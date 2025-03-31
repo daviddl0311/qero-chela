@@ -103,7 +103,7 @@ header {
 }
 .productos-column-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-    gap: 3.5rem;
+    gap: 2.5rem;
 }
 .img-producto img {
     width: 120px;
@@ -114,7 +114,6 @@ header {
     border-radius: 1rem;
     padding: 2rem;
     gap: 1.3rem;
-    width: 200px;
     height: 500px;
 }
 .text-producto {
@@ -247,14 +246,14 @@ header {
     gap: 2.1rem;
     padding: 1rem;
 }
-.title-telefono div > p {
+.title-telefono div > a {
     font-size: clamp(15px, 3vw, 20px);
 }
 .title-email {
     gap: 2.1rem;
     padding: 1rem;
 }
-.title-email div > p {
+.title-email div > a {
     font-size: clamp(15px, 3vw, 20px);
 }
 .social-media {
@@ -280,6 +279,7 @@ header {
     height: 45px;
     border-radius: 100%;
 }
+
 
 @media (0px < width < 1012px) {
     .cat-column-2 {

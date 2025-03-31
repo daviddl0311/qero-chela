@@ -33,6 +33,9 @@ header {
 .flex { 
     display: flex;
 }
+.flex-column {
+    flex-direction: column;
+}
 .center {
     display: grid;
     place-content: center;
@@ -102,9 +105,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 3.5rem;
 }
-.c1,.c2,.c3 {
-    
-}
 .img-producto img {
     width: 120px;
     position: relative;
@@ -166,7 +166,7 @@ header {
     flex-direction: column;
 }
 .flex-2 h2 {
-    font-size: clamp(15px, 3vw, 22px);
+    font-size: clamp(20px, 3vw, 22px);
     margin-top: 1rem;
     margin-bottom: 2.3rem;
 }
@@ -184,16 +184,17 @@ header {
     height: 100%;
 }
 .title-footer {
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: clamp(20px, 3vw, 30px);
     color: white;
     text-transform: uppercase;
-    margin-bottom: 2rem;
 }
 .text-footer {
     font-size: clamp(10px, 3vw, 22px);
     color: white;
     text-align: justify;
-    margin-bottom: 2rem;
+}
+.footer-flex {
+    gap: 2rem;
 }
 .footer-column-2 {
     grid-template-columns: 470px 350px;
@@ -247,14 +248,14 @@ header {
     padding: 1rem;
 }
 .title-telefono div > p {
-    font-size: clamp(10px, 3vw, 18px);
+    font-size: clamp(15px, 3vw, 20px);
 }
 .title-email {
     gap: 2.1rem;
     padding: 1rem;
 }
 .title-email div > p {
-    font-size: clamp(10px, 3vw, 18px);
+    font-size: clamp(15px, 3vw, 20px);
 }
 .social-media {
     padding: 1rem;
@@ -267,6 +268,9 @@ header {
 }
 .gap-footer-3 {
     gap: 1.7rem;
+}
+.gap-footer-3 a {
+    font-size: clamp(15px, 3vw, 17x);
 }
 .social {
     color: white;
@@ -290,5 +294,48 @@ header {
     .item-img2 img {
         width: 30rem;
         height: 100%;
+    }
+
+    /*-------------- FOOTER --------------*/ 
+    .footer-column-2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .img-footer {
+        display: none;
+    }
+    .my-footer {
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+        /* width: 63rem; */
+        height: 100%;
+    }
+    .footer-flex {
+        background-color: black;
+        border-radius: 15px;
+        padding: 3rem;
+        width: 600px;
+    }
+    .center-text-footer {
+        text-align: center;
+    }
+    .center-footer {
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-column-2-2 {
+        grid-column:inherit;
+        grid-template-columns: repeat(1, auto);
+        gap: 4rem;
+    }
+    .footer-column-3 {
+        grid-template-columns: repeat(3, auto);
+        gap: 3rem;
+    }
+    .my-footer2 {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-inline: 3.6rem;
     }
 }

@@ -99,19 +99,23 @@ header {
     margin-bottom: 4rem;
 }
 .productos-column-3 {
-    grid-template-columns: repeat(3, auto);
-    gap: 3.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 3.5rem;
+}
+.c1,.c2,.c3 {
+    
 }
 .img-producto img {
     width: 120px;
     position: relative;
 }
-.item-producto {
+.item-producto {    
     background-color: black;
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 2rem;
     gap: 1.3rem;
-    width: 12rem;
+    width: 200px;
+    height: 500px;
 }
 .text-producto {
     font-size: clamp(15px, 3vw, 22px);
@@ -271,4 +275,20 @@ header {
     width: 45px;
     height: 45px;
     border-radius: 100%;
+}
+
+@media (0px < width < 1012px) {
+    .cat-column-2 {
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
+    .item-img img {
+        /* height: 100%; */
+        width: 30rem;
+        height: 100%;
+    }
+    .item-img2 img {
+        width: 30rem;
+        height: 100%;
+    }
 }

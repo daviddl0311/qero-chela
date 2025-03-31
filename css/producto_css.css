@@ -13,6 +13,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 ul > li {
     list-style: none;
@@ -94,6 +95,7 @@ header {
     text-transform: uppercase;
 }
 .producto-text {
+    font-size: clamp(14px, 3vw, 19px);
     text-align: justify;
 }
 .producto-precio {
@@ -152,7 +154,7 @@ header {
 }
 .description {
     font-size: clamp(10px, 3vw, 15px);
-    text-align: justify;
+    text-align: center;
 }
 .text-producto, .description {
     color: white;

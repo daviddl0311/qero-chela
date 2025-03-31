@@ -13,6 +13,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 ul > li {
     list-style: none;
@@ -60,11 +61,11 @@ header {
 }
 
 /*--------------  BANNER -----------------*/
-.banner-img {
-    background: url(../img/Banner.png) no-repeat;
-    background-size: cover;
+.banner-img img {
+    /* background: url(../img/Banner.png) no-repeat; */
+    /* background-size: cover; */
     width: 100%;
-    height: 58rem;
+    /* height: 58rem; */
 }
 
 /*--------------  CATEGORIAS -----------------*/
@@ -118,7 +119,7 @@ header {
 }
 .description {
     font-size: clamp(10px, 3vw, 15px);
-    text-align: justify;
+    text-align: center;
 }
 .text-producto, .description {
     color: white;

@@ -5,6 +5,7 @@
 }
 body {
     font-family: "Gidole", sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     /* background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg); */
@@ -19,9 +20,9 @@ ul > li {
 header {
     padding-inline: 2rem;
     padding-block: .6rem;
-    top: 0px;
-    position: sticky;
-    z-index: 2;
+    /* top: 0px; */
+    /* position: sticky; */
+    /* z-index: 2; */
     background-color: white;
 }
 

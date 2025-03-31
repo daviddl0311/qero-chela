@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: "Gidole", sans-serif;
+}
+body {
+    /* background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg); */
+    /* background-attachment: fixed; */
+}
+a {
+    text-decoration: none;
+}
+ul > li {
+    list-style: none;
+}
+header {
+    padding-inline: 2rem;
+    padding-block: .6rem;
+    top: 0px;
+    position: sticky;
+    z-index: 2;
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+}
+.flex { 
+    display: flex;
+}
+.center {
+    display: grid;
+    place-content: center;
+}
+
+/*--------------  HEADER -----------------*/
+.column-header {
+    grid-template-columns: repeat(2, auto);
+}
+.title-logo {
+    flex-direction: row;
+    gap: .5rem;
+}
+.title-logo img {
+    width: 4.5rem;
+}
+.navegation {
+    flex-direction: row-reverse;
+}
+.navegation ul > li > a {
+    font-size: clamp(10px, 3vw, 15px);
+    text-transform: uppercase;
+}
+.gap5rem {
+    gap: 5rem
+}
+
+/*--------------  BANNER -----------------*/
+.banner-img {
+    background: url(../img/Banner.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 58rem;
+}
+
+/*--------------  CATEGORIAS -----------------*/
+.categorias {
+    padding-block: 5rem;
+}
+.item-img img {
+    /* height: 100%; */
+    width: 35rem;
+    height: 100%;
+}
+.item-img2 img {
+    width: 25rem;
+    height: 100%;
+}
+.cat-column-2 {
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+.cat-subcolumn-2 {
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+}
+
+/*--------------  PRODUCTOS -----------------*/
+.productos {
+    padding-block: 5rem;
+    background-color: #D9D9D9;
+}
+.productos section {
+    margin-bottom: 4rem;
+}
+.productos-column-3 {
+    grid-template-columns: repeat(3, auto);
+    gap: 3.6rem;
+}
+.img-producto img {
+    width: 120px;
+    position: relative;
+}
+.item-producto {
+    background-color: black;
+    border-radius: 1rem;
+    padding: 3rem;
+    gap: 1.3rem;
+    width: 12rem;
+}
+.text-producto {
+    font-size: clamp(15px, 3vw, 22px);
+    text-transform: uppercase;
+}
+.description {
+    font-size: clamp(10px, 3vw, 15px);
+    text-align: justify;
+}
+.text-producto, .description {
+    color: white;
+}
+.precio {
+    background-color: #F82020;
+    color: white;
+    font-size: clamp(15px, 3vw, 28px);
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    padding: .7rem 1rem .7rem 1rem;
+    border-radius: 100%;
+}
+.button-producto button {
+    color: white;
+    background-color: #F82020;
+    text-transform: uppercase;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 4rem;
+    transition: all .5s;
+}
+.button-producto button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #F82020;
+}
+.title-section {
+    font-size: clamp(15px, 3vw, 40px);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.text-section {
+    font-size: clamp(10px, 3vw, 20px);
+    color: rgb(44, 43, 43)
+}
+
+/*--------------  FOOTER -----------------*/
+.flex-2 {
+    flex-direction: column;
+}
+.flex-2 h2 {
+    font-size: clamp(15px, 3vw, 22px);
+    margin-top: 1rem;
+    margin-bottom: 2.3rem;
+}
+.flex-2 > a {
+    text-transform: uppercase;
+}
+.footer {
+    padding: 5rem;
+}
+.my-footer {
+    background-color: black;
+    border-radius: 15px;
+    padding: 3.2rem;
+    /* width: 63rem; */
+    height: 100%;
+}
+.title-footer {
+    font-size: clamp(15px, 3vw, 30px);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.text-footer {
+    font-size: clamp(10px, 3vw, 22px);
+    color: white;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.footer-column-2 {
+    grid-template-columns: 470px 350px;
+    gap: 3.6rem;
+}
+.button-footer button {
+    font-size: clamp(10px, 3vw, 20px);
+    background-color: #D9D9D9;
+    color: black;
+    padding-block: .8rem;
+    padding-inline: 3rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    transition: all .3s
+}
+.button-footer button:hover {
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 1px 1px 6px white;
+    color: #D9D9D9
+}
+.img-footer {
+    position: relative;
+}
+.img-footer img {
+    width: 28rem;
+    position: absolute;
+    left: -46px;
+    top: -170px;
+}
+.footer-column-2-2 {
+    grid-template-columns: repeat(2, auto);
+    gap: 8rem;
+}
+.footer-column-3 {
+    grid-template-columns: repeat(3, auto);
+    gap: 8rem;
+}
+.my-footer2 {
+    padding-top: 12rem;
+    padding-inline: 3.6rem;
+}
+.fa-phone, .fa-envelope {
+    font-size: clamp(10px, 3vw, 30px);
+}
+.text-logo {
+    font-size: clamp(15px, 3vw, 22px);
+}
+.title-telefono {
+    gap: 2.1rem;
+    padding: 1rem;
+}
+.title-telefono div > p {
+    font-size: clamp(10px, 3vw, 18px);
+}
+.title-email {
+    gap: 2.1rem;
+    padding: 1rem;
+}
+.title-email div > p {
+    font-size: clamp(10px, 3vw, 18px);
+}
+.social-media {
+    padding: 1rem;
+}
+.gap-footer {
+    gap: 3rem;
+}
+.gap-footer-2 {
+    gap: 5rem;
+}
+.gap-footer-3 {
+    gap: 1.7rem;
+}
+.social {
+    color: white;
+    background-color: black;
+    font-size: clamp(10px, 3vw, 18px);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}

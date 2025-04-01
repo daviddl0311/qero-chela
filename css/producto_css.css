@@ -7,10 +7,10 @@
 body {
     font-family: "Gidole", sans-serif;
 }
-body {
-    /* background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg); */
-    /* background-attachment: fixed; */
-}
+/* body {
+    background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg);
+    background-attachment: fixed;
+} */
 a {
     text-decoration: none;
     color: black;
@@ -77,8 +77,6 @@ header {
     padding: 2rem;
     gap: 2rem;
 }
-.ver-producto article {
-}
 .ver-producto-column {
     grid-template-columns: repeat(1, auto);
 }
@@ -90,9 +88,6 @@ header {
     background-color: black;
     padding: 5rem;
     border-radius: 1rem;
-}
-.producto-img {
-    /*width: 10rem;*/
 }
 .producto-title {
     font-size: clamp(23px, 3vw, 27px);

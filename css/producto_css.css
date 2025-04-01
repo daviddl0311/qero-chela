@@ -56,7 +56,7 @@ header {
     flex-direction: row-reverse;
 }
 .navegation ul > li > a {
-    font-size: clamp(10px, 3vw, 17px);
+    font-size: clamp(16px, 3vw, 17px);
     text-transform: uppercase;
 }
 .gap5rem {
@@ -66,6 +66,9 @@ header {
     display: none;
 }
 .burger-icon {
+    display: none;
+}
+.logo-burger {
     display: none;
 }
 
@@ -85,7 +88,7 @@ header {
     gap: 4rem;
 }
 .producto-img {
-    background-color: black;
+    background-color: rgb(77, 76, 76);
     padding: 5rem;
     border-radius: 1rem;
 }
@@ -408,16 +411,19 @@ header {
     .navegation > ul {
         position: fixed;
         background-color: black;
-        top: 5.09rem;
-        padding: 3rem;
-        width: 70%;
+        top: 0;
+        padding: 1rem;
+        width: 50%;
         max-width: 300px;
         height: 100vh;
-        right: -100%;
-        transition: all .3s ease-in-out;
+        left: -100%;
+        transition: all .5s ease-in-out;
     }
     #burgercheck:checked ~ ul  {
-        right: 0;
+        left: 0;
+    }
+    .navegation ul .burger-center{
+        padding-left: 1rem;
     }
     .navegation ul li > a {
         color: white;
@@ -428,6 +434,23 @@ header {
     .center-nav {
         display: flex;
         place-content: center;
+    }
+    .logo-burger {
+        display: inline-block;
+    }
+    .logo-burger-img img {
+        width: 7rem;
+    }
+    .logo-burger-text {
+        font-size: clamp(10px, 3vw, 19px);
+    }
+    .gap5rem {
+        gap: 3rem;
+    }
+    .burger-center {
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     /*-------------- VER PRODUCTO --------------*/
@@ -510,16 +533,19 @@ header {
     .navegation > ul {
         position: fixed;
         background-color: black;
-        top: 5.09rem;
-        padding: 3rem;
-        width: 70%;
+        top: 0;
+        padding: 1rem;
+        width: 50%;
         max-width: 300px;
         height: 100vh;
-        right: -100%;
-        transition: all .3s ease-in-out;
+        left: -100%;
+        transition: all .5s ease-in-out;
     }
     #burgercheck:checked ~ ul  {
-        right: 0;
+        left: 0;
+    }
+    .navegation ul .burger-center{
+        padding-left: 1rem;
     }
     .navegation ul li > a {
         color: white;
@@ -530,6 +556,23 @@ header {
     .center-nav {
         display: flex;
         place-content: center;
+    }
+    .logo-burger {
+        display: inline-block;
+    }
+    .logo-burger-img img {
+        width: 7rem;
+    }
+    .logo-burger-text {
+        font-size: clamp(10px, 3vw, 19px);
+    }
+    .gap5rem {
+        gap: 3rem;
+    }
+    .burger-center {
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     /*-------------- VER PRODUCTO --------------*/
@@ -615,16 +658,19 @@ header {
     .navegation > ul {
         position: fixed;
         background-color: black;
-        top: 5.09rem;
-        padding: 3rem;
-        width: 70%;
+        top: 0;
+        padding: 1rem;
+        width: 50%;
         max-width: 300px;
         height: 100vh;
-        right: -100%;
-        transition: all .3s ease-in-out;
+        left: -100%;
+        transition: all .5s ease-in-out;
     }
     #burgercheck:checked ~ ul  {
-        right: 0;
+        left: 0;
+    }
+    .navegation ul .burger-center{
+        padding-left: 1rem;
     }
     .navegation ul li > a {
         color: white;
@@ -635,6 +681,23 @@ header {
     .center-nav {
         display: flex;
         place-content: center;
+    }
+    .logo-burger {
+        display: inline-block;
+    }
+    .logo-burger-img img {
+        width: 7rem;
+    }
+    .logo-burger-text {
+        font-size: clamp(10px, 3vw, 19px);
+    }
+    .gap5rem {
+        gap: 3rem;
+    }
+    .burger-center {
+        display: flex;
+        justify-content: left;
+        align-items: center;
     }
 
     /*-------------- VER PRODUCTO --------------*/

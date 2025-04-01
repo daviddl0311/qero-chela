@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q'ero Chela Luna de Miel - Producto</title>
+    <title>Luna de Miel - Producto</title>
     <link rel="stylesheet" href="../css/producto_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,13 @@
                 </div>
             </a>
             <div class="flex navegation">
-                <ul class="flex gap5rem">    
+                <input type="checkbox" id="burgercheck">
+                <label for="burgercheck" class="burger-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="flex gap5rem flex-row-2">    
                     <li class="center">
-                        <a href="#">Productos</a>
+                        <a href="#productos">Productos</a>
                     </li>
                     <li class="center">
                         <a href="#">Nosotros</a>
@@ -58,18 +62,19 @@
                     </div>
                     <div class="flex flex-column producto-buttons">
                         <button class="producto-info" onclick="location.href='https://drive.google.com/file/d/1HApmSn--hCoGovvqA0Y5q6EPWLPCe-V2/view?usp=sharing'">Informacion</button>
-                        <button class="producto-comprar">Comprar ahora</button>
+                        <button class="producto-comprar" onclick="location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!'">Comprar ahora</button>
+           
                     </div>
                 </div>
             </article>
         </section>
-        <section class="productos">
+        <section class="productos" id="productos">
             <section class="center">
                 <div class="center">
                     <h2 class="title-section">nuestros productos</h2>
                 </div>
                 <div class="center">
-                    <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-section">Cerveza artesanal con identidad. Sabor que cuenta una historia.</p>
                 </div>
             </section>
             <div class="grid productos-column-3 center">
@@ -132,7 +137,7 @@
                     <p>Descubre el sabor perfecto para cada ocasión y vive una experiencia única. ¡Haz tu pedido ahora!</p>
                 </div>
                 <div class="button-footer center-footer">
-                    <button>comprar</button>
+                    <button onclick="location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!'">comprar</button>
                 </div>
             </div>
             <div class="img-footer">
@@ -171,17 +176,17 @@
                 </div>
                 <div class="flex social-media gap-footer">
                     <a href="https://www.facebook.com/profile.php?id=61573955267865" class="social-enlace" target="_blank">
-                        <div class="social center">
+                        <div class="social social-f center">
                             <i class="fa-brands fa-facebook"></i>
                         </div>
                     </a>
                     <a href="https://www.instagram.com/qerochela?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                        <div class="social center">
+                        <div class="social social-i center">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                     </a>
                     <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!" target="_blank">
-                        <div class="social center">
+                        <div class="social social-w center">
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </a>
@@ -199,7 +204,7 @@
                 <div class="flex flex-2">
                     <h2>Productos</h2>
                     <div class="flex flex-2 gap-footer-3">
-                        <a href="">Q'ero Chela</a>
+                        <a href="../index.html">Q'ero Chela</a>
                         <a href="">Tantrica</a>
                     </div>
                 </div>

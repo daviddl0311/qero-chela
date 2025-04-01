@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Gidole", sans-serif;
-    scroll-behavior: smooth;
 }
 body {
     /* background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg); */
@@ -56,11 +56,17 @@ header {
     flex-direction: row-reverse;
 }
 .navegation ul > li > a {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 17px);
     text-transform: uppercase;
 }
 .gap5rem {
     gap: 5rem
+}
+#burgercheck {
+    display: none;
+}
+.burger-icon {
+    display: none;
 }
 
 /*--------------  BANNER -----------------*/
@@ -117,11 +123,11 @@ header {
     height: 500px;
 }
 .text-producto {
-    font-size: clamp(15px, 3vw, 22px);
+    font-size: clamp(20px, 3vw, 22px);
     text-transform: uppercase;
 }
 .description {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 15px);
     text-align: center;
 }
 .text-producto, .description {
@@ -151,7 +157,7 @@ header {
     color: #F82020;
 }
 .title-section {
-    font-size: clamp(15px, 3vw, 40px);
+    font-size: clamp(30px, 3vw, 40px);
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -183,12 +189,12 @@ header {
     height: 100%;
 }
 .title-footer {
-    font-size: clamp(20px, 3vw, 30px);
+    font-size: clamp(22px, 3vw, 30px);
     color: white;
     text-transform: uppercase;
 }
 .text-footer {
-    font-size: clamp(10px, 3vw, 22px);
+    font-size: clamp(15px, 3vw, 22px);
     color: white;
     text-align: justify;
 }
@@ -237,7 +243,7 @@ header {
     padding-inline: 3.6rem;
 }
 .fa-phone, .fa-envelope {
-    font-size: clamp(10px, 3vw, 30px);
+    font-size: clamp(27px, 3vw, 30px);
 }
 .text-logo {
     font-size: clamp(15px, 3vw, 22px);
@@ -274,14 +280,109 @@ header {
 .social {
     color: white;
     background-color: black;
-    font-size: clamp(10px, 3vw, 18px);
+    font-size: 18px;
     width: 45px;
     height: 45px;
     border-radius: 100%;
+    transition: all .4s;
+}
+.social-f:hover {
+    background-color: #3b5998;
+}
+.social-i:hover {
+    background: #C13584;
+}
+.social-w:hover {
+    background-color: #25d366;
 }
 
+@media (850px < width < 1012px) {
+    /*-------------- FOOTER --------------*/ 
+    .footer-column-2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .img-footer {
+        display: none;
+    }
+    .my-footer {
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+        /* width: 63rem; */
+        height: 100%;
+    }
+    .footer-flex {
+        background-color: black;
+        border-radius: 15px;
+        padding: 3rem;
+    }
+    .center-text-footer {
+        text-align: center;
+    }
+    .center-footer {
+        display: grid;
+        place-content: center;
+    }
 
-@media (0px < width < 1012px) {
+    .footer-column-2-2 {
+        grid-column:inherit;
+        grid-template-columns: repeat(1, auto);
+        gap: 4rem;
+    }
+    .footer-column-3 {
+        grid-template-columns: repeat(3, auto);
+        gap: 3rem;
+    }
+    .my-footer2 {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-inline: 3.6rem;
+    }
+}
+@media (650px < width < 849px) {
+    /*-------------- HEADER --------------*/ 
+    header {
+        top: 0px;
+        position: sticky;
+        z-index: 1000;
+    }
+    .burger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navegation > ul {
+        position: fixed;
+        background-color: black;
+        top: 5.09rem;
+        padding: 3rem;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        right: -100%;
+        transition: all .3s ease-in-out;
+    }
+    #burgercheck:checked ~ ul  {
+        right: 0;
+    }
+    .navegation ul li > a {
+        color: white;
+    } 
+    .flex-row-2 {
+        flex-direction: column;
+    }
+    .center-nav {
+        display: flex;
+        place-content: center;
+    }
+
+    /*-------------- CATEGORIAS --------------*/
+    .categorias {
+        padding-block: 3rem;
+    } 
     .cat-column-2 {
         grid-template-columns: repeat(1, auto);
         gap: 1rem;
@@ -294,6 +395,14 @@ header {
     .item-img2 img {
         width: 30rem;
         height: 100%;
+    }
+
+     /*-------------- VER PRODUCTO --------------*/ 
+    .productos {
+        padding-block: 3rem;
+    }
+    .productos section {
+        margin-bottom: 3rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -314,7 +423,6 @@ header {
         background-color: black;
         border-radius: 15px;
         padding: 3rem;
-        width: 600px;
     }
     .center-text-footer {
         text-align: center;
@@ -330,8 +438,244 @@ header {
         gap: 4rem;
     }
     .footer-column-3 {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         gap: 3rem;
+    }
+    .my-footer2 {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-inline: 3.6rem;
+    }
+}
+
+@media (max-width: 649px) {
+    /*-------------- HEADER --------------*/ 
+    header {
+        top: 0px;
+        position: sticky;
+        z-index: 1000;
+        padding-inline: 1rem;
+    }
+    .burger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navegation > ul {
+        position: fixed;
+        background-color: black;
+        top: 5.09rem;
+        padding: 3rem;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        right: -100%;
+        transition: all .3s ease-in-out;
+    }
+    #burgercheck:checked ~ ul  {
+        right: 0;
+    }
+    .navegation ul li > a {
+        color: white;
+    } 
+    .flex-row-2 {
+        flex-direction: column;
+    }
+    .center-nav {
+        display: flex;
+        place-content: center;
+    }
+
+    /*-------------- CATEGORIAS --------------*/ 
+    .categorias {
+        padding-block: 3rem;
+    } 
+    .cat-column-2 {
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
+    .item-img,.item-img2 {
+        padding-inline: 3rem;
+    }
+    .item-img img {
+        /* height: 100%; */
+        width: 100%;
+        height: 100%;
+    }
+    .item-img2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------- PRODUCTOS --------------*/ 
+    .productos {
+        padding-block: 3rem;
+    } 
+    .producto section {
+        margin-bottom: 3rem;
+    }
+
+    /*-------------- FOOTER --------------*/ 
+    .footer {
+        padding: 3rem;
+    }
+    .footer-column-2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .img-footer {
+        display: none;
+    }
+    .my-footer {
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+        /* width: 63rem; */
+        height: 100%;
+    }
+    .footer-flex {
+        background-color: black;
+        border-radius: 15px;
+        padding: 3rem;
+    }
+    .center-text-footer {
+        text-align: center;
+    }
+    .center-footer {
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-column-2-2 {
+        grid-column:inherit;
+        grid-template-columns: repeat(1, auto);
+        gap: 4rem;
+    }
+    .footer-column-3 {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+    }
+    .my-footer2 {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-inline: 3.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    /*-------------- HEADER --------------*/ 
+    header {
+        top: 0px;
+        position: sticky;
+        z-index: 1000;
+        padding-inline: 1rem;
+    }
+    .burger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navegation > ul {
+        position: fixed;
+        background-color: black;
+        top: 5.09rem;
+        padding: 3rem;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        right: -100%;
+        transition: all .3s ease-in-out;
+    }
+    #burgercheck:checked ~ ul  {
+        right: 0;
+    }
+    .navegation ul li > a {
+        color: white;
+    } 
+    .flex-row-2 {
+        flex-direction: column;
+    }
+    .center-nav {
+        display: flex;
+        place-content: center;
+    }
+
+    /*-------------- CATEGORIAS --------------*/ 
+    .categorias {
+        padding-block: 3rem;
+    } 
+    .cat-column-2 {
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
+    .item-img,.item-img2 {
+        padding-inline: 3rem;
+    }
+    .item-img img {
+        /* height: 100%; */
+        width: 100%;
+        height: 100%;
+    }
+    .item-img2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------- PRODUCTOS --------------*/ 
+    .productos {
+        padding-block: 3rem;
+    } 
+    .producto section {
+        margin-bottom: 3rem;
+    }
+
+    /*-------------- FOOTER --------------*/ 
+    .footer {
+        padding: 3rem;
+    }
+    .footer-column-2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .img-footer {
+        display: none;
+    }
+    .my-footer {
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+        /* width: 63rem; */
+        height: 100%;
+    }
+    .footer-flex {
+        background-color: black;
+        border-radius: 15px;
+        padding: 3rem;
+        width: 200px;
+    }
+    .title-footer {
+        text-align: center;
+    }
+    .center-text-footer {
+        text-align: center;
+    }
+    .center-footer {
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-column-2-2 {
+        grid-column:inherit;
+        grid-template-columns: repeat(1, auto);
+        gap: 4rem;
+    }
+    .footer-column-3 {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
     }
     .my-footer2 {
         flex-direction: column-reverse;

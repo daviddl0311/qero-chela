@@ -187,7 +187,8 @@ header {
 .my-footer {
     background-color: black;
     border-radius: 15px;
-    padding: 3.2rem;
+    padding-inline: 3.2rem;
+    padding-block: 2.5rem;
     /* width: 63rem; */
     height: 100%;
 }

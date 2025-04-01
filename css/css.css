@@ -228,9 +228,9 @@ header {
     position: relative;
 }
 .img-footer img {
-    width: 28rem;
+    width: 30rem;
     position: absolute;
-    left: -46px;
+    left: -79px;
     top: -170px;
 }
 .footer-column-2-2 {
@@ -495,11 +495,11 @@ header {
         width: 50%;
         max-width: 300px;
         height: 100vh;
-        right: -100%;
+        left: -100%;
         transition: all .5s ease-in-out;
     }
     #burgercheck:checked ~ ul  {
-        right: 0;
+        left: 0;
     }
     .navegation ul .burger-center{
         padding-left: 1rem;
@@ -631,11 +631,11 @@ header {
         width: 50%;
         max-width: 300px;
         height: 100vh;
-        right: -100%;
+        left: -100%;
         transition: all .5s ease-in-out;
     }
     #burgercheck:checked ~ ul  {
-        right: 0;
+        left: 0;
     }
     .navegation ul li > a {
         color: white;

@@ -106,7 +106,7 @@ h1 {
 }
 .producto-img img {
     width: 150px;
-    height: 400px;
+    height: 350px;
 }
 .producto-title {
     font-size: clamp(23px, 3vw, 27px);

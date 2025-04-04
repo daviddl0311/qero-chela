@@ -359,7 +359,6 @@ footer {
     .my-footer {
         background-color: #4E2A14;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -484,10 +483,9 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -620,7 +618,7 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
         /* width: 63rem; */
@@ -757,10 +755,9 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {

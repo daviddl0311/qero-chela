@@ -98,10 +98,6 @@ header {
 .nosotros-img img {
     width: 30rem;
 }
-.container {
-    width: 61.2rem;
-    /* height: 350px; */
-}
 .gap1rem {
     gap: 3rem;
 }
@@ -323,6 +319,16 @@ footer {
     color: #fdfbed;
 }
 
+@media (min-width: 1101px) {
+    .nosotros {
+        width: 61.2rem;
+    }
+}
+@media (1013px < width < 1100px) {
+    .nosotros {
+        width: auto;
+    }
+}
 @media (850px < width < 1012px) {
     /*-------------- NOSOTROS ----------------*/
     .flex-column-2 {
@@ -330,10 +336,6 @@ footer {
     }
     .nosotros-img img {
         width: 25rem;
-    }
-    .container {
-        width: 100%;
-        /* height: 350px; */
     }
     .gap1rem {
         gap: 3rem;
@@ -507,7 +509,6 @@ footer {
         background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -664,7 +665,6 @@ footer {
         background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -766,7 +766,7 @@ footer {
         flex-direction: column;
     }
     .nosotros-img img {
-        width: 10rem;
+        width: 14.5rem;
     }
     .container {
         width: 100%;
@@ -805,6 +805,9 @@ footer {
     .medallas-column {
         grid-template-columns: repeat(1, auto);
         gap: 1rem;
+    }
+    .medallas img {
+        width: 250px;
     }
 
     /*-------------- FOOTER --------------*/ 

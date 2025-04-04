@@ -218,6 +218,9 @@ header {
 }
 
 /*--------------  FOOTER -----------------*/
+footer {
+    background-color: #fae98e;
+}
 .flex-2 {
     flex-direction: column;
 }
@@ -384,9 +387,7 @@ header {
     }
     .my-footer {
         background-color: #4E2414;
-        border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -504,10 +505,9 @@ header {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -629,10 +629,9 @@ header {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {
@@ -783,10 +782,9 @@ header {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
-        /* width: 63rem; */
         height: 100%;
     }
     .footer-flex {

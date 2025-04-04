@@ -20,11 +20,11 @@ ul > li {
 }
 header {
     padding-inline: 2rem;
-    padding-block: .6rem;
+    padding-block: .5rem;
     /* top: 0px; */
     /* position: sticky; */
     /* z-index: 2; */
-    background-color: #fdfae9;
+    background-color: black;
 }
 
 .grid {
@@ -58,7 +58,7 @@ header {
 .navegation ul > li > a {
     font-size: clamp(15px, 3vw, 16px);
     text-transform: uppercase;
-    color: #401e08;
+    color: white;
     transition: all .3s ease-in-out;
 }
 .gap5rem {
@@ -69,7 +69,7 @@ header {
 }
 .burger-icon {
     display: none;
-    color: #401e08;
+    color: white;
 }
 .logo-burger {
     display: none;
@@ -190,7 +190,7 @@ header {
 
 /*--------------  FOOTER -----------------*/
 footer {
-    background-color: #fdfae9;
+    background-color: #fae98e;
 }
 .flex-2 {
     flex-direction: column;
@@ -282,7 +282,7 @@ footer {
     color: #401e08;
 }
 .title-telefono div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .title-email {
     gap: 1.4rem;
@@ -291,7 +291,7 @@ footer {
     color: #401e08;
 }
 .title-email div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .social-media {
     padding: 1rem;
@@ -400,7 +400,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -530,7 +530,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -666,7 +666,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;

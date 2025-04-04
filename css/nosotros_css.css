@@ -20,11 +20,11 @@ ul > li {
 }
 header {
     padding-inline: 2rem;
-    padding-block: .6rem;
+    padding-block: .5rem;
     /* top: 0px; */
     /* position: sticky; */
     /* z-index: 2; */
-    background-color: #fdfae9;
+    background-color: black;
 }
 
 .grid {
@@ -58,7 +58,7 @@ header {
 .navegation ul > li > a {
     font-size: clamp(15px, 3vw, 16px);
     text-transform: uppercase;
-    color: #401e08;
+    color: white;
     transition: all .3s ease-in-out;
 }
 .gap5rem {
@@ -69,7 +69,7 @@ header {
 }
 .burger-icon {
     display: none;
-    color: #401e08;
+    color: white;
 }
 .logo-burger {
     display: none;
@@ -80,9 +80,8 @@ header {
 
 /*-------------- NOSOTROS ----------------*/
 .nosotros {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    gap: 2.4rem;
+    padding: 5rem;
+    gap: 7rem;
     background-color: white;
 }
 .about {
@@ -90,10 +89,10 @@ header {
 }
 .nosotros-title {
     text-transform: uppercase;
-    font-size: clamp(15px, 3vw, 28px);
+    font-size: clamp(20px, 3vw, 28px);
 }
 .nosotros-text {
-    font-size: clamp(10px, 3vw, 19px);
+    font-size: clamp(15px, 3vw, 19px);
     text-align: justify;
 }
 .nosotros-img img {
@@ -101,11 +100,10 @@ header {
 }
 .container {
     width: 61.2rem;
-    min-width: 10rem;
     /* height: 350px; */
 }
 .gap1rem {
-    gap: 1rem;
+    gap: 3rem;
 }
 .gap2rem {
     gap: 2rem;
@@ -125,39 +123,67 @@ header {
 .item-valores img { 
     width: 4.5rem;    
 }
+
+/*-------------- VALORES --------------*/
 .valores-column {
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(3, auto);
     gap: 2rem;
 }
 .hover-text {
     position: absolute;
     z-index: -1;
-    width: 0%;
+    top: -100%;
     height: 100%;
     background-color: #fae98e;
     border-radius: 10px;
-    transition: all .4s;
+    transition: all .2s ease-in-out;
 }
 .hover-text p {
-    display: none;
+    /* display: none; */
     text-align: center;
-    font-size: 16.5px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 15px;
+}
+.item-valores > img {
+    width: 6.5rem;
+}
+.sub-title {
+    margin-top: 1rem;
 }
 .item-valores:hover {
     .hover-text {
         z-index: 0;
+        top: 0%;
         width: 100%;
         border-radius: 10px;
     }
-    .hover-text p {
-        display: inline;
-    }
+}
+
+/*-------------- MEDALLAS ---------------*/
+.medals-img img {
+    width: 30rem;
+}
+.medals-title {
+    font-size: clamp(20px, 3vw, 28px);
+    text-transform: uppercase;
+}
+.medals-text {
+    font-size: clamp(15px, 3vw, 19px);
+    text-align: justify;
+}
+.medallas-column {
+    grid-template-columns: repeat(2, auto);
+}
+.medallas img {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    filter: drop-shadow(8px 8px 3px rgb(70, 69, 69));
 }
 
 /*-------------- FOOTER -----------------*/
 footer {
-    background-color: #fdfae9;
+    background-color: #fae98e;
 }
 .flex-2 {
     flex-direction: column;
@@ -249,7 +275,7 @@ footer {
     color: #401e08;
 }
 .title-telefono div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .title-email {
     gap: 1.4rem;
@@ -258,7 +284,7 @@ footer {
     color: #401e08;
 }
 .title-email div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .social-media {
     padding: 1rem;
@@ -298,6 +324,35 @@ footer {
 }
 
 @media (850px < width < 1012px) {
+    /*-------------- NOSOTROS ----------------*/
+    .flex-column-2 {
+        flex-direction: column;
+    }
+    .nosotros-img img {
+        width: 25rem;
+    }
+    .container {
+        width: 100%;
+        /* height: 350px; */
+    }
+    .gap1rem {
+        gap: 3rem;
+    }
+    .gap2rem {
+        gap: 2rem;
+    }
+    .item-valores {
+        position: relative;
+        background-color: #efd15a;
+        padding-block: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+    .item-valores img { 
+        width: 4.5rem;    
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
         grid-template-columns: repeat(1, auto);
@@ -349,7 +404,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -399,6 +454,48 @@ footer {
         align-items: center;
     }
 
+    /*-------------- NOSOTROS ----------------*/
+    .flex-column-2 {
+        flex-direction: column;
+    }
+    .nosotros-img img {
+        width: 20rem;
+    }
+    .container {
+        width: 100%;
+    }
+    .gap1rem {
+        gap: 3rem;
+    }
+    .gap2rem {
+        gap: 2rem;
+    }
+    .item-valores {
+        position: relative;
+        background-color: #efd15a;
+        padding-block: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+    .item-valores img { 
+        width: 4.5rem;    
+    }
+
+    /*-------------- VALORES --------------*/
+    .valores-column {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+    }
+
+    /*-------------- MEDALLAS ---------------*/
+    .medals-img img {
+        width: 25rem;
+    }
+    .flex-column-3 {
+        flex-direction: column-reverse ;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
         grid-template-columns: repeat(1, auto);
@@ -407,7 +504,7 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
         /* width: 63rem; */
@@ -453,7 +550,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -503,6 +600,56 @@ footer {
         align-items: center;
     }
 
+    /*-------------- NOSOTROS ----------------*/
+    .nosotros {
+        padding: 3rem;
+        gap: 3.5rem;
+    }
+    .flex-column-2 {
+        flex-direction: column;
+    }
+    .nosotros-img img {
+        width: 15rem;
+    }
+    .container {
+        width: 100%;
+    }
+    .gap1rem {
+        gap: 3rem;
+    }
+    .gap2rem {
+        gap: 2rem;
+    }
+    .item-valores {
+        position: relative;
+        background-color: #efd15a;
+        padding-block: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+    .item-valores img { 
+        width: 4.5rem;    
+    }
+
+    /*-------------- VALORES --------------*/
+    .valores-column {
+        grid-template-columns: repeat(1, auto);
+        gap: 2rem;
+    }
+
+    /*-------------- MEDALLAS ---------------*/
+    .flex-column-3 {
+        flex-direction: column-reverse ;
+    }
+    .medals-img img {
+        width: 20rem;
+    }
+    .medallas-column {
+        grid-template-columns: repeat(1, auto);
+        gap: 2rem;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -514,7 +661,7 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
         /* width: 63rem; */
@@ -560,7 +707,7 @@ footer {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -610,6 +757,56 @@ footer {
         align-items: center;
     }
 
+    /*-------------- NOSOTROS ----------------*/
+    .nosotros {
+        padding: 3rem;
+        gap: 3.5rem;
+    }
+    .flex-column-2 {
+        flex-direction: column;
+    }
+    .nosotros-img img {
+        width: 10rem;
+    }
+    .container {
+        width: 100%;
+    }
+    .gap1rem {
+        gap: 3rem;
+    }
+    .gap2rem {
+        gap: 2rem;
+    }
+    .item-valores {
+        position: relative;
+        background-color: #efd15a;
+        padding-block: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+    .item-valores img { 
+        width: 4.5rem;    
+    }
+
+    /*-------------- VALORES --------------*/
+    .valores-column {
+        grid-template-columns: repeat(1, auto);
+        gap: 2rem;
+    }
+
+    /*-------------- MEDALLAS ---------------*/
+    .flex-column-3 {
+        flex-direction: column-reverse ;
+    }
+    .medals-img img {
+        width: 18rem;
+    }
+    .medallas-column {
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -621,7 +818,7 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: white;
+        background-color: #fae98e;
         border-radius: 0;
         padding: 0;
         height: 100%;

@@ -20,14 +20,11 @@ ul > li {
 }
 header {
     padding-inline: 2rem;
-    padding-block: .6rem;
+    padding-block: .5rem;
     /* top: 0px; */
     /* position: sticky; */
     /* z-index: 2; */
-    background-color: #f4e493;
-}
-h1 {
-    color: #4E2414;
+    background-color: black;
 }
 
 .grid {
@@ -53,15 +50,15 @@ h1 {
     gap: .5rem;
 }
 .title-logo img {
-    width: 4.5rem;
+    width: 15rem;
 }
 .navegation {
     flex-direction: row-reverse;
 }
 .navegation ul > li > a {
-    font-size: clamp(16px, 3vw, 17px);
+    font-size: clamp(15px, 3vw, 16px);
     text-transform: uppercase;
-    color: #401e08;
+    color: white;
     transition: all .3s ease-in-out;
 }
 .navegation ul > li a:hover {
@@ -75,7 +72,7 @@ h1 {
 }
 .burger-icon {
     display: none;
-    color: #4E2A14;
+    color: white;
 }
 .logo-burger {
     display: none;
@@ -117,7 +114,7 @@ h1 {
     text-align: justify;
 }
 .producto-precio {
-    font-size: clamp(25px, 3vw, 38px);
+    font-size: clamp(30px, 3vw, 38px);
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -307,20 +304,22 @@ h1 {
     color: #401e08;
 }
 .title-telefono {
-    gap: 2.1rem;
+    gap: 1.4rem;
     padding: 1rem;
+    padding-inline: 1.4rem;
     color: #401e08;
 }
 .title-telefono div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .title-email {
-    gap: 2.1rem;
+    gap: 1.4rem;
     padding: 1rem;
+    padding-inline: 1.4rem;
     color: #401e08;
 }
 .title-email div > a {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
 }
 .social-media {
     padding: 1rem;
@@ -429,7 +428,7 @@ h1 {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -551,7 +550,7 @@ h1 {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -676,7 +675,7 @@ h1 {
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 24px;
+        top: 29px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;

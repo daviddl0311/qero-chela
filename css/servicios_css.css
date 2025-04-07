@@ -78,6 +78,71 @@ header {
     color: #401e08;
 }
 
+/*-------------- SERVICIOS ----------------*/
+.servicios {
+    padding: 5rem;
+}
+.ser-column-2 {
+    grid-template-columns: repeat(2, auto);
+    gap: 5rem;
+}
+.item {
+    background-color: #f7d54d;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    height: 334px;
+    position: relative;
+    top: 0rem;
+    transition: all .3s ease-in-out;
+    box-shadow: 5px 5px 10px rgb(196, 196, 196);
+}
+.item:hover {
+    top: -1rem;
+    .fa-solid {
+        font-size: 65px;
+    }
+}
+.item-s {
+    position: absolute;
+    top: -3rem;
+    padding: 30px;
+    height: 380px;
+}
+.ser-logo {
+    background-color: #fae98e;
+    padding: .8rem;
+    border-radius: 15px;
+    height: 150px;
+}
+.fa-solid {
+    font-size: 60px;
+    color: #401e08;
+    transition: all .3s ease-in-out;
+}
+.ser-title {
+    color: #401e08; 
+    font-size: clamp(10px, 3vw, 15px);
+}
+.ser-text {
+    color: #401e08;
+}
+.ser-enlace {
+    background-color: #f2be1d;
+    padding: 1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #401e08;
+    transition: all .3s ease-in-out;
+}
+.ser-enlace:hover {
+    background-color: #9c5b0c;
+}
+.gap-ser {
+    gap: 1.2rem;
+}
+
+
 /*-------------- FOOTER -----------------*/
 footer {
     background-color: #fae98e;

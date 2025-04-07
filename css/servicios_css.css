@@ -95,12 +95,13 @@ header {
     position: relative;
     top: 0rem;
     transition: all .3s ease-in-out;
+    cursor: pointer;
     box-shadow: 5px 5px 10px rgb(196, 196, 196);
 }
 .item:hover {
     top: -1rem;
-    .fa-solid {
-        font-size: 65px;
+    .ser-logo {
+        scale: 1.04;
     }
 }
 .item-s {
@@ -114,7 +115,33 @@ header {
     padding: .8rem;
     border-radius: 15px;
     height: 150px;
+    transition: all .3s ease-in-out;
+    border: 1px solid #696969;
 }
+.ser1-img {
+    background: url(../img/servicios-img/servicio-1.jpg) no-repeat;
+    background-size: cover;
+} 
+.ser2-img {
+    background: url(../img/servicios-img/servicio-2.jpg) no-repeat;
+    background-size: cover;
+}
+.ser3-img {
+    background: url(../img/servicios-img/servicio-3.jpg) no-repeat;
+    background-size: cover;
+}
+.ser4-img {
+    background: url(../img/servicios-img/servicio-4.jpg) no-repeat;
+    background-size: cover;
+}
+.ser5-img {
+    background: url(../img/servicios-img/servicio-5.jpg) no-repeat;
+    background-size: cover;
+} 
+.ser6-img {
+    background: url(../img/servicios-img/servicio-6.jpg) no-repeat;
+    background-size: cover;
+}     
 .fa-solid {
     font-size: 60px;
     color: #401e08;

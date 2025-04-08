@@ -111,11 +111,11 @@ header {
 }
 .cat-column-2 {
     grid-template-columns: repeat(2, auto);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .cat-subcolumn-2 {
     grid-template-rows: repeat(2, auto);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 /*--------------  PRODUCTOS -----------------*/
@@ -128,7 +128,7 @@ header {
 }
 .productos-column-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-    gap: 2.5rem;
+    gap: 2.61rem;
 }
 .img-producto img {
     width: 120px;
@@ -196,13 +196,14 @@ footer {
     flex-direction: column;
 }
 .flex-2 h2 {
-    font-size: clamp(20px, 3vw, 22px);
+    font-size: clamp(18px, 3vw, 20px);
+    text-transform: uppercase;
     color: #401e08;
     margin-top: 1rem;
     margin-bottom: 2.3rem;
 }
 .flex-2 > a {
-    text-transform: uppercase;
+    font-size: clamp(14px, 3vw, 16px);
     color: #401e08;
 }
 .footer {
@@ -230,7 +231,7 @@ footer {
 }
 .footer-column-2 {
     grid-template-columns: 470px 350px;
-    gap: 3.6rem;
+    gap: 4rem;
 }
 .button-footer button {
     font-size: clamp(10px, 3vw, 20px);
@@ -253,11 +254,11 @@ footer {
     width: 30rem;
     position: absolute;
     left: -79px;
-    top: -170px;
+    top: -169.5px;
 }
 .footer-column-2-2 {
     grid-template-columns: repeat(2, auto);
-    gap: 8rem;
+    gap: 3.4rem;
 }
 .footer-column-3 {
     grid-template-columns: repeat(3, auto);
@@ -303,10 +304,7 @@ footer {
     gap: 5rem;
 }
 .gap-footer-3 {
-    gap: 1.7rem;
-}
-.gap-footer-3 a {
-    font-size: clamp(15px, 3vw, 17x);
+    gap: 1.5rem;
 }
 .social {
     color: #4E2A14;

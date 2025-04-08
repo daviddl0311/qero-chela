@@ -37,10 +37,13 @@
                         </div>
                     </li>        
                     <li class="center burger-center">
-                        <a href="#productos">Productos</a>
+                        <a href="../productos.html">Productos</a>
                     </li>
                     <li class="center burger-center">
                         <a href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="center burger-center">
+                        <a href="../servicios.html">Servicios</a>
                     </li>
                     <li class="center burger-center">
                         <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!" target="_blank">
@@ -53,7 +56,7 @@
     </header>
 
     <main>
-        <section class="ver-producto center">
+        <section class="ver-producto center" id="luna-miel">
             <article class="grid ver-producto-column-2">
                 <div class="producto-img center">
                     <img src="../img/QeroChela_LunaMiel.png" alt="Q'ero Chela Luna de Miel">
@@ -65,8 +68,17 @@
                     <div class="producto-text">
                         <p>Es una cerveza artesanal elaborada con miel de origen natural. Cada sorbo te envuelve en una experiencia que combina suavidad y dulzura.</p>
                     </div>
+                    <div class="producto-formato grid">
+                        <button id="bt1" class="button producto-opacity">unidad</button>
+                        <button id="bt2" class="button">6 unid.</button>
+                        <button id="bt3" class="button">pack 24</button>
+                        <button id="bt4" class="button">30 l</button>
+                        <button id="bt5" class="button">50 l</button>
+                    </div>
                     <div class="producto-precio">
-                        pen 7.50
+                        <span id="precio">
+                            pen 7.50
+                        </span>
                     </div>
                     <div class="flex flex-column producto-buttons">
                         <button class="producto-info" onclick="location.href='https://drive.google.com/file/d/1HApmSn--hCoGovvqA0Y5q6EPWLPCe-V2/view?usp=sharing'">Informacion</button>
@@ -88,7 +100,9 @@
             <div class="grid productos-column-3 center">
                 <div class="grid item-producto">
                     <div class="img-producto center">
-                        <img src="../img/QeroChela_Aborigen.png" alt="Q'ero Chela Aborigen">
+                        <a href="qerochela.html">
+                            <img src="../img/QeroChela_Aborigen.png" alt="Q'ero Chela Aborigen">
+                        </a>
                         <span class="precio center">S/.</span>
                     </div>
                     <div class="text-producto center">
@@ -103,7 +117,9 @@
                 </div>
                 <div class="grid item-producto">
                     <div class="img-producto center">
-                        <img src="../img/Tantrica.png" alt="Tantrica">
+                        <a href="https://tantrica.pe/">
+                            <img src="../img/Tantrica.png" alt="Tantrica">
+                        </a>
                         <span class="precio center">S/.</span>
                     </div>
                     <div class="text-producto center">
@@ -118,7 +134,9 @@
                 </div>
                 <div class="grid item-producto">
                     <div class="img-producto center">
-                        <img src="../img/QeroChela_LunaMiel.png" alt="Q'ero Chela Luna de Miel">
+                        <a href="#luna-miel">
+                            <img src="../img/QeroChela_LunaMiel.png" alt="Q'ero Chela Luna de Miel">
+                        </a>
                         <span class="precio center">S/.</span>
                     </div>
                     <div class="text-producto center">
@@ -128,7 +146,7 @@
                         <p>Cerveza artesanal con miel natural, de sabor suave y dulce.</p>
                     </div>
                     <div class="button-producto center">
-                        <button onclick="location.href='qerochela-luna-miel.html'">ordenar ahora</button>
+                        <button onclick="location.href='#luna-miel'">ordenar ahora</button>
                     </div>
                 </div>
             </div>
@@ -203,28 +221,32 @@
                 <div class="flex flex-2">
                     <h2>Empresa</h2>
                     <div class="flex flex-2 gap-footer-3">
-                        <a href="">Nosotros</a>
-                        <a href="">Galeria</a>
-                        <a href="">Blog</a>
+                        <a href="../nosotros.html">Nosotros</a>
+                        <a href="">Taproom</a>
                     </div>
                 </div>
                 <div class="flex flex-2">
                     <h2>Productos</h2>
                     <div class="flex flex-2 gap-footer-3">
                         <a href="../index.html">Q'ero Chela</a>
-                        <a href="">Tantrica</a>
+                        <a href="https://tantrica.pe/">Tantrica</a>
                     </div>
                 </div>
                 <div class="flex flex-2">
                     <h2>Servicios</h2>
                     <div class="flex flex-2 gap-footer-3">
-                        <a href="">Servicio 1</a>
-                        <a href="">Servicio 2</a>
-                        <a href="">Servicio 3</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Asesoría%20e%20Implementación%20de%20Plantas%20Cerveceras!" target="_blank">Asesoría Cervecera</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Instalación%20de%20Barras%20de%20Cerveza!" target="_blank">Instalación de Barras</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Cerveza%20para%20Eventos%20en%20Botellas%20o%20Barril!" target="_blank">Cerveza para Eventos</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Maquila%20y%20Marca%20Blanca!" target="_blank">Maquila y Marca Blanca</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Cursos%20y%20Capacitaciones!" target="_blank">Cursos Especializados</a>
+                        <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Diseño%20y%20Producción%20de%20Merchandising!" target="_blank">Diseño de Merchandising</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>

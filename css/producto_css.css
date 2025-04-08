@@ -113,6 +113,26 @@ header {
     font-size: clamp(15px, 3vw, 19px);
     text-align: justify;
 }
+.producto-formato {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1.5rem;
+}
+.producto-formato > button {
+    padding: .8rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(10px, 3vw, 14px);
+    border-radius: .2rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.producto-formato > button:hover {
+    opacity: .7;
+}
+.producto-opacity {
+    opacity: 0.6;
+}
 .producto-precio {
     font-size: clamp(30px, 3vw, 38px);
     text-transform: uppercase;
@@ -225,13 +245,14 @@ footer {
     flex-direction: column;
 }
 .flex-2 h2 {
-    font-size: clamp(20px, 3vw, 22px);
+    font-size: clamp(18px, 3vw, 20px);
+    text-transform: uppercase;
     color: #401e08;
     margin-top: 1rem;
     margin-bottom: 2.3rem;
 }
 .flex-2 > a {
-    text-transform: uppercase;
+    font-size: clamp(14px, 3vw, 16px);
     color: #401e08;
 }
 .footer {
@@ -242,7 +263,6 @@ footer {
     border-radius: 15px;
     padding-inline: 3.2rem;
     padding-block: 2.5rem;
-    /* width: 63rem; */
     height: 100%;
 }
 .title-footer {
@@ -260,7 +280,7 @@ footer {
 }
 .footer-column-2 {
     grid-template-columns: 470px 350px;
-    gap: 3.6rem;
+    gap: 4rem;
 }
 .button-footer button {
     font-size: clamp(10px, 3vw, 20px);
@@ -275,7 +295,6 @@ footer {
 .button-footer button:hover {
     cursor: pointer;
     background-color: #efd15a;
-    /* box-shadow: 1px 1px 6px white; */
 }
 .img-footer {
     position: relative;
@@ -288,7 +307,7 @@ footer {
 }
 .footer-column-2-2 {
     grid-template-columns: repeat(2, auto);
-    gap: 8rem;
+    gap: 3.4rem;
 }
 .footer-column-3 {
     grid-template-columns: repeat(3, auto);
@@ -334,10 +353,7 @@ footer {
     gap: 5rem;
 }
 .gap-footer-3 {
-    gap: 1.7rem;
-}
-.gap-footer-3 a {
-    font-size: clamp(15px, 3vw, 17x);
+    gap: 1.5rem;
 }
 .social {
     color: #401e08;

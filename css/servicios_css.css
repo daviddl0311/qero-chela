@@ -97,7 +97,7 @@ header {
     border-radius: 15px;
     padding: 30px;
     width: 300px;
-    height: 334px;
+    height: 360px;
     position: relative;
     top: 0rem;
     transition: all .3s ease-in-out;
@@ -118,36 +118,17 @@ header {
 }
 .ser-logo {
     background-color: #fae98e;
-    padding: .8rem;
     border-radius: 15px;
-    height: 150px;
+    height: 200px;
     transition: all .3s ease-in-out;
     border: 1px solid #c4c4c4;
 }
-.ser1-img {
-    background: url(../img/servicios-img/servicio-1.jpg) no-repeat;
-    background-size: cover;
-} 
-.ser2-img {
-    background: url(../img/servicios-img/servicio-2.jpg) no-repeat;
-    background-size: cover;
+.ser-logo img {
+    width: 100%;
+    border-radius: 15px;
+    height: 200px;
+    object-fit: cover;
 }
-.ser3-img {
-    background: url(../img/servicios-img/servicio-3.jpg) no-repeat;
-    background-size: cover;
-}
-.ser4-img {
-    background: url(../img/servicios-img/servicio-4.jpg) no-repeat;
-    background-size: cover;
-}
-.ser5-img {
-    background: url(../img/servicios-img/servicio-5.jpg) no-repeat;
-    background-size: cover;
-} 
-.ser6-img {
-    background: url(../img/servicios-img/servicio-6.jpg) no-repeat;
-    background-size: cover;
-}     
 .ser-title {
     color: #401e08; 
     font-size: clamp(10px, 3vw, 15px);
@@ -542,14 +523,29 @@ footer {
         background-color: #f7d54d;
         border-radius: 15px;
         padding: 30px;
-        width: 250px;
-        height: 334px;
+        width: 290px;
+        height: 330px;
         position: relative;
         top: 0rem;
         transition: all .3s ease-in-out;
         cursor: pointer;
         box-shadow: 5px 5px 10px rgb(196, 196, 196);
     }
+    .ser-logo {
+        background-color: #fae98e;
+        /*padding: .8rem;*/
+        border-radius: 15px;
+        height: 170px;
+        transition: all .3s ease-in-out;
+        border: 1px solid #c4c4c4;
+    }
+    .ser-logo img {
+        width: 100%;
+        border-radius: 15px;
+        height: 170px;
+        object-fit: cover;
+    }
+    
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -669,8 +665,9 @@ footer {
         background-color: #f7d54d;
         border-radius: 15px;
         padding: 30px;
-        width: 225px;
-        height: 334px;
+        width: 270px;
+        max-width: 220px;
+        height: 330px;
         position: relative;
         top: 0rem;
         transition: all .3s ease-in-out;
@@ -679,9 +676,9 @@ footer {
     }
     .ser-logo {
         background-color: #fae98e;
-        padding: .8rem;
+        /*padding: .8rem;*/
         border-radius: 15px;
-        height: 150px;
+        /*height: 150px;*/
         transition: all .3s ease-in-out;
         border: 1px solid #c4c4c4;
     }

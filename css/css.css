@@ -79,10 +79,11 @@ header {
 }
 
 /*--------------  BANNER -----------------*/
-/* .banner {
-    height: 600px;
+.banner {
+    /* height: 600px; */
+    background-color: #D9D9D9;
 }
-.banner-img {
+/*.banner-img {
     height: 100%;
 } */
 .banner-img img {
@@ -433,7 +434,7 @@ footer {
         display: inline-block;
     }
     .logo-burger-img img {
-        width: 7rem;
+        width: 15rem;
     }
     .logo-burger-text {
         font-size: clamp(10px, 3vw, 19px);
@@ -562,7 +563,7 @@ footer {
         display: inline-block;
     }
     .logo-burger-img img {
-        width: 7rem;
+        width: 15rem;
     }
     .logo-burger-text {
         font-size: clamp(10px, 3vw, 19px);
@@ -659,10 +660,13 @@ footer {
         z-index: 1000;
         padding-inline: 1rem;
     }
+    .title-logo img {
+        width: 10rem;
+    }
     .burger-icon {
         display: inline-block;
         position: absolute;
-        top: 29px;
+        top: 20px;
         right: 30px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -698,7 +702,7 @@ footer {
         display: inline-block;
     }
     .logo-burger-img img {
-        width: 7rem;
+        width: 10rem;
     }
     .logo-burger-text {
         font-size: clamp(10px, 3vw, 19px);

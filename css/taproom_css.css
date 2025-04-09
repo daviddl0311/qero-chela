@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Gidole", sans-serif;
+    height: 100vh;
+}
+main {
+    padding-block: 5rem;
+    padding-inline: 3rem;
+}
+.center {
+    display: grid;
+    place-content: center;
+}
+.my-button {
+    cursor: pointer;
+    font-size: 15px;
+    padding-block: 1rem;
+    padding-inline: 2.5rem;
+    border-radius: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    margin-top: 2rem;
+    transition: all .3s ease-in-out;
+}
+.my-button:hover {
+    opacity: .8;
+}
+.img img {
+    width: 23rem;
+    max-width: 100%;
+    border-radius: 15px;
+}

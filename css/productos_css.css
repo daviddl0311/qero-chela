@@ -21,9 +21,6 @@ ul > li {
 header {
     padding-inline: 2rem;
     padding-block: .5rem;
-    /* top: 0px; */
-    /* position: sticky; */
-    /* z-index: 2; */
     background-color: black;
 }
 
@@ -134,7 +131,7 @@ header {
 
 /*-------------- FOOTER -----------------*/
 footer {
-    background-color: #fae98e;
+    background-color: #FDFAE9;
 }
 .flex-2 {
     flex-direction: column;
@@ -154,7 +151,7 @@ footer {
     padding: 5rem;
 }
 .my-footer {
-    background-color: #4E2A14;
+    background-color: #6F2601;
     border-radius: 15px;
     padding-inline: 3.2rem;
     padding-block: 2.5rem;
@@ -295,13 +292,12 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: #4E2A14;
+        background-color: #6F2601;
         padding: 0;
         height: 100%;
+        border-radius: 15px;
     }
     .footer-flex {
-        background-color: #4E2A14;
-        border-radius: 15px;
         padding: 3rem;
     }
     .center-text-footer {
@@ -429,7 +425,7 @@ footer {
         height: 100%;
     }
     .footer-flex {
-        background-color: #4E2A14;
+        background-color: #6F2601;
         border-radius: 15px;
         padding: 3rem;
     }
@@ -559,14 +555,12 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: #fae98e;
-        border-radius: 0;
+        background-color: #6F2601;
         padding: 0;
         height: 100%;
+        border-radius: 15px;
     }
     .footer-flex {
-        background-color: #4E2A14;
-        border-radius: 15px;
         padding: 3rem;
     }
     .center-text-footer {
@@ -673,16 +667,12 @@ footer {
         display: none;
     }
     .my-footer {
-        background-color: #fae98e;
-        border-radius: 0;
-        padding: 0;
         height: 100%;
     }
     .footer-flex {
-        background-color: #4E2A14;
+        background-color: #6F2601;
         border-radius: 15px;
         padding: 3rem;
-        width: 200px;
     }
     .title-footer {
         text-align: center;

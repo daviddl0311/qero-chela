@@ -86,7 +86,8 @@ header {
     padding-block: 5rem;
 }
 .ver-producto-2 {
-    padding: 2rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
     gap: 2rem;
 }
 .ver-producto-column {
@@ -122,13 +123,13 @@ header {
     background-color: black;
     color: white;
     text-transform: uppercase;
-    font-size: clamp(12px, 3vw, 14px);
+    font-size: clamp(13px, 3vw, 14px);
     border-radius: .2rem;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
 .producto-formato > button:hover {
-    opacity: .7;
+    opacity: .5;
 }
 .producto-opacity {
     opacity: 0.6;
@@ -1022,7 +1023,7 @@ footer {
     }
     .item-producto {
         width: 190px;
-        height: 370px;
+        height: 350px;
         padding: 1.3rem;
     }
     .button-producto button {

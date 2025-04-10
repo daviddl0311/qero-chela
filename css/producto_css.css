@@ -168,7 +168,7 @@ header {
 /*-------------- PRODUCTOS -----------------*/
 .productos {
     padding-block: 5rem;
-    background-image: url(../img/inicio-img/Fondo-Producto.jpeg);
+    background-image: url(../img/inicio-img/Fondo-Producto.jpg);
     background-size: 100%;
 }
 .productos section {

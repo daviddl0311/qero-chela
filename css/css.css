@@ -90,14 +90,22 @@ header {
     background-color: black;
 }
 .item-img img {
-    width: 35rem;
+    width: 34.7rem;
     height: 100%;
     border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+.item-img img:hover {
+    scale: 1.03;
 }
 .item-img2 img {
-    width: 25rem;
-    height: 100%;
+    width: 23rem;
+    height: 350px;
     border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+.item-img2 img:hover {
+    scale: 1.03;
 }
 .cat-column-2 {
     grid-template-columns: repeat(2, auto);

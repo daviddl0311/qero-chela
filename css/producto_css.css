@@ -416,7 +416,7 @@ footer {
         padding-block: 3rem;
     }
     .productos section {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
     .img-producto img {
         width: 100px;
@@ -424,9 +424,13 @@ footer {
     }
     .item-producto {
         width: 200px;
-        height: 380px;
+        height: 355px;
         padding: 2rem;
-        margin-top: 3rem;
+        margin-top: 3.4rem;
+    }
+    .my-item {
+        position: relative;
+        top: -6rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -545,7 +549,7 @@ footer {
         padding-block: 3rem;
     } 
     .productos section {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     .img-producto img {
         width: 100px;
@@ -553,9 +557,13 @@ footer {
     }
     .item-producto {
         width: 200px;
-        height: 380px;
+        height: 355px;
         padding: 2rem;
-        margin-top: 3rem;
+        margin-top: 3.4rem;
+    }
+    .my-item {
+        position: relative;
+        top: -6rem;
     }
 
 
@@ -688,6 +696,16 @@ footer {
     }
     .productos-column-3 {
         gap: 5.4rem;
+    }
+    .item-producto {
+        width: 200px;
+        height: 400px;
+        padding: 2rem;
+        margin-top: 3.4rem;
+    }
+    .my-item {
+        position: relative;
+        top: -6rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -840,25 +858,26 @@ footer {
         padding-block: 3rem;
     } 
     .productos section {
-        margin-bottom: 3rem;
-    }
-    .productos section {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
     .text-section {
         width: 250px;
     }
     .productos-column-3 {
-        gap: 5.4rem;
+        gap: 4.5rem;
     }
-    .item-producto {
-        width: 220px;
-        height: 415px;
+    .item-producto img {
+        width: 100px;
+        height: 250px;
     }
     .item-producto {
         width: 190px;
-        height: 370px;
+        height: 350px;
         padding: 1.3rem;
+    }
+    .my-item {
+        position: relative;
+        top: -6rem;
     }
     .button-producto button {
         padding: 1rem 1.5rem;
@@ -988,17 +1007,14 @@ footer {
     .productos {
         padding-block: 3rem;
     } 
-    .producto section {
-        margin-bottom: 3rem;
-    }
     .productos section {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
     .text-section {
         width: 250px;
     }
     .productos-column-3 {
-        gap: 6.2rem;
+        gap: 5rem;
     }
     .img-producto img {
         width: 100px;

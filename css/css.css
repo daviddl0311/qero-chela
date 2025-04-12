@@ -262,7 +262,7 @@ footer {
     width: 30rem;
     position: absolute;
     left: -79px;
-    top: -169.5px;
+    top: -170px;
 }
 .footer-column-2-2 {
     grid-template-columns: repeat(2, auto);

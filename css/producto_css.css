@@ -173,10 +173,10 @@ header {
 .productos {
     padding-block: 5rem;
     background-image: url(../img/inicio-img/Fondo-Producto.jpg);
-    background-size: 100%;
+    background-size: contain;
 }
 .productos section {
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
 }
 .productos-column-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
@@ -193,8 +193,10 @@ header {
 .item-producto {    
     background-color: white;
     border-radius: 1rem;
-    padding: 2.8rem;
-    height: 430px;
+    padding: 2rem;
+    width: 200px;
+    height: 375px;
+
 }
 .item-producto:hover {
     .img-producto img {
@@ -203,7 +205,7 @@ header {
 }
 .my-item {
     position: relative;
-    top: -5rem;
+    top: -8rem;
 }
 .gap1-3rem {
     gap: 1.3rem;

@@ -120,7 +120,7 @@ header {
 .productos {
     padding-block: 5rem;
     background-image: url(../img/inicio-img/Fondo-Producto.jpg);
-    background-size: 100%;
+    background-size: contain;
 }
 .productos section {
     margin-bottom: 10rem;

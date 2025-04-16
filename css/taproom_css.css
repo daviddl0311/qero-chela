@@ -125,6 +125,23 @@ header {
     background-color: white;
 }
 
+/*------------ TAPROOM WHAT -------------*/
+.taproom-what {
+    padding: 5rem;
+}
+.taproom-what-title {
+    font-size: clamp(25px, 3vw, 30px);
+    text-transform: uppercase;
+}
+.taproom-what-text {
+    font-size: clamp(18px, 3vw, 22px);
+    width: 600px;
+    text-align: justify;
+}
+.gappx2 {
+    gap: 2rem;
+}
+
 /*--------------  FOOTER -----------------*/
 footer {
     background-color: #FDFAE9;

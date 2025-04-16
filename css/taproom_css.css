@@ -92,7 +92,7 @@ header {
 }
 .my-taproom {
     position: relative;
-    height: 650px;
+    height: 670px;
 }
 .taproom-title {
     font-size: clamp(22px, 3vw, 40px);
@@ -148,13 +148,24 @@ header {
     padding: 5rem;
     background-color: black;
 }
-.cuadro-video .cuadro-video-img {
+.cuadro-video {
+    position: relative;
+    width: 400px;
+}
+.cuadro-video .cuadro-video-img img {
     width: 400px;
     height: 580px;
-    background-color: #faf8f1;
     border-radius: 15px;
+    opacity: .5;
+    background-color: rgb(92, 92, 92);
 }
-.cuadro-video-img img {
+.cuadro-enlace {
+    position: absolute;
+    top: 0px;
+    width: 400px;
+    height: 580px;
+}
+.cuadro-enlace a img {
     width: 120px;
 }
 .video-title {
@@ -573,10 +584,20 @@ footer {
     }
 
     /*------------- VIDEO TAPROOM ------------*/
+    .video-title {
+        margin-bottom: 2.5rem;
+    }
     .video-taproom {
         padding: 3rem;
     }
-    .cuadro-video .cuadro-video-img {
+    .cuadro-video {
+        width: 350px;
+    }
+    .cuadro-video .cuadro-video-img img {
+        width: 350px;
+        height: 530px;
+    }
+    .cuadro-enlace {
         width: 350px;
         height: 530px;
     }
@@ -699,12 +720,25 @@ footer {
     }
 
     /*------------- VIDEO TAPROOM ------------*/
+    .video-title {
+        margin-bottom: 2.5rem;
+    }
     .video-taproom {
         padding: 3rem;
     }
-    .cuadro-video .cuadro-video-img {
+    .cuadro-video {
+        width: 280px;
+    }
+    .cuadro-video .cuadro-video-img img {
         width: 280px;
         height: 500px;
+    }
+    .cuadro-enlace {
+        width: 280px;
+        height: 500px;
+    }
+    .cuadro-enlace a img {
+        width: 110px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -829,16 +863,27 @@ footer {
     }
 
     /*------------- VIDEO TAPROOM ------------*/
+    .video-title {
+        margin-bottom: 2.5rem;
+    }
     .video-taproom {
         padding: 3rem;
     }
-    .cuadro-video .cuadro-video-img {
+    .cuadro-video {
+        width: 250px;
+    }
+    .cuadro-video .cuadro-video-img img {
         width: 250px;
         height: 420px;
     }
-    .cuadro-video-img img {
+    .cuadro-enlace {
+        width: 250px;
+        height: 420px;
+    }
+    .cuadro-enlace a img {
         width: 100px;
     }
+    
 
     /*-------------- FOOTER --------------*/ 
     .footer {

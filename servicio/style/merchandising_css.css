@@ -332,6 +332,13 @@ footer {
         height: 100%;
     }
 
+    /*------------- MERCHANDISING --------------*/
+
+    /*------------- DISEÑOS --------------*/
+    .grid-column-diseño {
+        grid-template-columns: repeat(2, auto);
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
         grid-template-columns: repeat(1, auto);
@@ -430,6 +437,21 @@ footer {
         justify-content: left;
         align-items: center;
     }
+
+    /*------------- MERCHANDISING --------------*/
+    .mer-text p {
+        width: 600px;
+    }
+
+    /*------------- DISEÑOS --------------*/
+    .grid-column-diseño {
+        grid-template-columns: repeat(2, auto);
+    }
+    .dis-img img {
+        width: 280px;
+        height: 370px;
+    }
+
 
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
@@ -531,6 +553,23 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- MERCHANDISING --------------*/
+    .mer-text p {
+        width: 400px;
+    }
+
+    /*------------- DISEÑOS --------------*/
+    .diseños {
+        padding: 3rem;
+    }
+    .grid-column-diseño {
+        grid-template-columns: repeat(1, auto);
+    }
+    .dis-img img {
+        width: 300px;
+        height: 390px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -637,6 +676,23 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- MERCHANDISING --------------*/
+    .mer-text p {
+        width: 350px;
+    }
+
+    /*------------- DISEÑOS --------------*/
+    .diseños {
+        padding: 3rem;
+    }
+    .grid-column-diseño {
+        grid-template-columns: repeat(1, auto);
+    }
+    .dis-img img {
+        width: 290px;
+        height: 380px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -747,6 +803,23 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- MERCHANDISING --------------*/
+    .mer-text p {
+        width: 300px;
+    }
+
+    /*------------- DISEÑOS --------------*/
+    .diseños {
+        padding: 3rem;
+    }
+    .grid-column-diseño {
+        grid-template-columns: repeat(1, auto);
+    }
+    .dis-img img {
+        width: 260px;
+        height: 350px;
     }
 
     /*-------------- FOOTER --------------*/ 

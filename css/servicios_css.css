@@ -7,10 +7,6 @@
 body {
     font-family: "Gidole", sans-serif;
 }
-/* body {
-    background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg);
-    background-attachment: fixed;
-} */
 a {
     text-decoration: none;
     color: black;
@@ -94,7 +90,7 @@ header {
     border-radius: 15px;
     padding: 30px;
     width: 300px;
-    height: 360px;
+    height: 330px;
     position: relative;
     top: 0rem;
     transition: all .3s ease-in-out;
@@ -128,10 +124,11 @@ header {
 }
 .ser-title {
     color: #401e08; 
-    font-size: clamp(12px, 3vw, 15px);
+    font-size: clamp(10px, 3vw, 12.1px);
 }
 .ser-text {
     color: #401e08;
+    font-size: clamp(15px, 3vw, 17px);
 }
 .ser-enlace {
     background-color: #f2be1d;
@@ -521,7 +518,7 @@ footer {
         background-color: #f7d54d;
         border-radius: 15px;
         padding: 30px;
-        width: 290px;
+        width: 300px;
         height: 330px;
         position: relative;
         top: 0rem;
@@ -532,14 +529,14 @@ footer {
     .ser-logo {
         background-color: #fae98e;
         border-radius: 15px;
-        height: 170px;
+        height: 200px;
         transition: all .3s ease-in-out;
         border: 1px solid #c4c4c4;
     }
     .ser-logo img {
         width: 100%;
         border-radius: 15px;
-        height: 170px;
+        height: 200px;
         object-fit: fill;
     }
     
@@ -662,9 +659,8 @@ footer {
         background-color: #f7d54d;
         border-radius: 15px;
         padding: 30px;
-        width: 270px;
-        max-width: 220px;
-        height: 330px;
+        width: 265px;
+        height: 320px;
         position: relative;
         top: 0rem;
         transition: all .3s ease-in-out;
@@ -672,10 +668,13 @@ footer {
         box-shadow: 5px 5px 10px rgb(196, 196, 196);
     }
     .ser-logo {
-        background-color: #fae98e;
+        height: 200px;
+    }
+    .ser-logo img {
+        width: 100%;
         border-radius: 15px;
-        transition: all .3s ease-in-out;
-        border: 1px solid #c4c4c4;
+        height: 200px;
+        object-fit: fill;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -786,6 +785,36 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*-------------- SERVICIOS --------------*/
+    .item {
+        background-color: #f7d54d;
+        border-radius: 15px;
+        padding: 30px;
+        width: 270px;
+        max-width: 220px;
+        height: 280px;
+        position: relative;
+        top: 0rem;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgb(196, 196, 196);
+    }
+    .ser-logo {
+        background-color: #fae98e;
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
+        border: 1px solid #c4c4c4;
+    }
+    .ser-logo {
+        height: 150px;
+    }
+    .ser-logo img {
+        width: 100%;
+        border-radius: 15px;
+        height: 150px;
+        object-fit: fill;
     }
 
     /*-------------- FOOTER --------------*/ 

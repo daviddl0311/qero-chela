@@ -77,7 +77,8 @@ header {
 
 /*-------------- NOSOTROS ----------------*/
 .nosotros {
-    padding: 5rem;
+    padding-block: 3rem;
+    padding-inline: 1rem;
     gap: 7rem;
     background-color: white;
 }

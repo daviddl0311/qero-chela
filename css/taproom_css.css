@@ -95,9 +95,10 @@ header {
     height: 650px;
 }
 .taproom-title {
-    font-size: clamp(35px, 3vw, 40px);
+    font-size: clamp(22px, 3vw, 40px);
     text-transform: uppercase;
     color: white;
+    padding-inline: .5rem;
 }
 .taproom-text {
     font-size: clamp(17px, 3vw, 20px);
@@ -130,11 +131,11 @@ header {
     padding: 5rem;
 }
 .taproom-what-title {
-    font-size: clamp(25px, 3vw, 30px);
+    font-size: clamp(20px, 3vw, 30px);
     text-transform: uppercase;
 }
 .taproom-what-text {
-    font-size: clamp(18px, 3vw, 22px);
+    font-size: clamp(15px, 3vw, 22px);
     width: 600px;
     text-align: justify;
 }
@@ -149,15 +150,15 @@ header {
 }
 .cuadro-video .cuadro-video-img {
     width: 400px;
-    height: 600px;
-    background-color: white;
+    height: 580px;
+    background-color: #faf8f1;
     border-radius: 15px;
 }
 .cuadro-video-img img {
     width: 120px;
 }
 .video-title {
-    font-size: clamp(25px, 3vw, 30px);
+    font-size: clamp(20px, 3vw, 30px);
     color: white;
     margin-bottom: 3.5rem;
     text-transform: uppercase;
@@ -441,6 +442,22 @@ footer {
         align-items: center;
     }
 
+    /*------------- TAPROOM ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-text {
+        width: 470px;
+    }
+    .taproom-text p {
+        width: 470px;
+    }
+
+    /*------------- VIDEO TAPROOM ------------*/
+    .video-taproom {
+        padding: 3rem;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
         grid-template-columns: repeat(1, auto);
@@ -541,6 +558,27 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    
+    /*------------- TAPROOM ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-text {
+        width: 430px;
+    }
+    .taproom-text p {
+        width: 430px;
+    }
+
+    /*------------- VIDEO TAPROOM ------------*/
+    .video-taproom {
+        padding: 3rem;
+    }
+    .cuadro-video .cuadro-video-img {
+        width: 350px;
+        height: 530px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -647,6 +685,26 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- TAPROOM ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-text {
+        width: 330px;
+    }
+    .taproom-text p {
+        width: 330px;
+    }
+
+    /*------------- VIDEO TAPROOM ------------*/
+    .video-taproom {
+        padding: 3rem;
+    }
+    .cuadro-video .cuadro-video-img {
+        width: 280px;
+        height: 500px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -758,6 +816,29 @@ footer {
         justify-content: left;
         align-items: center;
     }    
+
+     /*------------- TAPROOM ------------*/
+     .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-text {
+        width: 250px;
+    }
+    .taproom-text p {
+        width: 300px;
+    }
+
+    /*------------- VIDEO TAPROOM ------------*/
+    .video-taproom {
+        padding: 3rem;
+    }
+    .cuadro-video .cuadro-video-img {
+        width: 250px;
+        height: 420px;
+    }
+    .cuadro-video-img img {
+        width: 100px;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {

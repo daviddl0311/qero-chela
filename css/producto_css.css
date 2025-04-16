@@ -7,10 +7,6 @@
 body {
     font-family: "Gidole", sans-serif;
 }
-/* body {
-    background-image: url(https://thumbs.dreamstime.com/b/modelo-de-la-producci%C3%B3n-cerveza-incons%C3%BAtil-120824598.jpg);
-    background-attachment: fixed;
-} */
 a {
     text-decoration: none;
     color: black;
@@ -411,6 +407,65 @@ footer {
     }
 }
 @media (850px < width < 1012px) {
+    /*-------------- HEADER --------------*/ 
+    header {
+        top: 0px;
+        position: sticky;
+        z-index: 1000;
+    }
+    .burger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 29px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navegation > ul {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        padding: 1rem;
+        width: 50%;
+        max-width: 300px;
+        height: 100vh;
+        left: -100%;
+        transition: all .5s ease-in-out;
+    }
+    #burgercheck:checked ~ ul  {
+        left: 0;
+    }
+    .navegation ul .burger-center{
+        padding-left: 1rem;
+    }
+    .navegation ul li > a {
+        color: white;
+    } 
+    .flex-row-2 {
+        flex-direction: column;
+    }
+    .center-nav {
+        display: flex;
+        place-content: center;
+    }
+    .logo-burger {
+        display: inline-block;
+    }
+    .logo-burger-img img {
+        width: 15rem;
+    }
+    .logo-burger-text {
+        font-size: clamp(10px, 3vw, 19px);
+    }
+    .gap5rem {
+        gap: 3rem;
+    }
+    .burger-center {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
     /*-------------- VER PRODUCTO --------------*/ 
     .ver-producto {
         padding-inline: 5rem;

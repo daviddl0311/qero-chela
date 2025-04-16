@@ -97,14 +97,22 @@ header {
     grid-template-columns: repeat(2, auto);
     gap: 4rem;
 }
-.producto-img {
+.ver-producto-img {
     background-color: #efd15a;
     padding: 5rem;
     border-radius: 1rem;
+    min-width: 170px;
+    max-width: 100%;
+    height: 350px;
 }
-.producto-img img {
+.producto-img {
     width: 150px;
     height: 350px;
+}
+.producto-img-2 {
+    width: 170px;
+    height: 350px;
+    object-fit: cover;
 }
 .producto-title {
     font-size: clamp(23px, 3vw, 27px);

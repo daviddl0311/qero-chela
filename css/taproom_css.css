@@ -128,6 +128,7 @@ header {
 
 /*------------ TAPROOM WHAT -------------*/
 .taproom-what {
+    position: relative;
     padding: 5rem;
 }
 .taproom-what-title img {
@@ -356,6 +357,24 @@ footer {
 }
 
 @media (min-width: 1013px) {
+    /*----------------- LUPULOS ---------------------*/
+    .item-lu, .item-lu-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item-lu img, .item-lu-2 img {
+        width: 22rem;
+    }
+    .item-lu {
+        top: -10px;
+        left: 0px;
+    }
+    .item-lu-2 {
+        top: 65%;
+        right: 0px;
+    }
+
+    /*---- FOOTER ---*/
     .my-footer {
         background-color: #6F2601;
         border-radius: 15px;
@@ -385,7 +404,6 @@ footer {
     .flex-column-taproom-what {
         flex-direction: column;
     }
-    /*----------- TAPROOM WHAT ---------*/
     .taproom-what-img img {
         width: 45rem;
     }
@@ -394,6 +412,23 @@ footer {
         width: 600px;
         margin-left: 4.4rem;
         text-align: justify;
+    }
+
+    /*----------------- LUPULOS ---------------------*/
+    .item-lu, .item-lu-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item-lu img, .item-lu-2 img {
+        width: 22rem;
+    }
+    .item-lu {
+        top: -10px;
+        left: 0px;
+    }
+    .item-lu-2 {
+        top: 80%;
+        right: 0px;
     }
 }
 
@@ -585,8 +620,24 @@ footer {
     .taproom-what-img img {
         width: 40rem;
     }
-    
 
+    /*----------------- LUPULOS ---------------------*/
+    .item-lu, .item-lu-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item-lu img, .item-lu-2 img {
+        width: 18rem;
+    }
+    .item-lu {
+        top: -7%;
+        left: 0px;
+    }
+    .item-lu-2 {
+        top: 83%;
+        right: 0px;
+    }
+    
     /*------------- VIDEO TAPROOM ------------*/
     .video-taproom {
         padding: 3rem;
@@ -726,6 +777,11 @@ footer {
     }
     .taproom-what-img img {
         width: 30rem;
+    }
+
+    /*----------------- LUPULOS ---------------------*/
+    .item-lu, .item-lu-2 {
+        display: none;
     }
 
     /*------------- VIDEO TAPROOM ------------*/

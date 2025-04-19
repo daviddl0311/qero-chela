@@ -917,7 +917,7 @@ footer {
         padding: 3rem;
     }
     .taproom-what-text {
-        width: 330px;
+        width: 320px;
     }
     .taproom-text p {
         width: 330px;
@@ -937,7 +937,7 @@ footer {
         text-align: left;
     }
     .taproom-what-text {
-        font-size: clamp(20px, 3vw, 27px);
+        font-size: clamp(19px, 3vw, 27px);
         margin-left: 1rem;
         text-align: justify;
     }
@@ -1083,7 +1083,7 @@ footer {
         padding: 3rem;
     }
     .taproom-what-text {
-        width: 250px;
+        width: 270px;
     }
     .taproom-text p {
         width: 300px;
@@ -1103,7 +1103,7 @@ footer {
         text-align: left;
     }
     .taproom-what-text {
-        font-size: clamp(20px, 3vw, 27px);
+        font-size: clamp(18px, 3vw, 27px);
         text-align: justify;
     }
     .taproom-what-img img {

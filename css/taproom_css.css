@@ -77,22 +77,22 @@ header {
 /*--------------  TAPROOM -----------------*/
 .taproom {
     position: relative;
-    background-color: #352012;
 }
 .taproom-img { 
-    top: 0px;
+    top: -1px;
     left: 0px;
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../img/taproom-img/fondo-Taproom.jpeg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: .3;
+}
+.taproom-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .my-taproom {
     position: relative;
-    height: 670px;
+    height: 800px;
 }
 .taproom-title {
     font-size: clamp(22px, 3vw, 40px);
@@ -130,27 +130,49 @@ header {
 .taproom-what {
     padding: 5rem;
 }
-.taproom-what-title {
-    font-size: clamp(20px, 3vw, 30px);
-    text-transform: uppercase;
+.taproom-what-title img {
+    width: 27rem;
+    margin-bottom: 2rem;
+}
+.center-left {
+    text-align: left;
 }
 .taproom-what-text {
-    font-size: clamp(15px, 3vw, 22px);
+    font-size: clamp(20px, 3vw, 27px);
     width: 600px;
+    margin-left: 4.4rem;
     text-align: justify;
 }
 .gappx2 {
     gap: 2rem;
 }
+.gappx3 {
+    gap: 2.5rem;
+}
+.taproom-what-img img {
+    width: 41rem;
+}
 
 /*------------ VIDEO TAPROOM ----------*/
 .video-taproom {
-    padding: 5rem;
-    background-color: black;
+    position: relative;
+}
+.fondo {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .cuadro-video {
     position: relative;
-    width: 400px;
+    height: 1044px;
+    top: 310px;
 }
 .cuadro-video .cuadro-video-img img {
     width: 400px;
@@ -167,12 +189,6 @@ header {
 }
 .cuadro-enlace a img {
     width: 120px;
-}
-.video-title {
-    font-size: clamp(20px, 3vw, 30px);
-    color: white;
-    margin-bottom: 3.5rem;
-    text-transform: uppercase;
 }
 
 /*------------- ANIMATION BUTTON -------------*/
@@ -352,6 +368,34 @@ footer {
         padding-inline: 3.6rem;
     }
 }
+@media (max-width: 1400px) {
+    /*----------- TAPROOM WHAT ---------*/
+    .taproom-what-img img {
+        width: 35rem;
+    }
+    .taproom-what-text {
+        font-size: clamp(20px, 3vw, 27px);
+        width: 500px;
+        margin-left: 4.4rem;
+        text-align: justify;
+    }
+}
+@media (max-width: 1200px) {
+    /*----------- TAPROOM WHAT ---------*/
+    .flex-column-taproom-what {
+        flex-direction: column;
+    }
+    /*----------- TAPROOM WHAT ---------*/
+    .taproom-what-img img {
+        width: 45rem;
+    }
+    .taproom-what-text {
+        font-size: clamp(20px, 3vw, 27px);
+        width: 600px;
+        margin-left: 4.4rem;
+        text-align: justify;
+    }
+}
 
 @media (850px < width < 1012px) {
      /*-------------- HEADER --------------*/ 
@@ -523,6 +567,26 @@ footer {
         width: 470px;
     }
 
+    /*----------- TAPROOM WHAT ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-title img {
+        width: 28rem;
+        margin-bottom: 1rem;
+    }
+    .center-left {
+        text-align: left;
+    }
+    .taproom-what-text {
+        font-size: clamp(26px, 3vw, 27px);
+        text-align: justify;
+    }
+    .taproom-what-img img {
+        width: 40rem;
+    }
+    
+
     /*------------- VIDEO TAPROOM ------------*/
     .video-taproom {
         padding: 3rem;
@@ -642,6 +706,28 @@ footer {
         width: 430px;
     }
 
+    /*----------- TAPROOM WHAT ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-title img {
+        width: 24rem;
+        margin-bottom: 1rem;
+        position: relative;
+        left: -60px;
+    }
+    .center-left {
+        text-align: left;
+    }
+    .taproom-what-text {
+        font-size: clamp(26px, 3vw, 27px);
+        margin-left: 0rem;
+        text-align: justify;
+    }
+    .taproom-what-img img {
+        width: 30rem;
+    }
+
     /*------------- VIDEO TAPROOM ------------*/
     .video-title {
         margin-bottom: 2.5rem;
@@ -654,11 +740,11 @@ footer {
     }
     .cuadro-video .cuadro-video-img img {
         width: 350px;
-        height: 530px;
+        height: 590px;
     }
     .cuadro-enlace {
         width: 350px;
-        height: 530px;
+        height: 590px;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -778,6 +864,28 @@ footer {
         width: 330px;
     }
 
+    /*----------- TAPROOM WHAT ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-title img {
+        width: 23rem;
+        margin-bottom: 1rem;
+        position: relative;
+        left: -45px;
+    }
+    .center-left {
+        text-align: left;
+    }
+    .taproom-what-text {
+        font-size: clamp(20px, 3vw, 27px);
+        margin-left: 1rem;
+        text-align: justify;
+    }
+    .taproom-what-img img {
+        width: 22rem;
+    }
+
     /*------------- VIDEO TAPROOM ------------*/
     .video-title {
         margin-bottom: 2.5rem;
@@ -786,15 +894,16 @@ footer {
         padding: 3rem;
     }
     .cuadro-video {
-        width: 280px;
+        width: 295px;
+        height: 1000px;
     }
     .cuadro-video .cuadro-video-img img {
-        width: 280px;
-        height: 500px;
+        width: 295px;
+        height: 553px;
     }
     .cuadro-enlace {
-        width: 280px;
-        height: 500px;
+        width: 295px;
+        height: 553px;
     }
     .cuadro-enlace a img {
         width: 110px;
@@ -921,6 +1030,28 @@ footer {
         width: 300px;
     }
 
+    /*----------- TAPROOM WHAT ------------*/
+    .taproom-what {
+        padding: 3rem;
+    }
+    .taproom-what-title img {
+        width: 20rem;
+        margin-bottom: 1rem;
+        position: relative;
+        left: -35px;
+    }
+    .center-left {
+        text-align: left;
+    }
+    .taproom-what-text {
+        font-size: clamp(20px, 3vw, 27px);
+        text-align: justify;
+    }
+    .taproom-what-img img {
+        width: 20rem;
+    }
+
+
     /*------------- VIDEO TAPROOM ------------*/
     .video-title {
         margin-bottom: 2.5rem;
@@ -933,16 +1064,15 @@ footer {
     }
     .cuadro-video .cuadro-video-img img {
         width: 250px;
-        height: 420px;
+        height: 500px;
     }
     .cuadro-enlace {
         width: 250px;
-        height: 420px;
+        height: 500px;
     }
     .cuadro-enlace a img {
         width: 100px;
     }
-    
 
     /*-------------- FOOTER --------------*/ 
     .footer {

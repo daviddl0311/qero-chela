@@ -15,6 +15,7 @@ buttons.forEach(button => {
                     img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
+                img.classList.add("producto-img")
                 break;
             case "bt2": 
                 price.textContent = "pen 45.00";
@@ -24,6 +25,7 @@ buttons.forEach(button => {
                     img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
+                img.classList.add("producto-img")
                 break;
             case "bt3": 
                 price.textContent = "pen 175.00";
@@ -33,6 +35,7 @@ buttons.forEach(button => {
                     img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
+                img.classList.add("producto-img")
                 break;
             case "bt4": 
                 price.textContent = "pen 465.00";

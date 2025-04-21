@@ -136,13 +136,13 @@ header {
 }
 .taproom-what-title img {
     width: 27rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .center-left {
     text-align: left;
 }
 .taproom-what-text {
-    font-size: clamp(20px, 3vw, 25px);
+    font-size: clamp(20px, 3vw, 23px);
     width: 600px;
     margin-left: 4.4rem;
     text-align: justify;
@@ -366,14 +366,14 @@ footer {
         z-index: -1;
     }
     .item-lu img, .item-lu-2 img {
-        width: 22rem;
+        width: 19.4rem;
     }
     .item-lu {
-        top: -10px;
+        top: -72px;
         left: 0px;
     }
     .item-lu-2 {
-        top: 65%;
+        top: 72%;
         right: 0px;
     }
 
@@ -391,12 +391,28 @@ footer {
     }
 }
 @media (max-width: 1400px) {
+    /*----------------- LUPULOS ---------------------*/
+    .item-lu, .item-lu-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item-lu img, .item-lu-2 img {
+        width: 18rem;
+    }
+    .item-lu {
+        top: -72px;
+        left: 0px;
+    }
+    .item-lu-2 {
+        top: 70%;
+        right: 0px;
+    }
+
     /*----------- TAPROOM WHAT ---------*/
     .taproom-what-img img {
         width: 35rem;
     }
     .taproom-what-text {
-        font-size: clamp(20px, 3vw, 27px);
         width: 500px;
         margin-left: 4.4rem;
         text-align: justify;

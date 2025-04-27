@@ -10,9 +10,9 @@ buttons.forEach(button => {
             case "bt1": 
                 price.textContent = "pen 7.50";
                 if(title.textContent.trim() == "aborigen") {
-                    img.src = "../img/inicio-img/QeroChela_Aborigen.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
-                    img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
                 img.classList.add("producto-img")
@@ -20,9 +20,9 @@ buttons.forEach(button => {
             case "bt2": 
                 price.textContent = "pen 45.00";
                 if(title.textContent.trim() == "aborigen") {
-                    img.src = "../img/inicio-img/QeroChela_Aborigen.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
-                    img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
                 img.classList.add("producto-img")
@@ -30,22 +30,22 @@ buttons.forEach(button => {
             case "bt3": 
                 price.textContent = "pen 175.00";
                 if(title.textContent.trim() == "aborigen") {
-                    img.src = "../img/inicio-img/QeroChela_Aborigen.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
-                    img.src = "../img/inicio-img/QeroChela_LunaMiel.png";
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
                 }
                 img.classList.remove("producto-img-2")
                 img.classList.add("producto-img")
                 break;
             case "bt4": 
                 price.textContent = "pen 465.00";
-                img.src = "img-Barril/barril-30.png"
+                img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da5ecff4139ac1088b95c_barril-30.png"
                 img.classList.add("producto-img-2")
                 img.classList.remove("producto-img")
                 break;
             case "bt5": 
                 price.textContent = "pen 749.00";
-                img.src = "img-Barril/barril-50.png"
+                img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da5ec5fbc5dc963726994_barril-50.png"
                 img.classList.add("producto-img-2")
                 img.classList.remove("producto-img")
                 break; 

@@ -13,3 +13,7 @@ button.addEventListener("click", () => {
 });
 
 console.log(localStorage.getItem("verificado"));
+
+button2.addEventListener("click", () => {
+    
+});

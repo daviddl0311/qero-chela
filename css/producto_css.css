@@ -177,7 +177,7 @@ header {
 /*-------------- PRODUCTOS -----------------*/
 .productos {
     padding-block: 5rem;
-    background-image: url(../img/inicio-img/Fondo-Producto.jpg);
+    background-image: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec03f679ef5a13a8562_Fondo-Producto.jpg);
     background-size: contain;
 }
 .productos section {

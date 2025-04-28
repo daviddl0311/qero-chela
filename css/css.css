@@ -6,6 +6,7 @@
 }
 body {
     font-family: "Gidole", sans-serif;
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -35,6 +36,80 @@ header {
 }
 .center-align {
     text-align: center;
+}
+.center-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/*--------------- MENSAGE ----------------*/
+.message {
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+.my-message {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+    opacity: .8;
+}
+.message-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.message-a {
+    position: relative;
+}
+.message-img img {
+    width: 28rem;
+    border-radius: 10px;
+}
+
+#close {
+    position: absolute;
+    top: -20px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*------------- ANIMATION BUTTON -------------*/
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
 }
 
 /*--------------  HEADER -----------------*/
@@ -115,7 +190,7 @@ header {
 /*--------------  PRODUCTOS -----------------*/
 .productos {
     padding-block: 5rem;
-    background-image: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec03f679ef5a13a8562_Fondo-Producto.jpg);
+    background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
     background-size: contain;
 }
 .productos section {
@@ -680,6 +755,34 @@ footer {
         align-items: center;
     }
 
+    /*------------- MESSAGE ------------*/
+    .my-message {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #080808;
+        opacity: .8;
+    }
+    .message-img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
+    .message-img img {
+        width: 22rem;
+        border-radius: 10px;
+    }
+    
+    #close {
+        position: absolute;
+        top: -20px;
+        left: 400px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+
     /*-------------- CATEGORIAS --------------*/ 
     .categorias {
         padding-block: 3rem;
@@ -825,6 +928,21 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- MESSAGE -------------*/
+    .message-img img {
+        width: 18rem;
+        border-radius: 10px;
+    }
+    
+    #close {
+        position: absolute;
+        top: -20px;
+        left: 310px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
     }
 
 
@@ -987,6 +1105,21 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------------- MESSAGE -------------*/
+    .message-img img {
+        width: 15rem;
+        border-radius: 10px;
+    }
+    
+    #close {
+        position: absolute;
+        top: -20px;
+        left: 260px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
     }
 
 

@@ -107,7 +107,7 @@ header {
 }
 .producto-info div > p {
     text-transform: uppercase;
-    font-size: clamp(25px, 3vw, 35px);
+    font-size: clamp(25px, 3vw, 30px);
     font-weight: bold;
 }
 .producto-info div > button {

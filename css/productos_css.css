@@ -80,7 +80,7 @@ header {
 }
 .productos-column-3 {
     grid-template-columns: repeat(3, auto);
-    gap: 12rem;
+    gap: 10rem;
 }
 .item-img {
     width: 8.5rem;
@@ -123,6 +123,12 @@ header {
 }
 .producto-info div > button:hover {
     opacity: .5;
+}
+.gap-pro {
+    gap: 6rem;
+}
+.item-flex {
+    width: 200px;
 }
 
 /*-------------- FOOTER -----------------*/

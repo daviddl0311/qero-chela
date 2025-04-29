@@ -65,14 +65,14 @@ header {
     position: relative;
 }
 .message-img img {
-    width: 28rem;
+    width: 24rem;
     border-radius: 10px;
 }
 
 #close {
     position: absolute;
     top: -20px;
-    left: 500px;
+    left: 450px;
     color: white;
     font-size: 20px;
     cursor: pointer;

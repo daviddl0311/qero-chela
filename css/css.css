@@ -188,11 +188,6 @@ header {
 }
 
 /*--------------  PRODUCTOS -----------------*/
-.productos {
-    padding-block: 5rem;
-    background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
-    background-size: contain;
-}
 .productos section {
     margin-bottom: 10rem;
 }
@@ -403,7 +398,24 @@ footer {
     color: #fdfbed;
 }
 
+@media (min-width: 1846px) {
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        padding-block: 5rem;
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: cover;
+    }
+}
+@media (1014px < width < 1845px) {
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        padding-block: 5rem;
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    }
+}
 @media (min-width: 1013px) {
+    /*------------- FOOTER -------------*/
     .my-footer {
         background-color: #6F2601;
         border-radius: 15px;
@@ -493,7 +505,11 @@ footer {
         height: 100%;
     }
 
-    /*-------------- VER PRODUCTO --------------*/ 
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    }
     .productos {
         padding-block: 3rem;
     }
@@ -631,7 +647,11 @@ footer {
         height: 100%;
     }
 
-    /*-------------- VER PRODUCTO --------------*/ 
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    } 
     .productos {
         padding-block: 3rem;
     }
@@ -803,7 +823,11 @@ footer {
         height: 100%;
     }
 
-    /*-------------- PRODUCTOS --------------*/ 
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    }
     .productos {
         padding-block: 3rem;
     } 
@@ -811,7 +835,10 @@ footer {
         margin-bottom: 5.5rem;
     }
     .productos-column-3 {
-        gap: 5.4rem;
+        gap: 4rem;
+    }
+    .text-section {
+        width: 350px;
     }
     .item-producto {
         width: 200px;
@@ -966,7 +993,11 @@ footer {
         height: 100%;
     }
 
-    /*-------------- PRODUCTOS --------------*/ 
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    }
     .productos {
         padding-block: 3rem;
     } 
@@ -1143,7 +1174,11 @@ footer {
         height: 100%;
     }
 
-    /*-------------- PRODUCTOS --------------*/ 
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    } 
     .productos {
         padding-block: 3rem;
     } 

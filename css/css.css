@@ -789,14 +789,14 @@ footer {
         height: 100vh;
     }
     .message-img img {
-        width: 22rem;
+        width: 18rem;
         border-radius: 10px;
     }
     
     #close {
         position: absolute;
         top: -20px;
-        left: 400px;
+        left: 330px;
         color: white;
         font-size: 20px;
         cursor: pointer;
@@ -966,7 +966,7 @@ footer {
     #close {
         position: absolute;
         top: -20px;
-        left: 220px;
+        left: 230px;
         color: white;
         font-size: 15px;
         cursor: pointer;
@@ -1140,14 +1140,14 @@ footer {
 
     /*------------- MESSAGE -------------*/
     .message-img img {
-        width: 12rem;
+        width: 12.6rem;
         border-radius: 10px;
     }
     
     #close {
         position: absolute;
         top: -20px;
-        left: 220px;
+        left: 230px;
         color: white;
         font-size: 15px;
         cursor: pointer;

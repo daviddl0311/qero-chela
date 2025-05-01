@@ -42,6 +42,9 @@ header {
     align-items: center;
     justify-content: right;
 }
+.display-none {
+    display: none;
+}
 
 /*--------------- MENSAGE ----------------*/
 .message {

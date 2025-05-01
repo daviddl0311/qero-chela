@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="theme-color" content="#000">
-    <title>Luna de Miel - Producto</title>
+    <title>Q'ero Chela - Productos</title>
     <link rel="preload" href="../css/producto_css.css" as="style">
     <link rel="stylesheet" href="../css/producto_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         <nav class="grid column-header">
             <div class="flex title-logo">
                 <div class="center">
-                    <a href="../index.html">
+                    <a href="../index.php">
                         <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9d168d4fd6f40ddc976c_logo-Qero-Chela.png" alt="Logo Q'ero Chela">
                     </a>
                 </div>
@@ -31,18 +31,18 @@
                 <label for="burgercheck" class="burger-icon">
                     <i class="fa-solid fa-bars"></i>
                 </label>
-                <ul class="flex gap5rem flex-row-2">
+                <ul class="flex gap5rem flex-row-2"> 
                     <li class="logo-burger">
                         <div class="flex">
                             <div class="center logo-burger-img">
-                                <a href="../index.html">
+                                <a href="../index.php">
                                     <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9d168d4fd6f40ddc976c_logo-Qero-Chela.png" alt="Logo Q'ero Chela">
                                 </a>
                             </div>
                         </div>
-                    </li>        
+                    </li>       
                     <li class="center burger-center">
-                        <a href="../productos.html">Productos</a>
+                        <a href="../productos.php">Productos</a>
                     </li>
                     <li class="center burger-center">
                         <a href="../servicios.html">Servicios</a>
@@ -64,38 +64,54 @@
     </header>
 
     <main>
-        <section class="ver-producto center" id="luna-miel">
-            <article class="grid ver-producto-column-2">
-                <div class="ver-producto-img center">
-                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png" alt="Q'ero Chela Luna de Miel" id="img-change" class="producto-img">
-                </div>
-                <div class="flex flex-column ver-producto-2">
-                    <div class="producto-title">
-                        <h2 id="h2-t">luna de miel</h2>
-                    </div>
-                    <div class="producto-text">
-                        <p>Es una cerveza artesanal elaborada con miel de origen natural. Cada sorbo te envuelve en una experiencia que combina suavidad y dulzura.</p>
-                    </div>
-                    <div class="producto-formato grid">
-                        <button id="bt1" class="button producto-opacity"  onclick="location.href='#luna-miel'">unidad</button>
-                        <button id="bt2" class="button" onclick="location.href='#luna-miel'">6 unid.</button>
-                        <button id="bt3" class="button" onclick="location.href='#luna-miel'">pack 24</button>
-                        <button id="bt4" class="button" onclick="location.href='#luna-miel'">30 l</button>
-                        <button id="bt5" class="button" onclick="location.href='#luna-miel'">50 l</button>
-                    </div>
-                    <div class="producto-precio">
-                        <span id="precio">
-                            pen 7.50
-                        </span>
-                    </div>
-                    <div class="flex flex-column producto-buttons">
-                        <button class="producto-info" onclick="location.href='https://drive.google.com/file/d/1HApmSn--hCoGovvqA0Y5q6EPWLPCe-V2/view?usp=sharing'">Informacion</button>
-                        <button class="producto-comprar" onclick="location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!'">Comprar ahora</button>
-           
-                    </div>
-                </div>
-            </article>
-        </section>
+        <?php
+            if(isset($_GET['id'])) {
+                $id_producto = $_GET['id'];
+
+                include '../php/conexion.php';
+
+                $query = "SELECT * FROM producto WHERE id_producto = $id_producto";
+
+                $resultado = mysqli_query($conexion, $query);
+
+                while($producto = mysqli_fetch_assoc($resultado)) {
+                    echo
+                    "<section class='ver-producto center' id='".$producto['nombre']."'>
+                        <article class='grid ver-producto-column-2'>
+                            <div class='ver-producto-img center'>
+                                <img src=' ". $producto['img'] ."' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
+                            </div>
+                            <div class='flex flex-column ver-producto-2'>
+                                <div class='producto-title'>
+                                    <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                </div>
+                                <div class='producto-text'>
+                                    <p>" .$producto['descripcion']. "</p>    
+                                </div>
+                                <div class='producto-formato grid'>
+                                    <button id='bt1' class='button producto-opacity' onclick='location.href=`#".$producto['nombre']."`'>unidad</button>
+                                    <button id='bt2' class='button' onclick='location.href=`#".$producto['nombre']."`'>6 unid.</button>
+                                    <button id='bt3' class='button' onclick='location.href=`#".$producto['nombre']."`'>pack 24</button>
+                                    <button id='bt4' class='button' onclick='location.href=`#".$producto['nombre']."`'>30 l</button>
+                                    <button id='bt5' class='button' onclick='location.href=`#".$producto['nombre']."`'>50 l</button>
+                                </div>
+                                <div class='producto-precio'>
+                                    <span id='precio'>
+                                        pen 7.50
+                                    </span>
+                                </div>
+                                <div class='flex flex-column producto-buttons'>
+                                    <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
+                                    <button class='producto-comprar' onclick='location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!''>Comprar ahora</button>
+                                </div>
+                            </div>
+                        </article>
+                    </section>";
+                }
+
+                mysqli_close($conexion);
+            }
+        ?>
         <section class="productos" id="productos">
             <section class="center">
                 <div class="center">
@@ -106,66 +122,63 @@
                 </div>
             </section>
             <div class="grid productos-column-3 center">
-                <div class="center">
-                    <div class="item-producto">
-                        <div class="my-item grid gap1-3rem">
-                            <div class="img-producto center">
-                                <a href="qerochela.html">
-                                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png" alt="Q'ero Chela Aborigen">
-                                </a>
-                            </div>
-                            <div class="text-producto center">
-                                <p>aborigen</p>
-                            </div>
-                            <div class="description center">
-                                <p>Cerveza suave y equilibrada, con notas de caramelo y un sutil toque tostado.</p>
-                            </div>
-                            <div class="button-producto center">
-                                <button onclick="location.href='qerochela.html'">ordenar ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="item-producto">
-                        <div class="my-item grid gap1-3rem">
-                            <div class="img-producto center">
-                                <a href="https://tantrica.pe/" target="_blank">
-                                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043afee771ed3316164_Tantrica.png" alt="Tantrica">
-                                </a>
-                            </div>
-                            <div class="text-producto center">
-                                <p>tántrica</p>
-                            </div>
-                            <div class="description center">
-                                <p>Cerveza orgánica con ingredientes afrodisíacos y una experiencia únicas.</p>
-                            </div>
-                            <div class="button-producto center">
-                                <button onclick="location.href='https://tantrica.pe/'">ordenar ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="item-producto">
-                        <div class="my-item grid gap1-3rem">
-                            <div class="img-producto center">
-                                <a href="#luna-miel">
-                                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png" alt="Q'ero Chela Luna de Miel">
-                                </a>
-                            </div>
-                            <div class="text-producto center">
-                                <p>luna de miel</p>
-                            </div>
-                            <div class="description center">
-                                <p>Cerveza artesanal con miel natural, de sabor suave y dulce.</p>
-                            </div>
-                            <div class="button-producto center">
-                                <button onclick="location.href='#luna-miel'">ordenar ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    include '../php/conexion.php';
+    
+                    $query = "SELECT * FROM producto";
+    
+                    $resultado = mysqli_query($conexion, $query);
+    
+                    while($producto = mysqli_fetch_assoc($resultado)) {
+                        if($producto['nombre'] == "tántrica") {
+                            echo
+                            "<div class='center'>
+                                <div class='item-producto'>
+                                    <div class='my-item grid gap1-3rem'>
+                                        <div class='img-producto center'>
+                                            <a href='".$producto['info']."' target='_blank'>
+                                                <img src='".$producto['img']."' alt='".$producto['nombre']."'>
+                                            </a>
+                                        </div>
+                                        <div class='text-producto center'>
+                                            <p>".$producto['nombre']."</p>
+                                        </div>
+                                        <div class='description center'>
+                                            <p>".$producto['resumen']."</p>
+                                        </div>
+                                        <div class='button-producto center'>
+                                            <button onclick='location.href=`".$producto['info']."`'>ordenar ahora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+                        } else {
+                            echo
+                            "<div class='center'>
+                                <div class='item-producto'>
+                                    <div class='my-item grid gap1-3rem'>
+                                        <div class='img-producto center'>
+                                            <a href='ver_producto.php?id={$producto['id_producto']}'>
+                                                <img src='".$producto['img']."' alt='".$producto['nombre']."'>
+                                            </a>
+                                        </div>
+                                        <div class='text-producto center'>
+                                            <p>".$producto['nombre']."</p>
+                                        </div>
+                                        <div class='description center'>
+                                            <p>".$producto['resumen']."</p>
+                                        </div>
+                                        <div class='button-producto center'>
+                                            <button onclick='location.href=`ver_producto.php?id={$producto['id_producto']}`'>ordenar ahora</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+                        }
+                    }
+
+                    mysqli_close($conexion);
+                ?>
             </div>
         </section>
     </main>
@@ -191,7 +204,7 @@
             <div class="flex flex-2"> 
                 <div class="flex title-logo">
                     <div class="center">
-                        <a href="../index.html">
+                        <a href="../index.php">
                             <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da092f2f6d2dda40ff911_logo-footer.png" alt="Logo Footer Q'ero Chela">
                         </a>
                     </div>
@@ -245,7 +258,7 @@
                 <div class="flex flex-2">
                     <h2>Productos</h2>
                     <div class="flex flex-2 gap-footer-3">
-                        <a href="../index.html">Q'ero Chela</a>
+                        <a href="../index.php">Q'ero Chela</a>
                         <a href="https://tantrica.pe/">Tantrica</a>
                     </div>
                 </div>

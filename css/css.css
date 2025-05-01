@@ -959,14 +959,14 @@ footer {
 
     /*------------- MESSAGE -------------*/
     .message-img img {
-        width: 13rem;
+        width: 14rem;
         border-radius: 10px;
     }
     
     #close {
         position: absolute;
         top: -20px;
-        left: 230px;
+        left: 255px;
         color: white;
         font-size: 15px;
         cursor: pointer;

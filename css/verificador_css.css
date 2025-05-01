@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Gidole", sans-serif;
+    background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/6812c910458780efbe517a8b_fondo-Verificador.jpg);
+}
+
+.grid {
+    display: grid;
+}
+.flex { 
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.center {
+    display: grid;
+    place-content: center;
+}
+.center-align {
+    text-align: center;
+}
+.center-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/*---------- IMG VERIFICADOR --------*/
+.img-verificador {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.img-verificador img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.button-verificador {
+    width: 100%;
+    height: 100vh;
+}
+.button-verificador .div {
+    background-color: black;
+    border-radius: 2rem;
+    padding: 3rem;
+    width: 500px;
+    position: relative;
+}
+.item, .item-2 {
+    position: absolute;
+    z-index: -1;
+}
+.item {
+    top: -69.5%;
+    left: -40%;
+}
+.item-2 {
+    top: -78%;
+    left: 80%;
+}
+.item img, .item-2 img {
+    width: 25rem;
+}
+
+/*--------- VERIFICADOR ---------*/
+.gap {
+    gap: 3rem
+}
+.gap-2 {
+    gap: 2rem; 
+}
+.verificador-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(15px, 3vw, 22px);
+}
+.grid-template-column {
+    grid-template-columns: repeat(2, auto);
+}
+
+button {
+    width: 200px;
+    text-transform: uppercase;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-radius: 5rem;
+    font-size: clamp(20px, 3vw, 25px);
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(138, 138, 138);
+}
+@media (min-width: 1847px) {
+    body {
+        height: 100vh;
+        background-size: contain;
+    }
+}
+@media (1401px < width < 1846px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 1400px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 3rem;
+        width: 450px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -55%;
+        left: -40%;
+    }
+    .item-2 {
+        top: -62%;
+        left: 83%;
+    }
+    .item img, .item-2 img {
+        width: 22rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 22px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 200px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+} 
+@media (1120px < width < 1399px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 3rem;
+        width: 400px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -42%;
+        left: -48%;
+    }
+    .item-2 {
+        top: -44%;
+        left: 78%;
+    }
+    .item img, .item-2 img {
+        width: 25rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 22px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 180px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+@media (950px < width < 1119px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 3rem;
+        width: 380px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -25%;
+        left: -45%;
+    }
+    .item-2 {
+        top: -28%;
+        left: 79%;
+    }
+    .item img, .item-2 img {
+        width: 22rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 22px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+@media (850px < width < 949px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        width: 345px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -37%;
+        transform: rotate(1deg);
+    }
+    .item-2 {
+        top: -5%;
+        left: 80%;
+        transform: rotate(6deg);
+    }
+    .item img, .item-2 img {
+        width: 17rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 22px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+@media (750px < width < 850px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        width: 400px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -29%;
+        transform: rotate(1deg);
+    }
+    .item-2 {
+        top: 1%;
+        left: 82%;
+        transform: rotate(6deg);
+    }
+    .item img, .item-2 img {
+        width: 16rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 20spx);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+@media (500px < width < 750px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        width: 350px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -40%;
+        transform: rotate(1deg);
+        display: none;
+    }
+    .item-2 {
+        top: -5%;
+        left: 80%;
+        transform: rotate(6deg);
+        display: none;
+    }
+    .item img, .item-2 img {
+        width: 18rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 20spx);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+@media (350px < width < 500px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        width: 330px;
+        max-width: 250px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -40%;
+        transform: rotate(1deg);
+        display: none;
+    }
+    .item-2 {
+        top: -5%;
+        left: 80%;
+        transform: rotate(6deg);
+        display: none;
+    }
+    .item img, .item-2 img {
+        width: 18rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(18px, 3vw, 20px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        max-width: 100px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2rem;
+        width: 300px;
+        max-width: 230px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -40%;
+        transform: rotate(1deg);
+        display: none;
+    }
+    .item-2 {
+        top: -5%;
+        left: 80%;
+        transform: rotate(6deg);
+        display: none;
+    }
+    .item img, .item-2 img {
+        width: 18rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 2rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(18px, 3vw, 20px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 150px;
+        max-width: 100px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}

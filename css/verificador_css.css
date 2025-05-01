@@ -35,7 +35,6 @@ body {
 .img-verificador {
     position: absolute;
     width: 100%;
-    height: 100vh;
 }
 .img-verificador img {
     width: 100%;
@@ -101,20 +100,17 @@ button:hover {
 }
 @media (min-width: 1847px) {
     body {
-        height: 100vh;
         background-size: contain;
     }
 }
 @media (1401px < width < 1846px) {
     body {
-        height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
     }
 }
 @media (max-width: 1400px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -172,7 +168,6 @@ button:hover {
 } 
 @media (1120px < width < 1399px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -230,7 +225,6 @@ button:hover {
 }
 @media (950px < width < 1119px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -289,7 +283,6 @@ button:hover {
 
 @media (850px < width < 949px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -349,7 +342,6 @@ button:hover {
 }
 @media (750px < width < 850px) {
     body {
-        height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -410,7 +402,6 @@ button:hover {
 }
 @media (500px < width < 750px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -472,7 +463,6 @@ button:hover {
 }
 @media (350px < width < 500px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 
@@ -537,7 +527,6 @@ button:hover {
 
 @media (max-width: 350px) {
     body {
-        height: 100vh;
         background-size: cover;
     }
 

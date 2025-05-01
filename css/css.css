@@ -1250,7 +1250,7 @@ footer {
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 300px) {
     /*-------------- HEADER --------------*/ 
     header {
         top: 0px;

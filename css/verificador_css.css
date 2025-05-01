@@ -400,17 +400,18 @@ button:hover {
         cursor: pointer;
     }
 }
-@media (500px < width < 750px) {
+@media (670px < width < 750px) {
     body {
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     /*---------- IMG VERIFICADOR --------*/
     .button-verificador .div {
         background-color: black;
         border-radius: 2rem;
-        padding: 2.5rem;
-        width: 350px;
+        padding: 2.2rem;
+        width: 330px;
         position: relative;
     }
     .item, .item-2 {
@@ -419,18 +420,16 @@ button:hover {
     }
     .item {
         top: -50%;
-        left: -40%;
+        left: -30%;
         transform: rotate(1deg);
-        display: none;
     }
     .item-2 {
-        top: -5%;
-        left: 80%;
+        top: 10%;
+        left: 83%;
         transform: rotate(6deg);
-        display: none;
     }
     .item img, .item-2 img {
-        width: 18rem;
+        width: 14rem;
     }
 
     /*--------- VERIFICADOR ---------*/
@@ -443,19 +442,79 @@ button:hover {
     .verificador-text {
         color: white;
         text-transform: uppercase;
-        font-size: clamp(15px, 3vw, 20spx);
+        font-size: clamp(15px, 3vw, 18px);
     }
     .grid-template-column {
         grid-template-columns: repeat(2, auto);
     }
 
     button {
-        width: 150px;
+        width: 130px;
         text-transform: uppercase;
         padding-block: 1rem;
         padding-inline: 1rem;
         border-radius: 5rem;
         font-size: clamp(20px, 3vw, 25px);
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+@media (500px < width < 670px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*---------- IMG VERIFICADOR --------*/
+    .button-verificador .div {
+        background-color: black;
+        border-radius: 2rem;
+        padding: 2rem;
+        width: 270px;
+        position: relative;
+    }
+    .item, .item-2 {
+        position: absolute;
+        z-index: -1;
+    }
+    .item {
+        top: -50%;
+        left: -37%;
+        transform: rotate(1deg);
+    }
+    .item-2 {
+        top: 10%;
+        left: 79%;
+        transform: rotate(6deg);
+    }
+    .item img, .item-2 img {
+        width: 13rem;
+    }
+
+    /*--------- VERIFICADOR ---------*/
+    .gap {
+        gap: 3rem
+    }
+    .gap-2 {
+        gap: 1rem; 
+    }
+    .verificador-text {
+        color: white;
+        text-transform: uppercase;
+        font-size: clamp(15px, 3vw, 16px);
+    }
+    .grid-template-column {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    button {
+        width: 120px;
+        text-transform: uppercase;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        border-radius: 5rem;
+        font-size: clamp(18px, 3vw, 22px);
         font-weight: bold;
         transition: all .3s ease-in-out;
         cursor: pointer;

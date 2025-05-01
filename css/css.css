@@ -959,14 +959,14 @@ footer {
 
     /*------------- MESSAGE -------------*/
     .message-img img {
-        width: 18rem;
+        width: 14rem;
         border-radius: 10px;
     }
     
     #close {
         position: absolute;
         top: -20px;
-        left: 310px;
+        left: 290px;
         color: white;
         font-size: 15px;
         cursor: pointer;
@@ -1140,14 +1140,190 @@ footer {
 
     /*------------- MESSAGE -------------*/
     .message-img img {
-        width: 15rem;
+        width: 13rem;
         border-radius: 10px;
     }
     
     #close {
         position: absolute;
         top: -20px;
-        left: 260px;
+        left: 235px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+
+    /*-------------- CATEGORIAS --------------*/ 
+    .categorias {
+        padding-block: 3rem;
+    } 
+    .cat-column-2 {
+        grid-template-columns: repeat(1, auto);
+        gap: 1.5rem;
+    }
+    .item-img,.item-img2 {
+        padding-inline: 3rem;
+    }
+    .item-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .item-img2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*--------------  PRODUCTOS -----------------*/
+    .productos {
+        background-image: url(https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8152de755569d5e8bd02_04dc0f9c210b60f1ba384bea6fb8331d_Fondo-Producto.png);
+        background-size: contain;
+    } 
+    .productos {
+        padding-block: 3rem;
+    } 
+    .productos section {
+        margin-bottom: 5rem;
+    }
+    .text-section {
+        width: 250px;
+    }
+    .productos-column-3 {
+        gap: 5rem;
+    }
+    .img-producto img {
+        width: 100px;
+        height: 250px;
+    }
+    .item-producto {
+        width: 190px;
+        height: 350px;
+        padding: 1.3rem;
+    }
+    .button-producto button {
+        padding: 1rem 1.5rem;
+    }
+
+    /*-------------- FOOTER --------------*/ 
+    .footer {
+        padding: 3rem;
+    }
+    .footer-column-2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .img-footer {
+        display: none;
+    }
+    .my-footer {
+        height: 100%;
+    }
+    .footer-flex {
+        background-color: #6F2601;
+        border-radius: 15px;
+        padding: 3rem;
+        width: 180px;
+    }
+    .title-footer {
+        text-align: center;
+    }
+    .center-text-footer {
+        text-align: center;
+    }
+    .center-footer {
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-column-2-2 {
+        grid-column:inherit;
+        grid-template-columns: repeat(1, auto);
+        gap: 4rem;
+    }
+    .footer-column-3 {
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }
+    .my-footer2 {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+        padding-inline: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    /*-------------- HEADER --------------*/ 
+    header {
+        top: 0px;
+        position: sticky;
+        z-index: 1000;
+        padding-inline: 1rem;
+    }
+    .title-logo img {
+        width: 10rem;
+    }
+    .burger-icon {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navegation > ul {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        padding: 1rem;
+        width: 50%;
+        max-width: 300px;
+        height: 100vh;
+        left: -100%;
+        transition: all .5s ease-in-out;
+    }
+    #burgercheck:checked ~ ul  {
+        left: 0;
+    }
+    .navegation ul li > a {
+        color: white;
+    } 
+    .navegation ul .burger-center{
+        padding-left: 1rem;
+    }
+    .flex-row-2 {
+        flex-direction: column;
+    }
+    .center-nav {
+        display: flex;
+        place-content: center;
+    }
+    .logo-burger {
+        display: inline-block;
+    }
+    .logo-burger-img img {
+        width: 10rem;
+    }
+    .logo-burger-text {
+        font-size: clamp(10px, 3vw, 19px);
+    }
+    .gap5rem {
+        gap: 3rem;
+    }
+    .burger-center {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    /*------------- MESSAGE -------------*/
+    .message-img img {
+        width: 10rem;
+        border-radius: 10px;
+    }
+    
+    #close {
+        position: absolute;
+        top: -20px;
+        left: 235px;
         color: white;
         font-size: 15px;
         cursor: pointer;

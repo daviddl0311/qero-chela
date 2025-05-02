@@ -129,6 +129,8 @@
         include "php/footer-p.php";
     ?>
 
-    <script src="js/verificado.js"></script>
+    <?php
+        include 'php/verificado.php';
+    ?>
 </body>
 </html>

@@ -62,6 +62,8 @@
         include "../php/footer-s-2.php"
     ?>
 
-    <script src="../js/verificado.js"></script>
+    <?php
+        include "../php/verificado-2.php";
+    ?>
 </body>
 </html>

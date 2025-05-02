@@ -42,6 +42,8 @@
         </div>
     </main>
 
-    <script src="js/verificador.js"></script>
+    <?php
+        include 'php/verificador.php';
+    ?>
 </body>
 </html>

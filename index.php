@@ -18,20 +18,33 @@
     <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-    <div class="message display-none">
-        <div class="my-message center">
-        </div>
-        <div class="message-img center flex flex-column">
-            <div class="message-a">
-                <div>
-                    <a href="https://www.facebook.com/share/p/1FM9N5Qz6J/" target="_blank">
-                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680ffef71de9d700edc097f1_post%20temploo%20(16).jpg" alt="Publicidad Templo Q'ero Chela" class="pulsate-fwd">
-                    </a>
+    <?php
+        include 'php/conexion.php';
+
+        $query = "SELECT * FROM mensajes ORDER BY id_mensaje DESC LIMIT 1";
+
+        $resultado = mysqli_query($conexion, $query);
+
+        while($mensaje = mysqli_fetch_assoc($resultado)) {
+            echo
+            "<div class='message ".$mensaje['display']."'>
+                <div class='my-message center'>
                 </div>
-                <i class="fa-solid fa-x" id="close"></i>
-            </div>
-        </div>
-    </div>
+                <div class='message-img center flex flex-column'>
+                    <div class='message-a'>
+                        <div>
+                            <a href='".$mensaje['info-publicidad']."' target='_blank'>
+                                <img src='".$mensaje['img']."' alt='Publicidad Templo Q'ero Chela' class='pulsate-fwd'>
+                            </a>
+                        </div>
+                        <i class='fa-solid fa-x' id='close'></i>
+                    </div>
+                </div>
+            </div>";
+
+        }
+        mysqli_close($conexion);
+    ?>
 
     <?php
         include 'php/header-p.php';

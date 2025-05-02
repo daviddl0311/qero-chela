@@ -146,8 +146,6 @@
     ?>
 
     <script src="../js/app.js"></script>
-    <?php
-        include "../php/verificador-2.php"
-    ?>
+    <script src="../js/verificado.js"></script>
 </body>
 </html>

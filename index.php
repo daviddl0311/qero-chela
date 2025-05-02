@@ -139,8 +139,6 @@
 
     <script src="js/message.js"></script>
     
-    <?php
-        include "php/verificador.php";
-    ?>
+    <script src="js/verificado.js"></script>
 </body>
 </html>

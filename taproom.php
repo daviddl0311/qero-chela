@@ -83,8 +83,6 @@
         include "php/footer-p.php";
     ?>
 
-    <?php
-        include "php/verificador.php";
-    ?>
+    <script src="js/verificado.js"></script>
 </body>
 </html>

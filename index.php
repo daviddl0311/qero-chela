@@ -43,22 +43,48 @@
         </section>
         <section class="categorias center">
             <article class="grid cat-column-2">
-                <div class="item-img">
-                    <a href="producto/qerochela.html">
-                        <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec0f98fb67f818fb902_Publicidad1.avif" alt="Publicidad 1">
-                    </a>
-                </div>
+                <?php
+                    include "php/conexion.php";
+
+                    $query = "SELECT * FROM producto WHERE nombre = 'aborigen'";
+
+                    $resultado = mysqli_query($conexion, $query);
+
+                    while($producto = mysqli_fetch_assoc($resultado)) {
+                        echo 
+                        "<div class='item-img'>
+                            <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
+                                <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec0f98fb67f818fb902_Publicidad1.avif' alt='Publicidad 1'>
+                            </a>
+                        </div>";
+                    }
+
+                    mysqli_close($conexion);
+                ?>
                 <div class="grid cat-subcolumn-2">
                     <div class="item-img2">
                         <a href="https://tantrica.pe/" target="_blank">
                             <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec05fbc5dc9636fd1f3_Publicidad2.avif" alt="Publicidad 2">
                         </a>
                     </div>
-                    <div class="item-img2">
-                        <a href="producto/qerochela-luna-miel.html">
-                            <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec05b46e54492a06460_Publicidad3.avif" alt="Publicidad 3">
-                        </a>
-                    </div>
+                    <?php
+                        include "php/conexion.php";
+
+                        $query = "SELECT * FROM producto WHERE nombre = 'luna de miel'";
+
+                        $resultado = mysqli_query($conexion, $query);
+
+                        while($producto = mysqli_fetch_assoc($resultado)) {
+                            echo 
+                            "<div class='item-img2'>
+                                <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
+                                    <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680d9ec05b46e54492a06460_Publicidad3.avif' alt='Publicidad 3'>
+                                </a>
+                            </div>";
+                        }
+
+                        mysqli_close($conexion);
+                    ?>
                 </div>
             </article>
         </section>

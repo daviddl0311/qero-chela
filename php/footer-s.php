@@ -73,7 +73,7 @@
             <div class="flex flex-2">
                 <h2>Productos</h2>
                 <div class="flex flex-2 gap-footer-3">
-                    <a href="../index.php">Q'ero Chela</a>
+                    <a href="https://qerochela.com/">Q'ero Chela</a>
                     <a href="https://tantrica.pe/" target="_blank">Tantrica</a>
                 </div>
             </div>

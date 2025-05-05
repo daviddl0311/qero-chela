@@ -87,73 +87,77 @@ header {
 .producto {
     padding: 5rem;
 }
-.producto-img img {
-    width: 6rem;
-}
-.producto-nombre {
-    text-transform: uppercase;
-    font-size: clamp(20px, 3vw, 25px);
-    color: white;
-}
-.producto-btn button {
-    text-transform: uppercase;
-    font-size: clamp(15px, 3vw, 16px);
-    width: 150px;
-    padding: .6rem;
-    border-radius: 1rem;
-    transition: all .3s ease-in-out;
-    background-color: #efd15a;
-    color: #401e08;
-    cursor: pointer;
-}
-.gap-fun {
-    gap: 1.5rem;
-}
-.gap-fun-2 {
-    gap: 2rem;
-}
-.gap-fun-3 {
-    gap: 1.3rem;
-}
-.producto-item {
-    background-color: black;
-    width: 180px;
+.item-producto {
+    background-color: #000000;
     padding: 1.5rem;
     border-radius: 15px;
 }
-
-.cantidad {
-    font-size: clamp(20px, 3vw, 22px);
-    color: white;
+.producto-img {
+    width: 120px;
 }
-.btn-minus, .btn-plus {
-    color: #401e08;
-    font-size: clamp(20px, 3vw, 25px);
-    background-color: #efd15a;
-    padding-inline: 10px;
-    padding-block: 1px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    border-radius: 5px;
+.producto-img img {
+    width: 6rem;
+    filter: drop-shadow(0 0 5px #c2c1c1);
 }
-.btn-minus:hover, .btn-plus:hover {
-    opacity: 0.7;
-}
-#lista-formato {
-    background-color: #401e08;
-    color: white;
-    font-size: clamp(12px, 3vw, 15px);
-    width: 150px;
-    padding: .5rem;
-    border-radius: 7px;
+.producto-name {
+    font-size: clamp(15px, 3vw, 20px);
     text-transform: uppercase;
-}
-.gap-fun-4 {
-    gap: 1.5rem;
+    color: white;
 }
 .producto-precio {
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(15px, 3vw, 20px); 
     color: white;
+}
+.precio {
+    font-size: clamp(25px, 3vw, 30px);
+    font-weight: bold;
+}
+.producto-formato button {
+    background-color: white;
+    padding: .45rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.producto-formato button:hover {
+    background-color: rgb(170, 170, 170);
+}
+.grid-template-column-3 {
+    grid-template-columns: repeat(3, auto);
+    gap: .5rem;
+}
+.gap-producto {
+    gap: 1.7rem;
+}
+.gap-producto-2 {
+    gap: 1rem;
+}
+.gap-producto-3 {
+    gap: .5rem;
+}
+.input-cantidad {
+    background-color: white;
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: clamp(10px, 3vw, 15px);
+}
+.input-enviar {
+    padding: .4rem;
+    width: 80px;
+    border-radius: 5px;
+    font-size: clamp(10px, 3vw, 15px);
+    cursor: pointer;
+    background-color: #dcdcdc;
+    color: #292929;
+    transition: all .3s ease-in-out;
+}
+.input-enviar:hover {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+.button-opacity {
+    opacity: .5;
 }
 
 /*--------------  FOOTER -----------------*/

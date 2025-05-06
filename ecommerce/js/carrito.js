@@ -1,25 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".btn-plus").forEach((btn) => {
-        btn.addEventListener("click", () => actualizarCantidad(btn, 1));
-    });
-    
-    document.querySelectorAll(".btn-minus").forEach((btn) => {
-        btn.addEventListener("click", () => actualizarCantidad(btn, -1));
+document.getElementById("DOMContentLoaded", () => {
+    document.querySelector(".input-enviar").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            enlistarCarrito(btn);
+        });
     });
 });
 
-function actualizarCantidad(btn, cambio) {
-    const producto = btn.closest(".producto-item");
+function enlistarCarrito(btn) {
+    const producto = btn.closest(".item-producto");
+    const productoName = producto.querySelector(".producto-Name").textContent.trim();
+    const productoPrecio = producto.querySelector(".precio").textContent;
+    const productoFormato = producto.querySelector(".button-opacity").textContent;
+    const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
 
-    const cantidadDiv = producto.querySelector(".cantidad"); 
+    console.log("Mi producto");
+    // let item = document.createElement("li");
+    // console.log(`<p>Mi producto ${productoName}, precio ${productoPrecio}, formato ${productoFormato}, cantidad ${productoCantidad}</p>`);
 
-    let cantidadAct = parseInt(cantidadDiv.textContent);
-
-    cantidadAct += cambio;
-    
-    if(cantidadAct < 0) {
-        cantidadAct= 0;
-    }
-
-    cantidadDiv.textContent = cantidadAct;
+    // document.getElementById("mi-carrito").appendChild(item);
 }

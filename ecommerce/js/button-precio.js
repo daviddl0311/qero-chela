@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
             cantidadUpdate(btn, -1);
         })
     });
+
+    document.querySelectorAll(".input-enviar").forEach((btnEnviar) => {
+        btnEnviar.addEventListener("click", () => {
+            enlistarCarrito(btnEnviar);
+        });
+    });
 });
 
 function changeFormato(btn) {
@@ -55,4 +61,19 @@ function cantidadUpdate(btn, cambio) {
     }
 
     cantidadP.textContent = newCantidad;
+}
+
+function enlistarCarrito(btnEnviar) {
+    const producto = btnEnviar.closest(".item-producto");
+    const productoName = producto.querySelector(".producto-name").textContent.trim();
+    const productoImg = producto.querySelector(".img-producto").src;
+    const productoPrecio = producto.querySelector(".precio").textContent;
+    const productoFormato = producto.querySelector(".button-opacity").textContent;
+    const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
+
+    let item = document.createElement("li");
+    item.innerHTML= `<p>Mi producto ${productoName}, precio ${productoPrecio}, formato ${productoFormato}, cantidad ${productoCantidad}</p>
+    <img src='${productoImg}'>`;
+
+    document.getElementById("mi-carrito").appendChild(item);
 }

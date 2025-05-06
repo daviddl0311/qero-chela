@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("button").forEach((btn) => {
+    document.querySelectorAll(".button").forEach((btn) => {
         btn.addEventListener("click", () => {
             changeFormato(btn);
         });
     });
 
-    /*document.querySelectorAll(".input-cantidad").forEach((cantidad) => {
-        cantidad.addEventListener("input", () => {
-
-        });
-    });*/
+    document.querySelectorAll(".btn-plus").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            cantidadUpdate(btn, 1);
+        })
+    });
+    document.querySelectorAll(".btn-minus").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            cantidadUpdate(btn, -1);
+        })
+    });
 });
 
 function changeFormato(btn) {
@@ -19,6 +24,7 @@ function changeFormato(btn) {
     switch(btn.id) {
         case "btn1":
             precioPro.textContent = "7.50";
+            console.log(precioPro.textContent.trim());
             break;
         case "btn2":
             precioPro.textContent = "45.00";
@@ -36,4 +42,17 @@ function changeFormato(btn) {
 
     producto.querySelectorAll("button").forEach(button => button.classList.remove("button-opacity"));
     btn.classList.add("button-opacity");
+}
+
+function cantidadUpdate(btn, cambio) {
+    const producto = btn.closest(".item-producto");
+    const cantidadP = producto.querySelector(".producto-cantidad");
+
+    let newCantidad = parseInt(cantidadP.textContent) + cambio;
+
+    if(newCantidad <= 1) {
+        newCantidad = 1;
+    }
+
+    cantidadP.textContent = newCantidad;
 }

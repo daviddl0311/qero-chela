@@ -136,15 +136,33 @@ header {
 .gap-producto-3 {
     gap: .5rem;
 }
-.input-cantidad {
-    background-color: white;
-    padding: .4rem;
+.producto-cantidad {
+    width: 28px;
     border-radius: 5px;
-    font-size: clamp(10px, 3vw, 15px);
+    color: white;
+    font-size: clamp(15px, 3vw, 20px);
+}
+.btn-minus button, .btn-plus button {
+    background-color: white;
+    border-radius: 5px;
+    padding-inline: .7rem;
+    padding-block: 1px;
+    color: black;
+    font-size: clamp(20px, 3vw, 25px);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.btn-minus button:hover, .btn-plus button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px white;
+}
+.gap-producto-4 {
+    gap: .5rem;
 }
 .input-enviar {
     padding: .4rem;
-    width: 80px;
+    width: 100px;
     border-radius: 5px;
     font-size: clamp(10px, 3vw, 15px);
     cursor: pointer;

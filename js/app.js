@@ -39,13 +39,13 @@ buttons.forEach(button => {
                 break;
             case "bt4": 
                 price.textContent = "pen 465.00";
-                img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da5ecff4139ac1088b95c_barril-30.png"
+                img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91af4810a725ec4834f1_barril-30.png"
                 img.classList.add("producto-img-2")
                 img.classList.remove("producto-img")
                 break;
             case "bt5": 
                 price.textContent = "pen 749.00";
-                img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da5ec5fbc5dc963726994_barril-50.png"
+                img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png"
                 img.classList.add("producto-img-2")
                 img.classList.remove("producto-img")
                 break; 

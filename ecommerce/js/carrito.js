@@ -13,16 +13,16 @@ function enlistarCarrito(btnEnviar) {
     const productoPrecio = producto.querySelector(".precio").textContent;
     const productoFormato = producto.querySelector(".button-opacity").textContent;
     const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
-    const productoButton = producto.querySelector(".input-enviar")
+    const productoButton = producto.querySelector(".input-enviar");
 
-    productoButton.disabled = "true";
-    productoButton.style.opacity = "0.5";
+    productoButton.disabled = true;
+    producto.style.opacity = "0.5";
     productoButton.textContent = "✔";
 
     let item = document.createElement("li");
-    item.setAttribute("class","burger-center");
+    item.setAttribute("class","item-carrito");
     item.innerHTML= `
-    <div class="flex mi-carrito-gap item-carrito">
+    <div class="flex mi-carrito-gap">
         <div class="carrito-img center">
             <img src="${productoImg}" alt="${productoName}">
         </div>
@@ -41,11 +41,31 @@ function enlistarCarrito(btnEnviar) {
                     <p>SubTotal: S/. <span id="carrito-sub">${parseFloat(productoPrecio*productoCantidad).toFixed(2)}</span></p>
                 </div>
             </div>
-             <div class="delete center">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
         </div>
-    </div>`;
+    </div>
+     <button class="center item-delete">
+        <i class="fa-solid fa-xmark"></i>
+    </button>`;
 
     document.getElementById("mi-carrito").appendChild(item);
+
+    const deleteItemButton = document.querySelectorAll(".item-delete");
+
+    deleteItemButton.forEach((itemDel) => {
+        itemDel.addEventListener("click", () => {
+            deleteItem(itemDel, producto);
+        });
+    });
 }
+
+function deleteItem(itemDel, producto) {
+    const productoItem = itemDel.closest(".item-carrito");
+    const productoButton = producto.querySelector(".input-enviar");
+
+    document.getElementById("mi-carrito").removeChild(productoItem);
+
+    productoButton.disabled = false;
+    producto.style.opacity = "1";
+    productoButton.textContent = "Añadir";
+
+}   

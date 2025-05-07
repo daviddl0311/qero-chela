@@ -31,6 +31,9 @@
                 <input type="checkbox" id="burgercheck">
                 <label for="burgercheck" class="burger-icon">
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="n-items">
+                        0
+                    </div>
                 </label>
                 <ul class="flex gap2rem flex-row-2" id="mi-carrito"> 
                     <li class="logo-burger">
@@ -49,14 +52,19 @@
             </div>
         </nav>
     </header>
-
+    
+    
     <main>
+        <div class="emerge-msg">
+            <ul class="flex flex-column gap-msg-mrg" id="list-msg">
+            </ul>
+        </div>
         <section class="grid grid-template-carrito center producto gap-producto-5">
-            <div class="flex item-producto gap-producto">
+            <div class="flex item-producto gap-producto flex-column-producto">
                 <div class="producto-img center">
                     <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="img-producto">
                 </div>
-                <div class="producto-inf flex flex-column center gap-producto-2">
+                <div class="producto-inf flex flex-column gap-producto-2">
                     <div class="producto-name">
                         <h2>aborigen</h2>
                     </div>
@@ -70,7 +78,7 @@
                         <button id="btn4" class="button">30 l</button>
                         <button id="btn5" class="button">50 l</button>
                     </div>
-                    <div class="flex gap-producto-3">
+                    <div class="flex gap-producto-3 flex-column-producto-2">
                         <div class="flex gap-producto-4">
                             <div class="btn-minus center">
                                 <button class="center">-</button>
@@ -88,13 +96,13 @@
                     </div>
                 </div>
             </div>
-            <div class="flex item-producto gap-producto">
+            <div class="flex item-producto gap-producto flex-column-producto">
                 <div class="producto-img center">
                     <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="img-producto">
                 </div>
-                <div class="producto-inf flex flex-column center gap-producto-2">
+                <div class="producto-inf flex flex-column gap-producto-2">
                     <div class="producto-name">
-                        <h2>aborigen2</h2>
+                        <h2>aborigen</h2>
                     </div>
                     <div class="producto-precio">
                         <p>PEN <span class="precio">7.50</span></p>
@@ -106,7 +114,7 @@
                         <button id="btn4" class="button">30 l</button>
                         <button id="btn5" class="button">50 l</button>
                     </div>
-                    <div class="flex gap-producto-3">
+                    <div class="flex gap-producto-3 flex-column-producto-2">
                         <div class="flex gap-producto-4">
                             <div class="btn-minus center">
                                 <button class="center">-</button>
@@ -115,7 +123,7 @@
                                 <p>1</p>
                             </div>
                             <div class="btn-plus center">
-                                <button class="center">+</button>
+                                <button class="centre">+</button>
                             </div>
                         </div>
                         <div class="producto-btn center">
@@ -124,13 +132,13 @@
                     </div>
                 </div>
             </div>
-            <div class="flex item-producto gap-producto">
+            <div class="flex item-producto gap-producto flex-column-producto">
                 <div class="producto-img center">
                     <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="img-producto">
                 </div>
-                <div class="producto-inf flex flex-column center gap-producto-2">
+                <div class="producto-inf flex flex-column gap-producto-2">
                     <div class="producto-name">
-                        <h2>aborigen3</h2>
+                        <h2>aborigen</h2>
                     </div>
                     <div class="producto-precio">
                         <p>PEN <span class="precio">7.50</span></p>
@@ -142,7 +150,7 @@
                         <button id="btn4" class="button">30 l</button>
                         <button id="btn5" class="button">50 l</button>
                     </div>
-                    <div class="flex gap-producto-3">
+                    <div class="flex gap-producto-3 flex-column-producto-2">
                         <div class="flex gap-producto-4">
                             <div class="btn-minus center">
                                 <button class="center">-</button>
@@ -151,7 +159,7 @@
                                 <p>1</p>
                             </div>
                             <div class="btn-plus center">
-                                <button class="center">+</button>
+                                <button class="centre">+</button>
                             </div>
                         </div>
                         <div class="producto-btn center">
@@ -162,6 +170,7 @@
             </div>
         </section>
     </main>
+
 
     <script src="js/button.js"></script>
     <script src="js/carrito.js"></script>

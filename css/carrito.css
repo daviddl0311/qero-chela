@@ -19,11 +19,15 @@ header {
     padding-inline: 2rem;
     padding-block: .5rem;
     background-color: black;
+    color: white;
 }
 header {
     top: 0px;
     position: sticky;
     z-index: 1000;
+}
+body {
+    position: relative;
 }
 
 .grid {
@@ -80,6 +84,114 @@ header {
 .title-logo div > h1 {
     color: #401e08;
 }
+/*------- MENSAGE EMERGENTE ------*/
+.emerge-msg {
+    position: absolute;
+}
+#list-msg {
+    position: fixed;
+    left: 81%;
+    top: 120px;
+    z-index: 999;
+}
+.list-dl {
+    background-color: white;
+    width: 200px;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    font-size: clamp(15px, 3vw, 17px);
+}
+.list-dl-2 {
+    background-color: red;
+    color: white;
+    width: 200px;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    font-size: clamp(15px, 3vw, 17px);
+}
+.gap-msg-mrg {
+    gap: 1rem;
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+    }
+    @keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+
+/*------- MESSAGE CARRITO ------*/
+.mess-text-1, .mess-text-2 {
+    color: white;
+}
+.mess-text-1 {
+    font-size: clamp(15px, 3vw, 20px);
+}
+.mess-text-2 {
+    font-size: clamp(10px, 3vw, 15px);
+}
+.gap-message {
+    gap: 1.2rem;
+}
+.mess-text-3 {
+    font-size: clamp(11px, 3vw, 16px);
+    color: rgb(177, 177, 177);
+}
+.button-message > button {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: clamp(11px, 3vw, 16px);
+    transition: all .3s ease-in-out;
+}
+.button-message > button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 6px rgb(197, 195, 195);
+}
+.message-carrito {
+    height: 50%;
+}
+
+#message-checkbox:checked {
+    left: -100%;
+}
+
+/*----- NÚMERO DE PRODUCTOS CARRITO -----*/
+.n-items {
+    position: relative;
+    font-size: 13px;
+    top: -40px;
+    left: 30px;
+}
 
 /*------- VER PRODUCTO CARRITO ---------*/
 .burger-icon {
@@ -97,7 +209,8 @@ header {
     position: fixed;
     background-color: black;
     top: 0;
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
     width: 50%;
     max-width: 300px;
     height: 100vh;
@@ -180,6 +293,7 @@ header {
 
 .item-carrito {
     position: relative;
+    margin-bottom: 1.2rem;
 }
 
 .item-delete {
@@ -192,7 +306,7 @@ header {
     padding-inline: .3rem;
     border-radius: 100%;
     cursor: pointer;
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: 20px;
     transition: all .3s ease-in-out;
 }
 .item-delete:hover {
@@ -263,7 +377,7 @@ header {
     width: 28px;
     border-radius: 5px;
     color: white;
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: 21px;
 }
 .btn-minus button, .btn-plus button {
     background-color: white;
@@ -271,7 +385,7 @@ header {
     padding-inline: .7rem;
     padding-block: 1px;
     color: black;
-    font-size: clamp(20px, 3vw, 25px);
+    font-size: 26px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -429,7 +543,64 @@ footer {
     background-color: #25d366;
     color: #fdfbed;
 }
+@media (max-width: 1180px) {
+    #list-msg {
+        position: fixed;
+        left: 79%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
+}
+@media (max-width: 1050px) {
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 76%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
 
+}
 @media (min-width: 1013px) {
     /*------------- FOOTER -------------*/
     .my-footer {
@@ -502,6 +673,34 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 74%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
     }
 
     /*---------- CARRITO -----------*/
@@ -606,6 +805,34 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 68%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
     }
 
     /*---------- CARRITO -----------*/
@@ -718,6 +945,88 @@ footer {
         align-items: center;
     }
 
+    /*-------- ITEM CARRITO --------*/
+    .item-delete {
+        position: absolute;
+        color: white;
+        left: 13rem;
+        top: -1rem;
+        background-color: red;
+        padding-block: .2rem;
+        padding-inline: .3rem;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 58%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 200px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: clamp(15px, 3vw, 17px);
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
+
+    /*---------- CARRITO -----------*/
+    .producto {
+        padding: 3rem;
+    }
+    .grid-template-carrito {
+        grid-template-columns: repeat(1, auto);
+    }
+    .flex-column-producto {
+        flex-direction: column;
+    }
+    .item-producto {
+        width: 280px; 
+    }
+    .gap-producto {
+        gap: 1.8rem;
+    }
+
+    .btn-minus button, .btn-plus button {
+        background-color: white;
+        border-radius: 5px;
+        padding-inline: .7rem;
+        padding-block: 1px;
+        color: black;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    .producto-formato button {
+        padding: .8rem;
+        font-size: 15px;
+    }
+
+    .input-enviar {
+        padding: .8rem;
+        font-size: 16.5px;
+    }
+    .gap-producto-3 {
+        gap: 1.5rem;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -822,6 +1131,94 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*-------- ITEM CARRITO --------*/
+    .item-delete {
+        position: absolute;
+        color: white;
+        left: 9.2rem;
+        top: -1rem;
+        background-color: red;
+        padding-block: .2rem;
+        padding-inline: .3rem;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .mi-carrito-gap {
+        gap: 1.3rem;
+    }
+    .flex-column-producto-3 {
+        flex-direction: column;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 48%;
+        top: 100px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 160px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 160px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
+
+    /*---------- CARRITO -----------*/
+    .producto {
+        padding: 3rem;
+    }
+    .grid-template-carrito {
+        grid-template-columns: repeat(1, auto);
+    }
+    .flex-column-producto {
+        flex-direction: column;
+    }
+    .item-producto {
+        width: 260px; 
+    }
+    .gap-producto {
+        gap: 1.8rem;
+    }
+
+    .btn-minus button, .btn-plus button {
+        background-color: white;
+        border-radius: 5px;
+        padding-inline: .7rem;
+        padding-block: 1px;
+        color: black;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    .producto-formato button {
+        padding: .8rem;
+        font-size: 15px;
+    }
+
+    .input-enviar {
+        padding: .8rem;
+        font-size: 16.5px;
+    }
+    .gap-producto-3 {
+        gap: 1.5rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -934,6 +1331,104 @@ footer {
         align-items: center;
     }
 
+    /*-------- ITEM CARRITO --------*/
+    .item-delete {
+        position: absolute;
+        color: white;
+        left: 8rem;
+        top: -1rem;
+        background-color: red;
+        padding-block: .2rem;
+        padding-inline: .3rem;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .mi-carrito-gap {
+        gap: 1.3rem;
+    }
+    .flex-column-producto-3 {
+        flex-direction: column;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 40%;
+        top: 120px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 130px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 130px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
+
+    /*-------- CARRITO -------*/
+    .producto {
+        padding: 3rem;
+    }
+    .grid-template-carrito {
+        grid-template-columns: repeat(1, auto);
+    }
+    .flex-column-producto {
+        flex-direction: column;
+    }
+    .item-producto {
+        width: 250px; 
+    }
+    .gap-producto {
+        gap: 1.8rem;
+    }
+
+    .btn-minus button, .btn-plus button {
+        background-color: white;
+        border-radius: 5px;
+        padding-inline: .7rem;
+        padding-block: 1px;
+        color: black;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    .producto-formato button {
+        padding: .8rem;
+        font-size: 15px;
+    }
+
+    .input-enviar {
+        padding: .8rem;
+        width: 160px;
+        font-size: 16.5px;
+    }
+    .gap-producto-2 {
+        gap: 1.5rem;
+    }
+    .gap-producto-3 {
+        gap: 1rem;
+    }
+
+    .flex-column-producto-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -980,7 +1475,7 @@ footer {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     /*-------------- HEADER --------------*/ 
     header {
         top: 0px;
@@ -1042,6 +1537,97 @@ footer {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+
+    /*-------- ITEM CARRITO --------*/
+    .item-delete {
+        position: absolute;
+        color: white;
+        left: 7rem;
+        top: -1rem;
+        background-color: red;
+        padding-block: .2rem;
+        padding-inline: .3rem;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .mi-carrito-gap {
+        gap: 1.3rem;
+    }
+    .flex-column-producto-3 {
+        flex-direction: column;
+    }
+
+    /*------- MENSAJE EMERGENTE ------*/
+    #list-msg {
+        position: fixed;
+        left: 32%;
+        top: 100px;
+        z-index: 999;
+    }
+    .list-dl {
+        background-color: white;
+        width: 120px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .list-dl-2 {
+        background-color: red;
+        color: white;
+        width: 120px;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        font-size: 16px;
+    }
+    .gap-msg-mrg {
+        gap: 1rem;
+    }
+
+    /*-------- CARRITO -------*/
+    .producto {
+        padding: 3rem;
+    }
+    .grid-template-carrito {
+        grid-template-columns: repeat(1, auto);
+    }
+    .flex-column-producto {
+        flex-direction: column;
+    }
+    .item-producto {
+        width: 180px; 
+    }
+    .gap-producto {
+        gap: 1.8rem;
+    }
+
+    .btn-minus button, .btn-plus button {
+        background-color: white;
+        border-radius: 5px;
+        padding-inline: .7rem;
+        padding-block: 1px;
+        color: black;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    .grid-template-column-3 {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .producto-formato button {
+        padding: .8rem;
+        font-size: 15px;
+    }
+
+    .input-enviar {
+        padding: .8rem;
+        font-size: 16.5px;
+    }
+    .gap-producto-3 {
+        gap: 1rem;
     }
 
     /*-------------- FOOTER --------------*/ 

@@ -46,7 +46,7 @@ function alerta() {
     const url = `https://wa.me/${numero}?text=${mensaje}`;
     
     window.open(url, "_blank");
-    console.log(contenido[3]);
+    // console.log(contenido[3]);
 }
 
 

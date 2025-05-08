@@ -37,16 +37,28 @@ function messageCarrito() {
 }
 
 function alerta() {
-    const carrito = document.getElementById("mi-carrito");
-    const contenido = carrito.innerText || carrito.textContent;
+    const items = document.querySelectorAll("#mi-carrito .item-carrito"); 
+
+    let mensaje = '*Mi Carrito:*\n\n';
+
+    items.forEach(item => {
+        const lineas = item.querySelectorAll("p");
+        mensaje += `*${lineas[0].innerText.trim()}*\n`;
+
+        for(let i = 1; i < lineas.length; i++) {
+            mensaje += lineas[i].innerText.trim() + '\n';
+        }
+
+        mensaje += '----------------------\n';
+    })
 
 
-    const mensaje = encodeURIComponent(contenido);
+    const mensajeCodificado = encodeURIComponent(mensaje);
     const numero = 51955369597;
-    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
     
     window.open(url, "_blank");
-    // console.log(contenido[3]);
+    console.log(items);
 }
 
 

@@ -178,7 +178,7 @@ body {
     box-shadow: 0 0 6px rgb(197, 195, 195);
 }
 .message-carrito {
-    height: 50%;
+    height: 100vh;
 }
 
 #message-checkbox:checked {
@@ -217,7 +217,13 @@ body {
     left: -100%;
     z-index: 999;
     transition: all .5s ease-in-out;
-    overflow: scroll;
+}
+#mi-carrito {
+    overflow:scroll;
+    scrollbar-width: none;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 #burgercheck:checked ~ ul  {
     left: 0;

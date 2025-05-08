@@ -35,7 +35,7 @@
                         0
                     </div>
                 </label>
-                <ul class="flex gap2rem flex-row-2" id="mi-carrito"> 
+                <ul class="flex gap2rem flex-row-2"> 
                     <li class="logo-burger">
                         <div class="flex">
                             <div class="center logo-burger-img">
@@ -46,14 +46,18 @@
                         </div>
                     </li>
                     <li class="center burger-center">
-                        <p class="title-carrito">Mi carrito</p>
+                        <p class="title-carrito">Mi carrito:</p>
                     </li>
+                    <ul class="flex gap2rem flex-row-2" id="mi-carrito"> 
+
+                    </ul>
                 </ul>
             </div>
         </nav>
     </header>
     
-    
+    <button onclick="alerta()">Finalizar Compra</button>
+
     <main>
         <div class="emerge-msg">
             <ul class="flex flex-column gap-msg-mrg" id="list-msg">
@@ -281,6 +285,7 @@
             </div>
         </section>
     </main>
+
 
 
     <script src="js/button.js"></script>

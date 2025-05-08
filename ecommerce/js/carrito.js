@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".input-enviar").forEach((btnEnviar) => {
         btnEnviar.addEventListener("click", () => {
             enlistarCarrito(btnEnviar);
-            // console.log(document.querySelector("#mi-carrito").childElementCount);
+            //console.log(document.querySelector("#mi-carrito").childElementCount);
         });
     });
 });
@@ -16,7 +16,7 @@ function messageCarrito() {
     const carrito = document.getElementById("mi-carrito");
     let messageCarrito = document.createElement("li");
     
-    if(carrito.children.length <= 2) {
+    if(carrito.children.length == 0) {
         messageCarrito.setAttribute("class", "message-carrito center");
         messageCarrito.innerHTML = 
         `<div class="flex flex-column center gap-message">
@@ -34,6 +34,19 @@ function messageCarrito() {
         </div>`;
         carrito.appendChild(messageCarrito);
     }
+}
+
+function alerta() {
+    const carrito = document.getElementById("mi-carrito");
+    const contenido = carrito.innerText || carrito.textContent;
+
+
+    const mensaje = encodeURIComponent(contenido);
+    const numero = 51955369597;
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    
+    window.open(url, "_blank");
+    console.log(contenido[3]);
 }
 
 
@@ -55,7 +68,7 @@ function enlistarCarrito(btnEnviar) {
     item.innerHTML= `
     <div class="flex mi-carrito-gap flex-column-producto-3">
         <div class="carrito-img center">
-            <img src="${productoImg}" alt="${productoName}">
+            <img src="${productoImg}" alt="${productoName}" id="mi-carrito-img">
         </div>
         <div class="flex flex-column center mi-carrito-gap2">
             <div class="carrito-title">
@@ -124,7 +137,7 @@ function deleteItem(itemDel, producto) {
 }   
 
 function addMessage() {
-    if(document.querySelector("#mi-carrito").children.length == 3) {
+    if(document.querySelector("#mi-carrito").children.length <= 1) {
         document.querySelector(".message-carrito").classList.remove("display-none");
     }
 }

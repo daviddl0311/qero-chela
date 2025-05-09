@@ -64,12 +64,15 @@ function alerta() {
 
 function enlistarCarrito(btnEnviar) {
     const producto = btnEnviar.closest(".item-producto");
-    const productoName = producto.querySelector(".producto-name").textContent.trim();
+    const productoName = producto.querySelector(".productos-name").textContent.trim();
     const productoImg = producto.querySelector(".img-producto").src;
     const productoPrecio = producto.querySelector(".precio").textContent;
-    const productoFormato = producto.querySelector(".button-opacity").textContent;
+    const productoFormato = producto.querySelector(".formato-selected").textContent;
     const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
     const productoButton = producto.querySelector(".input-enviar");
+
+    /*TOTAL*/
+    let totalProducto = parseFloat(productoPrecio * productoCantidad).toFixed(2);
 
     productoButton.disabled = true;
     producto.style.opacity = "0.5";
@@ -77,31 +80,33 @@ function enlistarCarrito(btnEnviar) {
 
     let item = document.createElement("li");
     item.setAttribute("class","item-carrito");
-    item.innerHTML= `
-    <div class="flex mi-carrito-gap flex-column-producto-3">
-        <div class="carrito-img center">
-            <img src="${productoImg}" alt="${productoName}" id="mi-carrito-img">
-        </div>
-        <div class="flex flex-column center mi-carrito-gap2">
-            <div class="carrito-title">
-                <p>${productoName}</p>
+    item.innerHTML= 
+    `<div class="flex item-carrito-gap">
+        <div class="flex flex-direction-item item-carrito-gap">
+            <div class="center item-carrito-img">
+                <img src=" ${productoImg}" alt="${productoName}">
             </div>
-            <div class="flex flex-column center mi-carrito-gap3">
-                <div class="carrito-formato">
-                    <p>Formato: <span id="carrito-for">${productoFormato}</span></p>
+            <div class="flex flex-column center item-carrito-gap-2">
+                <div class="item-carrito-producto">
+                    <p>${productoName}</p>
                 </div>
-                <div class="carrito-cantidad">
-                    <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
-                </div>
-                <div class="carrito-subtotal">
-                    <p>SubTotal: S/. <span id="carrito-sub">${parseFloat(productoPrecio*productoCantidad).toFixed(2)}</span></p>
+                <div class="flex flex-column item-carrito-gap-3">
+                    <div class="item-carrito-formato">
+                        <p>Formato: <span id="carrito-for">${productoFormato}</span></p>
+                    </div>
+                    <div class="item-carrito-cantidad">
+                        <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                    </div>
+                    <div class="item-carrito-subtotal">
+                        <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-     <button class="center item-delete">
-        <i class="fa-solid fa-xmark"></i>
-    </button>`;
+        <button class="item-delete center">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>`;
 
     //Borra el Mensaje Carrito
     document.querySelector(".message-carrito").classList.add("display-none");
@@ -138,13 +143,13 @@ function deleteItem(itemDel, producto) {
     productoButton.textContent = "Añadir";
 
     //Mensage Emergente
-    emergeMessageDel();
+    //emergeMessageDel();
 
     //Dismuir en Carrito
     sum-=1;
     totalProducto(sum);
 
-    addMessage();
+    //addMessage();
     // console.log(document.querySelector("#mi-carrito").childElementCount);
 }   
 

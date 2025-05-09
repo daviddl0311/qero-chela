@@ -84,116 +84,8 @@ body {
 .title-logo div > h1 {
     color: #401e08;
 }
-/*------- MENSAGE EMERGENTE ------*/
-.emerge-msg {
-    position: absolute;
-}
-#list-msg {
-    position: fixed;
-    left: 81%;
-    top: 120px;
-    z-index: 999;
-}
-.list-dl {
-    background-color: white;
-    width: 200px;
-    padding: .5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 5px black;
-    font-size: clamp(15px, 3vw, 17px);
-}
-.list-dl-2 {
-    background-color: red;
-    color: white;
-    width: 200px;
-    padding: .5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 5px black;
-    font-size: clamp(15px, 3vw, 17px);
-}
-.gap-msg-mrg {
-    gap: 1rem;
-}
 
-.slide-in-right {
-	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-@-webkit-keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-                transform: translateX(1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        opacity: 1;
-    }
-    }
-    @keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-                transform: translateX(1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        opacity: 1;
-    }
-}
-  
-
-/*------- MESSAGE CARRITO ------*/
-.mess-text-1, .mess-text-2 {
-    color: white;
-}
-.mess-text-1 {
-    font-size: clamp(15px, 3vw, 20px);
-}
-.mess-text-2 {
-    font-size: clamp(10px, 3vw, 15px);
-}
-.gap-message {
-    gap: 1.2rem;
-}
-.mess-text-3 {
-    font-size: clamp(11px, 3vw, 16px);
-    color: rgb(177, 177, 177);
-}
-.button-message > button {
-    background-color: white;
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 100%;
-    cursor: pointer;
-    font-size: clamp(11px, 3vw, 16px);
-    transition: all .3s ease-in-out;
-}
-.button-message > button:hover {
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 6px rgb(197, 195, 195);
-}
-.message-carrito {
-    height: 100vh;
-}
-
-#message-checkbox:checked {
-    left: -100%;
-}
-
-/*----- NÚMERO DE PRODUCTOS CARRITO -----*/
-.n-items {
-    position: relative;
-    font-size: 13px;
-    top: -40px;
-    left: 30px;
-}
-
-/*------- VER PRODUCTO CARRITO ---------*/
+/*------------- MI CARRITO ---------------*/
 .burger-icon {
     color: white;
 }
@@ -241,9 +133,6 @@ body {
     display: flex;
     place-content: center;
 }
-.logo-burger-text {
-    font-size: clamp(10px, 3vw, 19px);
-}
 .gap5rem {
     gap: 3rem;
 }
@@ -253,11 +142,51 @@ body {
     align-items: center;
 }
 
+/*--------- ITEMS CARRITO --------*/
 .title-carrito {
     color: white;
+    font-size: clamp(20px, 3vw, 25px);
+    padding-block: 1rem;
+}
+.item-carrito-img img {
+    width: 100px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 .5px white);
+}
+.item-carrito-producto {
     font-size: clamp(15px, 3vw, 20px);
 }
-.carrito-img img {
+.item-carrito-formato,
+.item-carrito-cantidad,
+.item-carrito-subtotal {
+    font-size: clamp(10px, 3vw, 15px);
+}
+#carrito-for,
+#carrito-cant,
+#carrito-sub {
+    font-size: clamp(13px, 3vw, 18px);
+}
+.item-carrito-gap {
+    gap: .8rem;
+}
+.item-carrito-gap-2 {
+    gap: .5rem;
+}
+.item-carrito-gap-3 {
+    gap: .3rem;
+}
+.item-delete {
+    height: 5%;
+    background-color: red;
+    color: white;
+    padding-inline: .4rem;
+    padding-block: .3rem;
+    border-radius: 100%;
+    font-size: clamp(11px, 3vw, 16px);
+    cursor: pointer;
+}
+/* .carrito-img img {
     width: 6rem;
     height: 6rem;
     object-fit: contain;
@@ -312,107 +241,130 @@ body {
 .item-delete:hover {
     color: red;
     background-color: white;
+} */
+
+/*----- NÚMERO DE PRODUCTOS CARRITO -----*/
+.n-items {
+    position: relative;
+    font-size: 15px;
+    top: -40px;
+    left: 30px;
 }
 
-
-/*------------- CARRITO ---------------*/
-.producto {
+/*-------- PRODUCTOS ---------*/
+.productos {
     padding: 5rem;
 }
-.grid-template-carrito {
+.grid-column-3 {
+    grid-template-columns: repeat(3, auto);
+}
+.grid-column-2 {
     grid-template-columns: repeat(2, auto);
 }
 .item-producto {
-    background-color: #000000;
-    padding-inline: 1.5rem;
-    padding-block: 2rem;
     border-radius: 15px;
-    width: 450px;
+    background-color: #ffa500;
+    padding: 1.5rem;
 }
-.producto-img img {
-    width: 13rem;
-    height: 13rem;
+.productos-img img {
+    width: 230px;
+    height: 230px;
+    filter:  drop-shadow(0 0 2px white);
     object-fit: contain;
-    filter: drop-shadow(0 0 5px #c2c1c1);
 }
-.producto-name {
-    font-size: clamp(15px, 3vw, 20px);
-    text-transform: uppercase;
-    color: white;
-}
-.producto-precio {
-    font-size: clamp(15px, 3vw, 20px); 
-    color: white;
-}
-.precio {
-    font-size: clamp(25px, 3vw, 30px);
-    font-weight: bold;
-}
-.producto-formato button {
-    background-color: white;
-    padding: .45rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-}
-.producto-formato button:hover {
-    background-color: rgb(170, 170, 170);
-}
-.grid-template-column-3 {
-    grid-template-columns: repeat(3, auto);
-    gap: .5rem;
-}
-
-.gap-producto-2 {
+.productos-gap {
     gap: 1rem;
 }
-.gap-producto-3 {
+.productos-gap-2 {
+    gap: 1rem;
+}
+.productos-gap-3 {
+    gap: 1.8rem;
+}
+.productos-gap-4 {
+    gap: 2rem;
+}
+.productos-gap-5 {
     gap: .5rem;
 }
-.gap-producto-5 {
-    gap: 1.7rem;
+.productos-name {
+    text-transform: uppercase;
+    font-size: clamp(22px, 3vw, 27px);
+    font-weight: bold;
 }
-.producto-cantidad {
-    width: 28px;
-    border-radius: 5px;
+.productos-precio {
+    font-size: clamp(15px, 3vw, 18px);
+}
+.productos-precio span {
+    font-size: clamp(25px, 3vw, 30px);
+    width: 200px;
+    font-weight: bold;
+}
+.productos-formato {
+    gap: .3rem;
+}
+.formato {
+    background-color: rgb(24, 23, 23);
     color: white;
-    font-size: 21px;
-}
-.btn-minus button, .btn-plus button {
-    background-color: white;
+    padding: .6rem; 
     border-radius: 5px;
-    padding-inline: .7rem;
-    padding-block: 1px;
-    color: black;
-    font-size: 26px;
+    text-transform: uppercase; 
+    font-size: clamp(10px, 3vw, 14px);
     cursor: pointer;
-    transition: all .2s ease-in-out;
-}
-.btn-minus button:hover, .btn-plus button:hover {
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 5px white;
-}
-.gap-producto-4 {
-    gap: .5rem;
-}
-.input-enviar {
-    padding: .4rem;
-    width: 100px;
-    border-radius: 5px;
-    font-size: clamp(10px, 3vw, 15px);
-    cursor: pointer;
-    background-color: #dcdcdc;
-    color: #292929;
     transition: all .3s ease-in-out;
 }
-.input-enviar:hover {
-    background-color: #7c7c7c;
-    color: #fff;
+.formato:hover {
+    background-color: white;
+    color: black;
 }
-.button-opacity {
-    opacity: .5;
+.formato-selected {
+    background-color: white;
+    color: black
+}
+.productos-button-enviar button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: clamp(10px, 3vw, 15px);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.productos-button-enviar button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 8px black;
+}
+.btn-plus, .btn-minus {
+    font-size: 30px;
+    width: 30px;
+    border-radius: 5px;
+    padding: .1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.producto-cantidad {
+    font-size: 25px;
+    width: 20px;
+}
+
+/*--------- MENSAJE ---------*/
+.message-carrito {
+    height: 100vh;
+}
+.mess-text-1 {
+    font-size: clamp(15px, 3vw, 20px);
+}
+.mess-text-2 {
+    font-size: clamp(10px, 3vw, 15px);
+}
+.gap-message {
+    gap: .8rem;
+}
+.mess-text-3 {
+    color: rgb(172, 168, 168);
 }
 
 /*--------------  FOOTER -----------------*/
@@ -543,64 +495,7 @@ footer {
     background-color: #25d366;
     color: #fdfbed;
 }
-@media (max-width: 1180px) {
-    #list-msg {
-        position: fixed;
-        left: 79%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-}
-@media (max-width: 1050px) {
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 76%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
 
-}
 @media (min-width: 1013px) {
     /*------------- FOOTER -------------*/
     .my-footer {
@@ -675,39 +570,11 @@ footer {
         align-items: center;
     }
 
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 74%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
+    /*------ PRODUCTO -------*/
+    .grid-column-3 {
+        grid-template-columns: repeat(2, auto);
     }
 
-    /*---------- CARRITO -----------*/
-    .grid-template-carrito {
-        grid-template-columns: repeat(1, auto);
-    }
-    
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
         grid-template-columns: repeat(1, auto);
@@ -807,40 +674,9 @@ footer {
         align-items: center;
     }
 
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 68%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-
-    /*---------- CARRITO -----------*/
-    .producto {
-        padding: 3rem;
-    }
-    .grid-template-carrito {
-        grid-template-columns: repeat(1, auto);
+    /*------ PRODUCTO -------*/
+    .grid-column-3 {
+        grid-template-columns: repeat(2, auto);
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -945,87 +781,24 @@ footer {
         align-items: center;
     }
 
-    /*-------- ITEM CARRITO --------*/
-    .item-delete {
-        position: absolute;
-        color: white;
-        left: 13rem;
-        top: -1rem;
-        background-color: red;
-        padding-block: .2rem;
-        padding-inline: .3rem;
-        border-radius: 100%;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 58%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 200px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: clamp(15px, 3vw, 17px);
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-
-    /*---------- CARRITO -----------*/
-    .producto {
+    /*------ PRODUCTO -------*/
+    .productos {
         padding: 3rem;
     }
-    .grid-template-carrito {
+    .grid-column-3 {
         grid-template-columns: repeat(1, auto);
     }
-    .flex-column-producto {
+
+    /*-------- ITEMS CARRITO -------*/
+    .item-carrito-img img {
+        width: 80px;
+        height: 120px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 .5px white);
+    }
+    /* .flex-direction-item {
         flex-direction: column;
-    }
-    .item-producto {
-        width: 280px; 
-    }
-    .gap-producto {
-        gap: 1.8rem;
-    }
-
-    .btn-minus button, .btn-plus button {
-        background-color: white;
-        border-radius: 5px;
-        padding-inline: .7rem;
-        padding-block: 1px;
-        color: black;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-    }
-
-    .producto-formato button {
-        padding: .8rem;
-        font-size: 15px;
-    }
-
-    .input-enviar {
-        padding: .8rem;
-        font-size: 16.5px;
-    }
-    .gap-producto-3 {
-        gap: 1.5rem;
-    }
+    } */
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -1133,92 +906,26 @@ footer {
         align-items: center;
     }
 
-    /*-------- ITEM CARRITO --------*/
-    .item-delete {
-        position: absolute;
-        color: white;
-        left: 9.2rem;
-        top: -1rem;
-        background-color: red;
-        padding-block: .2rem;
-        padding-inline: .3rem;
-        border-radius: 100%;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-    .mi-carrito-gap {
-        gap: 1.3rem;
-    }
-    .flex-column-producto-3 {
-        flex-direction: column;
-    }
-
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 48%;
-        top: 100px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 160px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 160px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-
-    /*---------- CARRITO -----------*/
-    .producto {
+    /*------ PRODUCTO -------*/
+    .productos {
         padding: 3rem;
     }
-    .grid-template-carrito {
+    .grid-column-3 {
         grid-template-columns: repeat(1, auto);
     }
-    .flex-column-producto {
+
+    /*-------- ITEMS CARRITO -------*/
+    .item-carrito-img img {
+        width: 60px;
+        height: 100px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 .5px white);
+    }
+    /* .flex-direction-item {
         flex-direction: column;
-    }
-    .item-producto {
-        width: 260px; 
-    }
-    .gap-producto {
-        gap: 1.8rem;
-    }
-
-    .btn-minus button, .btn-plus button {
-        background-color: white;
-        border-radius: 5px;
-        padding-inline: .7rem;
-        padding-block: 1px;
-        color: black;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-    }
-
-    .producto-formato button {
-        padding: .8rem;
-        font-size: 15px;
-    }
-
-    .input-enviar {
-        padding: .8rem;
-        font-size: 16.5px;
-    }
-    .gap-producto-3 {
-        gap: 1.5rem;
+    } */
+    .item-carrito-gap {
+        gap: .5rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -1331,103 +1038,45 @@ footer {
         align-items: center;
     }
 
-    /*-------- ITEM CARRITO --------*/
-    .item-delete {
-        position: absolute;
-        color: white;
-        left: 8rem;
-        top: -1rem;
-        background-color: red;
-        padding-block: .2rem;
-        padding-inline: .3rem;
-        border-radius: 100%;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-    .mi-carrito-gap {
-        gap: 1.3rem;
-    }
-    .flex-column-producto-3 {
-        flex-direction: column;
-    }
-
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 40%;
-        top: 120px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 130px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 130px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-
-    /*-------- CARRITO -------*/
-    .producto {
+    /*------ PRODUCTO -------*/
+    .productos {
         padding: 3rem;
     }
-    .grid-template-carrito {
+    .grid-column-3 {
         grid-template-columns: repeat(1, auto);
     }
-    .flex-column-producto {
+
+    /*-------- ITEMS CARRITO -------*/
+    .item-carrito-img img {
+        width: 50px;
+        height: 80px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 .5px white);
+    }
+    /* .flex-direction-item {
         flex-direction: column;
+    } */
+    .item-carrito-gap {
+        gap: 0.4rem;
     }
-    .item-producto {
-        width: 250px; 
+    .item-carrito-gap-2 {
+        gap: 0.3rem;
     }
-    .gap-producto {
-        gap: 1.8rem;
+    .item-carrito-gap-3 {
+        gap: 0.2rem;
     }
 
-    .btn-minus button, .btn-plus button {
-        background-color: white;
-        border-radius: 5px;
-        padding-inline: .7rem;
-        padding-block: 1px;
-        color: black;
+    .item-delete {
+        height: 5%;
+        background-color: red;
+        color: white;
+        padding-inline: .3rem;
+        padding-block: .2rem;
+        border-radius: 100%;
+        font-size: clamp(11px, 3vw, 16px);
         cursor: pointer;
-        transition: all .2s ease-in-out;
     }
 
-    .producto-formato button {
-        padding: .8rem;
-        font-size: 15px;
-    }
-
-    .input-enviar {
-        padding: .8rem;
-        width: 160px;
-        font-size: 16.5px;
-    }
-    .gap-producto-2 {
-        gap: 1.5rem;
-    }
-    .gap-producto-3 {
-        gap: 1rem;
-    }
-
-    .flex-column-producto-2 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -1539,95 +1188,12 @@ footer {
         align-items: center;
     }
 
-    /*-------- ITEM CARRITO --------*/
-    .item-delete {
-        position: absolute;
-        color: white;
-        left: 7rem;
-        top: -1rem;
-        background-color: red;
-        padding-block: .2rem;
-        padding-inline: .3rem;
-        border-radius: 100%;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-    .mi-carrito-gap {
-        gap: 1.3rem;
-    }
-    .flex-column-producto-3 {
-        flex-direction: column;
-    }
-
-    /*------- MENSAJE EMERGENTE ------*/
-    #list-msg {
-        position: fixed;
-        left: 32%;
-        top: 100px;
-        z-index: 999;
-    }
-    .list-dl {
-        background-color: white;
-        width: 120px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .list-dl-2 {
-        background-color: red;
-        color: white;
-        width: 120px;
-        padding: .5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        font-size: 16px;
-    }
-    .gap-msg-mrg {
-        gap: 1rem;
-    }
-
-    /*-------- CARRITO -------*/
-    .producto {
+    /*------ PRODUCTO -------*/
+    .productos {
         padding: 3rem;
     }
-    .grid-template-carrito {
+    .grid-column-3 {
         grid-template-columns: repeat(1, auto);
-    }
-    .flex-column-producto {
-        flex-direction: column;
-    }
-    .item-producto {
-        width: 180px; 
-    }
-    .gap-producto {
-        gap: 1.8rem;
-    }
-
-    .btn-minus button, .btn-plus button {
-        background-color: white;
-        border-radius: 5px;
-        padding-inline: .7rem;
-        padding-block: 1px;
-        color: black;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-    }
-    .grid-template-column-3 {
-        grid-template-columns: repeat(2, auto);
-    }
-
-    .producto-formato button {
-        padding: .8rem;
-        font-size: 15px;
-    }
-
-    .input-enviar {
-        padding: .8rem;
-        font-size: 16.5px;
-    }
-    .gap-producto-3 {
-        gap: 1rem;
     }
 
     /*-------------- FOOTER --------------*/ 

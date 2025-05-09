@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".button").forEach((btn) => {
+    document.querySelectorAll(".formato").forEach((btn) => {
         btn.addEventListener("click", () => {
             changeFormato(btn);
         });
@@ -21,20 +21,33 @@ function changeFormato(btn) {
     const producto = btn.closest(".item-producto");
     const precioPro = producto.querySelector(".precio");
     const imgPro = producto.querySelector(".img-producto");
+    const nombrePro = producto.querySelector(".productos-name");
 
     switch(btn.id) {
         case "btn1":
             precioPro.textContent = "7.50";
-            imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
-            console.log(precioPro.textContent.trim());
+            if(nombrePro.textContent.trim() == "aborigen") {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
+            } else {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png";
+            }
+            // console.log(precioPro.textContent.trim());
             break;
         case "btn2":
             precioPro.textContent = "45.00";
-            imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
+            if(nombrePro.textContent.trim() == "aborigen") {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
+            } else {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png";
+            }
             break;
         case "btn3":
             precioPro.textContent = "175.00";
-            imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
+             if(nombrePro.textContent.trim() == "aborigen") {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
+            } else {
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png";
+            }
             break;
         case "btn4":
             precioPro.textContent = "465.00";
@@ -45,13 +58,15 @@ function changeFormato(btn) {
             imgPro.src ="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png";
             break;
     }
-
-    producto.querySelectorAll("button").forEach(button => button.classList.remove("button-opacity"));
-    btn.classList.add("button-opacity");
+    //remover clase formato-selected
+    producto.querySelectorAll(".formato").forEach(button => button.classList.remove("formato-selected"));
+    //añadir clase formato-selected
+    btn.classList.add("formato-selected");
 }
 
 function cantidadUpdate(btn, cambio) {
     const producto = btn.closest(".item-producto");
+
     const cantidadP = producto.querySelector(".producto-cantidad");
 
     let newCantidad = parseInt(cantidadP.textContent) + cambio;

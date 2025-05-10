@@ -39,6 +39,9 @@
                 <li class="center burger-center">
                     <a href="https://drive.google.com/file/d/13l0jRu1-jTnoHsqHDHLKZHBEltW0Ig9d/view?usp=sharing" target="_blank">Brochure</a>
                 </li>
+                <li class="center burger-center">
+                    <a href="../ecommerce/carrito.php" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
             </ul>
         </div>
     </nav>

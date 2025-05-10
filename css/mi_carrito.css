@@ -26,7 +26,7 @@ header {
     position: sticky;
     z-index: 1000;
 }
-body {
+main {
     position: relative;
 }
 
@@ -114,8 +114,8 @@ body {
     overflow:scroll;
     scrollbar-width: none;
     height: 100vh;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 3rem;
 }
 #burgercheck:checked ~ ul  {
     left: 0;
@@ -156,6 +156,7 @@ body {
 }
 .item-carrito-producto {
     font-size: clamp(15px, 3vw, 20px);
+    text-transform: uppercase;
 }
 .item-carrito-formato,
 .item-carrito-cantidad,
@@ -166,6 +167,7 @@ body {
 #carrito-cant,
 #carrito-sub {
     font-size: clamp(13px, 3vw, 18px);
+    text-transform: uppercase;
 }
 .item-carrito-gap {
     gap: .8rem;
@@ -186,68 +188,20 @@ body {
     font-size: clamp(11px, 3vw, 16px);
     cursor: pointer;
 }
-/* .carrito-img img {
-    width: 6rem;
-    height: 6rem;
-    object-fit: contain;
-    filter: drop-shadow(0px 0px 2px white);
-}
-.carrito-title {
-    font-size: clamp(13px, 3vw, 18px);
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-}
-.carrito-formato, .carrito-cantidad ,
-.carrito-subtotal {
-    font-size: 13px;
-    color: rgb(240, 240, 240);
-}
-
-.mi-carrito-gap {
-    gap: 10px;
-}
-.mi-carrito-gap2 {
-    gap: 10px;
-}
-.mi-carrito-gap3 {
-    gap: 3px;
-}
-
-#carrito-for, #carrito-cant, #carrito-sub {
-    font-size: clamp(15px, 3vw, 17px);
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-}
-
 .item-carrito {
     position: relative;
-    margin-bottom: 1.2rem;
 }
-
-.item-delete {
+.btn-delete {
     position: absolute;
-    color: white;
-    left: 15.5rem;
-    top: -1rem;
-    background-color: red;
-    padding-block: .2rem;
-    padding-inline: .3rem;
-    border-radius: 100%;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .3s ease-in-out;
+    right: 3%;
+    top: 0%;
 }
-.item-delete:hover {
-    color: red;
-    background-color: white;
-} */
 
 /*----- NÚMERO DE PRODUCTOS CARRITO -----*/
-.n-items {
+#n-items {
     position: relative;
-    font-size: 15px;
-    top: -40px;
+    font-size: 16px;
+    top: -42px;
     left: 30px;
 }
 
@@ -273,7 +227,7 @@ body {
     object-fit: contain;
 }
 .productos-gap {
-    gap: 1rem;
+    gap: 1.2rem;
 }
 .productos-gap-2 {
     gap: 1rem;
@@ -339,11 +293,20 @@ body {
 }
 .btn-plus, .btn-minus {
     font-size: 30px;
-    width: 30px;
+    width: 35px;
     border-radius: 5px;
-    padding: .1rem;
+    padding-inline: 1rem;
+    padding-block: .02rem;
+    background-color: black;
+    color: white;
     transition: all .3s ease-in-out;
     cursor: pointer;
+}
+.btn-plus:hover, .btn-minus:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px black;
+    scale: 1.2;
 }
 .producto-cantidad {
     font-size: 25px;
@@ -365,6 +328,119 @@ body {
 }
 .mess-text-3 {
     color: rgb(172, 168, 168);
+}
+
+/*------- MENSAJE EMERGENTE -------*/
+.box {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+}
+.emerge-msg {
+    position: fixed;
+    right: 5%;
+    gap: .6rem;
+}
+.add {
+    background-color: rgb(57, 182, 20);
+    color: white;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    cursor: default;
+    font-size: clamp(15px, 3vw, 18px);
+}
+.delete {
+    background-color: red;
+    color: white;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    cursor: default;
+    font-size: clamp(15px, 3vw, 18px);
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scale-out-center {
+	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes scale-out-center {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+}
+@keyframes scale-out-center {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+}
+
+/*------------- FINALIZAR COMPRA -------------*/
+.finalizar {
+    position: absolute;
+    right: 0%;
+}
+.finalizar button {
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    background-color: black;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    color: white;
+    font-size: clamp(12px, 3vw, 16px);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.finalizar button:hover {
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    color: black;
 }
 
 /*--------------  FOOTER -----------------*/

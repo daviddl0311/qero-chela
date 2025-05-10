@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#finalCompra").addEventListener("click", () => {
+        finalizarCompra();
+    });
+
+    document.querySelector("#finalCompra").style.opacity = ".5";
+});
+
+function finalizarCompra() {
+    const items = document.querySelectorAll("#mi-carrito .item-carrito"); 
+
+    if(document.querySelector("#mi-carrito").children.length > 1) {
+
+        //Habilitar Boton de Finalizar Compra
+        document.querySelector("#finalCompra").style.opacity = 1;
+
+        let mensaje = '*Mi Carrito:*\n\n';
+    
+        items.forEach(item => {
+            const lineas = item.querySelectorAll("p");
+            mensaje += `*${lineas[0].innerText.trim()}*\n`;
+    
+            for(let i = 1; i < lineas.length; i++) {
+                mensaje += lineas[i].innerText.trim() + '\n';
+            }
+    
+            mensaje += '----------------------\n';
+        })
+    
+        const mensajeCodificado = encodeURIComponent(mensaje);
+        
+        //Colocar Numero
+        const numero = 51935287218;
+        const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+        
+        window.open(url, "_blank");
+    } else {
+        alert("¡Tu carrito está vacío...¡pero no por mucho tiempo! Explora nuestras mejores ofertas y encuentra lo que necesitas.!");
+    }
+}

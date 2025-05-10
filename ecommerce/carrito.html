@@ -31,7 +31,7 @@
                 <input type="checkbox" id="burgercheck">
                 <label for="burgercheck" class="burger-icon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <div class="n-items">
+                    <div id="n-items">
                         0
                     </div>
                 </label>
@@ -39,64 +39,8 @@
                     <li class="center burger-center">
                         <p class="title-carrito">Mi carrito:</p>
                     </li>
-                    <ul class="flex gap2rem flex-row-2" id="mi-carrito"> 
-                        <!--MI CARRITO-->
-                        <!-- <li class="item-carrito">
-                            <div class="flex item-carrito-gap">
-                                <div class="flex flex-direction-item item-carrito-gap">
-                                    <div class="center item-carrito-img">
-                                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="">
-                                    </div>
-                                    <div class="flex flex-column center item-carrito-gap-2">
-                                        <div class="item-carrito-producto">
-                                            <p>aborigen</p>
-                                        </div>
-                                        <div class="flex flex-column item-carrito-gap-3">
-                                            <div class="item-carrito-formato">
-                                                <p>Formato: <span id="carrito-for">6 unid.</span></p>
-                                            </div>
-                                            <div class="item-carrito-cantidad">
-                                                <p>Cantidad: <span id="carrito-cant">5</span></p>
-                                            </div>
-                                            <div class="item-carrito-subtotal">
-                                                <p>SubTotal: S/. <span id="carrito-sub">54.00</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="item-delete center">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item-carrito">
-                            <div class="flex item-carrito-gap">
-                                <div class="flex  flex-direction-item item-carrito-gap">
-                                    <div class="center item-carrito-img">
-                                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png" alt="">
-                                    </div>
-                                    <div class="flex flex-column center item-carrito-gap-2">
-                                        <div class="item-carrito-producto">
-                                            <p>aborigen</p>
-                                        </div>
-                                        <div class="flex flex-column item-carrito-gap-3">
-                                            <div class="item-carrito-formato">
-                                                <p>Formato: <span id="carrito-for">6 unid.</span></p>
-                                            </div>
-                                            <div class="item-carrito-cantidad">
-                                                <p>Cantidad: <span id="carrito-cant">5</span></p>
-                                            </div>
-                                            <div class="item-carrito-subtotal">
-                                                <p>SubTotal: S/. <span id="carrito-sub">54.00</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="item-delete center">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                        </li> -->
+                    <ul class="flex gap2rem flex-row-2" id="mi-carrito">
+                      
                     </ul>
                 </ul>
             </div>
@@ -126,15 +70,15 @@
                         </div>
                         <div class="cantidad center">
                             <div class="flex productos-gap-4">
-                                <div class="center btn-minus">
+                                <button class="center btn-minus">
                                     -
-                                </div>
+                                </button>
                                 <div class="center producto-cantidad">
                                     1
                                 </div>
-                                <div class="center btn-plus">
+                                <button class="center btn-plus">
                                     +
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="productos-button-enviar">
@@ -164,15 +108,15 @@
                         </div>
                         <div class="cantidad center">
                             <div class="flex productos-gap-4">
-                                <div class="center btn-minus">
+                                <button class="center btn-minus">
                                     -
-                                </div>
+                                </button>
                                 <div class="center producto-cantidad">
                                     1
                                 </div>
-                                <div class="center btn-plus">
+                                <button class="center btn-plus">
                                     +
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="productos-button-enviar">
@@ -202,15 +146,129 @@
                         </div>
                         <div class="cantidad center">
                             <div class="flex productos-gap-4">
-                                <div class="center btn-minus">
+                                <button class="center btn-minus">
                                     -
-                                </div>
+                                </button>
                                 <div class="center producto-cantidad">
                                     1
                                 </div>
-                                <div class="center btn-plus">
+                                <button class="center btn-plus">
                                     +
+                                </button>
+                            </div>
+                        </div>
+                        <div class="productos-button-enviar">
+                            <button class="input-enviar">añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-column-3">
+                <div class="item-producto flex flex-column center productos-gap">
+                    <div class="productos-img center">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="Producto IMG" class="img-producto">
+                    </div>
+                    <div class="productos-info flex flex-column productos-gap-2">
+                        <div class="productos-name">
+                            <p>luna de miel</p>
+                        </div>
+                        <div class="productos-precio">
+                            <p>PEN <span class="precio">7.50</span></p>
+                        </div>
+                        <div class="productos-formato grid grid-column-2">
+                            <button id='btn1' class="formato formato-selected">unid.</button>
+                            <button id='btn2' class="formato">6 unid.</button>
+                            <button id='btn3'  class="formato">24 pack</button>
+                            <button id='btn4' class="formato">30 l</button>
+                            <button id='btn5' class="formato">50 l</button>
+                        </div>
+                        <div class="cantidad center">
+                            <div class="flex productos-gap-4">
+                                <button class="center btn-minus">
+                                    -
+                                </button>
+                                <div class="center producto-cantidad">
+                                    1
                                 </div>
+                                <button class="center btn-plus">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <div class="productos-button-enviar">
+                            <button class="input-enviar">añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-column-3">
+                <div class="item-producto flex flex-column center productos-gap">
+                    <div class="productos-img center">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="Producto IMG" class="img-producto">
+                    </div>
+                    <div class="productos-info flex flex-column productos-gap-2">
+                        <div class="productos-name">
+                            <p>luna de miel</p>
+                        </div>
+                        <div class="productos-precio">
+                            <p>PEN <span class="precio">7.50</span></p>
+                        </div>
+                        <div class="productos-formato grid grid-column-2">
+                            <button id='btn1' class="formato formato-selected">unid.</button>
+                            <button id='btn2' class="formato">6 unid.</button>
+                            <button id='btn3'  class="formato">24 pack</button>
+                            <button id='btn4' class="formato">30 l</button>
+                            <button id='btn5' class="formato">50 l</button>
+                        </div>
+                        <div class="cantidad center">
+                            <div class="flex productos-gap-4">
+                                <button class="center btn-minus">
+                                    -
+                                </button>
+                                <div class="center producto-cantidad">
+                                    1
+                                </div>
+                                <button class="center btn-plus">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <div class="productos-button-enviar">
+                            <button class="input-enviar">añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-column-3">
+                <div class="item-producto flex flex-column center productos-gap">
+                    <div class="productos-img center">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="Producto IMG" class="img-producto">
+                    </div>
+                    <div class="productos-info flex flex-column productos-gap-2">
+                        <div class="productos-name">
+                            <p>luna de miel</p>
+                        </div>
+                        <div class="productos-precio">
+                            <p>PEN <span class="precio">7.50</span></p>
+                        </div>
+                        <div class="productos-formato grid grid-column-2">
+                            <button id='btn1' class="formato formato-selected">unid.</button>
+                            <button id='btn2' class="formato">6 unid.</button>
+                            <button id='btn3'  class="formato">24 pack</button>
+                            <button id='btn4' class="formato">30 l</button>
+                            <button id='btn5' class="formato">50 l</button>
+                        </div>
+                        <div class="cantidad center">
+                            <div class="flex productos-gap-4">
+                                <button class="center btn-minus">
+                                    -
+                                </button>
+                                <div class="center producto-cantidad">
+                                    1
+                                </div>
+                                <button class="center btn-plus">
+                                    +
+                                </button>
                             </div>
                         </div>
                         <div class="productos-button-enviar">
@@ -220,9 +278,19 @@
                 </div>
             </div>
         </section>
+
+        <div class="box">
+            <ul class="emerge-msg flex flex-column ">
+            </ul>
+        </div>
+
+        <div class="finalizar">
+            <button id="finalCompra">Finalizar Compra</button>
+        </div> 
     </main>
 
     <script src="js/button.js"></script>
     <script src="js/carrito.js"></script>
+    <script src="js/finalizar-compra.js"></script>
 </body>
 </html>

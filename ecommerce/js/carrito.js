@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".input-enviar").forEach((btnEnviar) => {
         btnEnviar.addEventListener("click", () => {
             enlistarCarrito(btnEnviar);
-            //console.log(document.querySelector("#mi-carrito").childElementCount);
         });
     });
 });
@@ -32,35 +31,10 @@ function messageCarrito() {
                 <p>Explora nuestras mejores ofertas y encuentra lo que necesitas.</p>
             </div>
         </div>`;
+
         carrito.appendChild(messageCarrito);
     }
 }
-
-function alerta() {
-    const items = document.querySelectorAll("#mi-carrito .item-carrito"); 
-
-    let mensaje = '*Mi Carrito:*\n\n';
-
-    items.forEach(item => {
-        const lineas = item.querySelectorAll("p");
-        mensaje += `*${lineas[0].innerText.trim()}*\n`;
-
-        for(let i = 1; i < lineas.length; i++) {
-            mensaje += lineas[i].innerText.trim() + '\n';
-        }
-
-        mensaje += '----------------------\n';
-    })
-
-
-    const mensajeCodificado = encodeURIComponent(mensaje);
-    const numero = 51955369597;
-    const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
-    
-    window.open(url, "_blank");
-    console.log(items);
-}
-
 
 function enlistarCarrito(btnEnviar) {
     const producto = btnEnviar.closest(".item-producto");
@@ -70,13 +44,26 @@ function enlistarCarrito(btnEnviar) {
     const productoFormato = producto.querySelector(".formato-selected").textContent;
     const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
     const productoButton = producto.querySelector(".input-enviar");
+    
+    //Botones de Formato
+    const productoButtons = producto.querySelectorAll(".formato");
+    //Boton de Aumentar
+    const productoAddbtn = producto.querySelector(".btn-plus");
+    //Boton de Disminuir
+    const productoMinusbtn = producto.querySelector(".btn-minus");
 
-    /*TOTAL*/
+    /*SUB-TOTAL*/
     let totalProducto = parseFloat(productoPrecio * productoCantidad).toFixed(2);
 
+    //Deshabilitar Botones
     productoButton.disabled = true;
     producto.style.opacity = "0.5";
     productoButton.textContent = "✔";
+    productoButtons.forEach(btn => {
+        btn.disabled = true;
+    });
+    productoAddbtn.disabled = true;
+    productoMinusbtn.disabled = true;
 
     let item = document.createElement("li");
     item.setAttribute("class","item-carrito");
@@ -84,7 +71,7 @@ function enlistarCarrito(btnEnviar) {
     `<div class="flex item-carrito-gap">
         <div class="flex flex-direction-item item-carrito-gap">
             <div class="center item-carrito-img">
-                <img src=" ${productoImg}" alt="${productoName}">
+                <img src="${productoImg}" alt="${productoName}">
             </div>
             <div class="flex flex-column center item-carrito-gap-2">
                 <div class="item-carrito-producto">
@@ -103,23 +90,28 @@ function enlistarCarrito(btnEnviar) {
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btn-delete">
         <button class="item-delete center">
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>`;
 
-    //Borra el Mensaje Carrito
-    document.querySelector(".message-carrito").classList.add("display-none");
-    
-    //Se enlista en el Carrito
-    document.getElementById("mi-carrito").appendChild(item);
+    //Activar Boton de Finalizar Compra
+    activarBtnFin();
 
     //Aumentar Cantidad
     sum+=1;
-    totalProducto(sum);
+    addItem(sum);
 
-    //Mensaje Emergente
+    //Mensaje Emergente de Producto Añadido
     emergeMessage();
+    
+    //Borra el Mensaje Carrito
+    document.querySelector(".message-carrito").classList.add("display-none");
+
+    //Se enlista en el Carrito
+    document.getElementById("mi-carrito").appendChild(item);
 
     //Evento de Button Eliminar
     const deleteItemButton = document.querySelectorAll(".item-delete");
@@ -131,53 +123,88 @@ function enlistarCarrito(btnEnviar) {
     });
 }
 
+function activarBtnFin() {
+    let fin = document.querySelector("#finalCompra");
+    let miCar = document.querySelector("#mi-carrito");
+
+    if(miCar.children.length >= 0) {
+        fin.style.opacity = "1";
+    }
+}
+
+function desactivarBtnFin() {
+    let fin = document.querySelector("#finalCompra");
+    let miCar = document.querySelector("#mi-carrito");
+
+    if(miCar.children.length <= 1) {
+        fin.style.opacity = ".5";
+    }
+
+    console.log(miCar.children.length);
+}
+
+function addItem(sum) {
+    let products = document.querySelector("#n-items");
+    products.textContent = sum;
+}
+
 function deleteItem(itemDel, producto) {
     const productoItem = itemDel.closest(".item-carrito");
     const productoButton = producto.querySelector(".input-enviar");
+    const productoButtons = producto.querySelectorAll(".formato");
+    
+    //Boton de Aumentar
+    const productoAddbtn = producto.querySelector(".btn-plus");
+    //Boton de Disminuir
+    const productoMinusbtn = producto.querySelector(".btn-minus");
 
     //Eliminar Producto en Carrito
     document.getElementById("mi-carrito").removeChild(productoItem);
     
+    //Habilitar Botones
     productoButton.disabled = false;
     producto.style.opacity = "1";
     productoButton.textContent = "Añadir";
+    productoButtons.forEach(btn => {
+        btn.disabled = false;
+    });
+    productoAddbtn.disabled = false;
+    productoMinusbtn.disabled = false;
 
     //Mensage Emergente
-    //emergeMessageDel();
+    emergeMessageDel();
 
     //Dismuir en Carrito
     sum-=1;
-    totalProducto(sum);
+    addItem(sum);
 
-    //addMessage();
-    // console.log(document.querySelector("#mi-carrito").childElementCount);
+    //Desactivar Boton Finalizar
+    desactivarBtnFin();
+
+    //Añadir Mensaje
+    addMessage();
 }   
 
-function addMessage() {
-    if(document.querySelector("#mi-carrito").children.length <= 1) {
-        document.querySelector(".message-carrito").classList.remove("display-none");
-    }
-}
-
 function emergeMessage() {
-    let msgList = document.querySelector("#list-msg");
+    let msgList = document.querySelector(".emerge-msg");
     let msgList_item = document.createElement("li");
     
-    msgList_item.setAttribute("class", "center slide-in-right list-dl");
+    msgList_item.setAttribute("class", "add scale-in-center center");
     msgList_item.textContent = "Producto Añadido";
 
     msgList.appendChild(msgList_item);
 
     setTimeout(() => {
         msgList.removeChild(msgList_item);
-    }, 7000);
+    }, 3000);
+
 }
 
 function emergeMessageDel() {
-    let msgList = document.querySelector("#list-msg");
+    let msgList = document.querySelector(".emerge-msg");
     let msgList_item = document.createElement("li");
     
-    msgList_item.setAttribute("class", "center slide-in-right list-dl-2");
+    msgList_item.setAttribute("class", "delete scale-in-center center");
     msgList_item.textContent = "Producto Eliminado";
 
     msgList.appendChild(msgList_item);
@@ -187,6 +214,10 @@ function emergeMessageDel() {
     }, 7000);
 }
 
-function totalProducto(sum) {
-    document.querySelector(".n-items").textContent = sum;
+function addMessage() {
+    if(document.querySelector("#mi-carrito").children.length <= 1) {
+        document.querySelector(".message-carrito").classList.remove("display-none");
+    }
 }
+
+

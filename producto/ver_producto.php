@@ -60,7 +60,7 @@
                                 </div>
                                 <div class='flex flex-column producto-buttons'>
                                     <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
-                                    <button class='producto-comprar' onclick='location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!''>Comprar ahora</button>
+                                    <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
                                 </div>
                             </div>
                         </article>

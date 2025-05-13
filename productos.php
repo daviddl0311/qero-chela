@@ -102,9 +102,9 @@
             </section>
         </article>
 
-        <article>
+        <!-- <article>
             <div class="title-productos center">
-                <h2>craft beer</h2>
+                <h2>craft Beer</h2>
             </div>
             <section class="my-products center grid productos-column-1">
                 <div class="item-flex-2 flex flex-column">
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="item-flex flex flex-column">
+                <div class="item-flex flex flex-column">
                     <div class="center">
                         <a href="https://tantrica.pe/">
                             <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043afee771ed3316164_Tantrica.png" alt="Tántrica" class="item-img">
@@ -151,9 +151,9 @@
                             <button onclick="location.href='producto/qerochela-luna-miel.html'">conoce más</button>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </section>
-        </article>
+        </article>-->
     </main>
 
     <?php

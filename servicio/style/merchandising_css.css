@@ -315,7 +315,7 @@ footer {
     color: #fdfbed;
 }
 
-@media (min-width: 1013px) {
+@media (min-width: 1160px) {
     .my-footer {
         background-color: #6F2601;
         border-radius: 15px;
@@ -328,7 +328,7 @@ footer {
         padding-inline: 3.6rem;
     }
 } 
-@media (850px < width < 1012px) {
+@media (850px < width < 1159px) {
      /*-------------- HEADER --------------*/ 
      header {
         top: 0px;

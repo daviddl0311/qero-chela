@@ -195,7 +195,7 @@ header {
     margin-bottom: 10rem;
 }
 .productos-column-3 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    grid-template-columns: repeat(3, auto);
     gap: 2.61rem;
 }
 .img-producto img {
@@ -409,7 +409,7 @@ footer {
         background-size: cover;
     }
 }
-@media (1014px < width < 1845px) {
+@media (1161px < width < 1845px) {
     /*--------------  PRODUCTOS -----------------*/
     .productos {
         padding-block: 5rem;
@@ -417,7 +417,7 @@ footer {
         background-size: contain;
     }
 }
-@media (min-width: 1013px) {
+@media (min-width: 1160px) {
     /*------------- FOOTER -------------*/
     .my-footer {
         background-color: #6F2601;
@@ -431,7 +431,7 @@ footer {
         padding-inline: 3.6rem;
     }
 } 
-@media (850px < width < 1012px) {
+@media (850px < width < 1159px) {
     /*-------------- HEADER --------------*/ 
     header {
         top: 0px;
@@ -532,6 +532,11 @@ footer {
     .my-item {
         position: relative;
         top: -6rem;
+    }
+
+    .productos-column-3 {
+        grid-template-columns: repeat(2, auto);
+        gap: 2.61rem;
     }
     
     /*-------------- FOOTER --------------*/ 
@@ -674,6 +679,11 @@ footer {
     .my-item {
         position: relative;
         top: -6rem;
+    }
+
+    .productos-column-3 {
+        grid-template-columns: repeat(1, auto);
+        gap: 2.61rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -838,6 +848,7 @@ footer {
         margin-bottom: 5.5rem;
     }
     .productos-column-3 {
+        grid-template-columns: repeat(1, auto);
         gap: 4rem;
     }
     .text-section {
@@ -1011,6 +1022,7 @@ footer {
         width: 250px;
     }
     .productos-column-3 {
+        grid-template-columns: repeat(1, auto);
         gap: 4.5rem;
     }
     .img-producto img {
@@ -1192,6 +1204,7 @@ footer {
         width: 250px;
     }
     .productos-column-3 {
+        grid-template-columns: repeat(1, auto);
         gap: 5rem;
     }
     .img-producto img {
@@ -1368,6 +1381,7 @@ footer {
         width: 250px;
     }
     .productos-column-3 {
+        grid-template-columns: repeat(1, auto);
         gap: 5rem;
     }
     .img-producto img {

@@ -451,7 +451,7 @@ footer {
     }
 }
 
-@media (850px < width < 1012px) {
+@media (850px < width < 1159px) {
      /*-------------- HEADER --------------*/ 
      header {
         top: 0px;

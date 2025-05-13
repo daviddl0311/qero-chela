@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-     <header>
+    <header>
         <nav class="grid column-header">
             <div class="flex title-logo">
                 <div class="center">
@@ -40,7 +40,7 @@
                         <p class="title-carrito">Mi carrito:</p>
                     </li>
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
-                      
+                        
                     </ul>
                 </ul>
             </div>

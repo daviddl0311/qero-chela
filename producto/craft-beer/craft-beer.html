@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="theme-color" content="#000">
+    <title>Q'ero Chela - Craft Beer</title>
+    <link rel="preload" href="../../css/craft-beer_css.css" as="style">
+    <link rel="stylesheet" href="../../css/craft-beer_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8146c15656b15c111316_Logo-Web.png">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    
+    
+    
+    <main>
+        <section>
+            <p>Hola</p>
+            <div class="my-craft-beer flex" >
+                gg
+            </div>
+        </section>
+        <section class="flex flex-column center">
+            <div class="flex gap-1"> 
+                <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+                <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+                <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+                <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+                <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+                 <div class="producto center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img">
+                    <button id="btn">añadir</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll("#btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                   addCraftBeer(btn);
+            });
+        });
+
+        function addCraftBeer(btn) {
+            let btnProducto = btn.closest(".producto");
+            const imgProducto = btnProducto.querySelector(".my-img").src;
+            
+            let buttonProducto = btnProducto.querySelector("#btn");
+            let craftBeer = document.querySelector(".my-craft-beer");
+
+            let item = document.createElement("li");
+
+            item.innerHTML = 
+            `<div class="center">
+                <img src="${imgProducto}">
+            </div>`;
+
+
+
+
+            craftBeer.appendChild(item);
+
+            buttonProducto.textContent = "Ok";
+            buttonProducto.disabled = true;
+            buttonProducto.classList.add("opaco");
+        }
+
+    </script>
+</body>
+</html>

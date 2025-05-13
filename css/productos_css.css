@@ -82,6 +82,9 @@ header {
     grid-template-columns: repeat(3, auto);
     gap: 10rem;
 }
+.productos-column-1 {
+    grid-template-columns: repeat(1, auto);
+}
 .item-img {
     width: 8.5rem;
     height: 20rem;
@@ -89,13 +92,29 @@ header {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
+.item-img-2 {
+    height: 20rem;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
 .item-img:hover {
     scale: 120%;
     filter: grayscale(0%);
     rotate: -10deg;
 }
+.item-img-2:hover {
+    scale: 115%;
+    filter: grayscale(0%);
+}
 .title-productos {
     text-transform: uppercase;
+    margin-bottom: 5rem;
+    color: #401e08;
+    font-size: clamp(20px, 3vw, 29px);
+}
+.title-productos-2 {
     margin-bottom: 5rem;
     color: #401e08;
     font-size: clamp(20px, 3vw, 29px);
@@ -129,6 +148,9 @@ header {
 }
 .item-flex {
     width: 200px;
+}
+.item-flex-2 {
+    width: 100%;
 }
 
 /*-------------- FOOTER -----------------*/
@@ -347,6 +369,11 @@ footer {
         filter: grayscale(0%);
         rotate: -10deg;
     }
+    .item-img-2:hover {
+        scale: 100%;
+        filter: grayscale(0%);
+    }
+
 
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
@@ -458,6 +485,12 @@ footer {
     }
     .item-img {
         width: 8.5rem;
+        height: 20rem;
+        filter: grayscale(100%);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .item-img-2 {
         height: 20rem;
         filter: grayscale(100%);
         transition: all .3s ease-in-out;
@@ -595,6 +628,12 @@ footer {
         transition: all .3s ease-in-out;
         cursor: pointer;
     }
+    .item-img-2 {
+        height: 20rem;
+        filter: grayscale(100%);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
     .item-img:hover {
         scale: 110%;
         filter: grayscale(0%);
@@ -717,6 +756,17 @@ footer {
     .productos {
         padding: 3rem;
     }
+    .item-img-2 {
+        width: 18rem;
+        height: 18rem;
+        filter: grayscale(100%);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .item-img-2:hover {
+        scale: 1.02;        
+        filter: grayscale(0%);
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -831,6 +881,17 @@ footer {
     /*-------------- PRODUCTOS ------------*/
     .producto-info {
         margin-top: 2.4rem;
+    }
+    .item-img-2 {
+        width: 13rem;
+        height: 13rem;
+        filter: grayscale(100%);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .item-img-2:hover {
+        scale: 1.05;        
+        filter: grayscale(0%);
     }
 
     /*-------------- FOOTER --------------*/ 

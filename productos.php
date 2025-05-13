@@ -102,27 +102,27 @@
             </section>
         </article>
 
-        <!-- <article>
+        <article>
             <div class="title-productos center">
-                <h2>promos festivos</h2>
+                <h2>craft beer</h2>
             </div>
-            <section class="my-products center grid productos-column-3">
-                <div class="item-flex flex flex-column">
+            <section class="my-products center grid productos-column-1">
+                <div class="item-flex-2 flex flex-column">
                     <div class="center">
-                        <a href="producto/qerochela.html">
-                            <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png" alt="Q'ero Chela Aborigen" class="item-img">
+                        <a href="producto/craft-beer/craft-beer.html">
+                            <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/68236f77a1cec4a2ff9da4c6_Craft-Beer.webp" alt="Craft Beer" class="item-img-2">
                         </a>
                     </div>
                     <div class="producto-info flex flex-column">
                         <div class="center">
-                            <p>basico</p>
+                            <p>Arma tu Six Pack</p>
                         </div>
                         <div class="center">
                             <button onclick="location.href='producto/qerochela.html'">conoce más</button>
                         </div>
                     </div>
                 </div>
-                <div class="item-flex flex flex-column">
+                <!-- <div class="item-flex flex flex-column">
                     <div class="center">
                         <a href="https://tantrica.pe/">
                             <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043afee771ed3316164_Tantrica.png" alt="Tántrica" class="item-img">
@@ -151,9 +151,9 @@
                             <button onclick="location.href='producto/qerochela-luna-miel.html'">conoce más</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
-        </article> -->
+        </article>
     </main>
 
     <?php

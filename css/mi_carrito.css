@@ -398,6 +398,7 @@ main {
 }
 .finalizar button {
     position: fixed;
+    z-index: 9999;
     right: 1%;
     bottom: 2%;
     background-color: black;

@@ -196,7 +196,7 @@ header {
 }
 .productos-column-3 {
     grid-template-columns: repeat(3, auto);
-    gap: 2.61rem;
+    gap: 4.7rem;
 }
 .img-producto img {
     width: 120px;

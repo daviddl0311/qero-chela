@@ -88,17 +88,19 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: .2;
+    opacity: .3;
 }
 .mer-div {
     height: 800px;
     position: relative;
 }
 .mer-title {
-    font-size: clamp(22px, 3vw, 45px);
+    font-size: clamp(30px, 3vw, 45px);
     text-transform: uppercase;
     color: white;
     padding-inline: .6rem;
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 3px;
 }
 .mer-text {
     font-size: clamp(17px, 3vw, 20px);
@@ -121,6 +123,7 @@ header {
     text-transform: uppercase;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 0 2px rgb(85, 85, 85);
 }
 .mer-button button:hover {
     color: black;

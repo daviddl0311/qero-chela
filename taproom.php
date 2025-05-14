@@ -32,7 +32,7 @@
                     <h2>visita el templo q'ero chela</h2>
                 </div>
                 <div class="taproom-text center">
-                    <p class="center-align">Vive el sabor auténtico de nuestra cerveza en un espacio diseñado para compartir, disfrutar y descubrir nuevas sensaciones.</p>
+                    <p class="center-align">Vive el sabor auténtico de nuestra cerveza en un espacio para compartir y disfrutar.</p>
                 </div>
                 <div class="taproom-btn center">
                     <button onclick="location.href='https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20visitar%20el%20Templo%20Qero%20Chela!'">información</button>

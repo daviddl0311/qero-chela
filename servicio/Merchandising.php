@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/merchandising_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/bilcase-demo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8146c15656b15c111316_Logo-Web.png">
     <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script> 
@@ -27,7 +28,7 @@
                     <h2>diseño de merchandising</h2>
                 </div>
                 <div class="mer-text center">
-                    <p class="center-align">Creamos tu logo, etiquetas y packaging con identidad propia, comunicando la esencia de tu marca con diseños únicos y funcionales.</p>
+                    <p class="center-align">Diseñamos tu logo, etiquetas y packaging con identidad propia, transmitiendo la esencia de tu marca.</p>
                 </div>
                 <div class="mer-button center">
                     <button onclick='location.href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20Servicio%20de%20Diseño%20y%20Producción%20de%20Merchandising!"'>información</button>

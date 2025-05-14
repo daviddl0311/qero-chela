@@ -49,6 +49,7 @@ header {
 /*----------- CRAFT BEER ----------*/
 .my-craft-beer {
     background-color: black;
+    color: white;
 }
 
 img {
@@ -68,4 +69,9 @@ button {
 }
 .opaco {
     opacity: 0.3;
+}
+
+.btns {
+    font-size: clamp(15px, 3vw, 20px);
+    cursor: pointer;
 }

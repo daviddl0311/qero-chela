@@ -92,22 +92,27 @@ header {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
-.item-img-2 {
-    height: 20rem;
-    filter: grayscale(100%);
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    border-radius: 15px;
+.rotate {
+    scale: 120%;
+    filter: grayscale(0%);
+    rotate: -10deg;
 }
 .item-img:hover {
     scale: 120%;
     filter: grayscale(0%);
     rotate: -10deg;
 }
-.item-img-2:hover {
+/*.item-img-2 {
+    height: 20rem;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}*/
+/*.item-img-2:hover {
     scale: 115%;
     filter: grayscale(0%);
-}
+}*/
 .title-productos {
     text-transform: uppercase;
     margin-bottom: 5rem;

@@ -47,7 +47,7 @@
                                     <p>".$producto['nombre']."</p>
                                 </div>
                                 <div class='center'>
-                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`'>conoce más</button>
+                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
                                 </div>
                             </div>
                         </div>";
@@ -66,7 +66,7 @@
                             <p>tántrica</p>
                         </div>
                         <div class="center">
-                            <button onclick="location.href='https://tantrica.pe/'">conoce más</button>
+                            <button onclick="location.href='https://tantrica.pe/'" id="btn-an">conoce más</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                                     <p>".$producto['nombre']."</p>
                                 </div>
                                 <div class='center'>
-                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`'>conoce más</button>
+                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
                                 </div>
                             </div>
                         </div>";
@@ -163,5 +163,7 @@
     <?php
         include 'php/verificado.php';
     ?>
+
+    <script src="js/rotate.js"></script>
 </body>
 </html>

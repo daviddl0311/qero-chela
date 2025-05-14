@@ -18,13 +18,23 @@
 </head>
 <body>
     
-    
-    
     <main>
         <section>
             <p>Hola</p>
-            <ul class="my-craft-beer flex" >
-            </ul>
+            <div class="box center" >
+                <ul class="my-craft-beer flex">
+                    <div class="flex pre">
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                        <li><img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png" alt="" class="my-img"></li>
+                    </div>
+                    <ul class="flex pre-2">
+                    </ul>
+                </ul>
+            </div>
         </section>
         <section class="flex flex-column center">
             <div class="flex gap-1 craft"> 
@@ -123,7 +133,7 @@
             const cantidadProducto = btnProducto.querySelector("#cantidad").textContent;
             
             let buttonProducto = btnProducto.querySelector("#btn");
-            let craftBeer = document.querySelector(".my-craft-beer");
+            let craftBeer = document.querySelector(".pre-2");
 
 
             for(let i = 0; i < parseInt(cantidadProducto); i++) {
@@ -142,7 +152,11 @@
                     btn.disabled = true;
                     btn.classList.add("opaco");
                 });
-                //craftBeer.removeChild(craftBeer.lastChild);    
+                //craftBeer.removeChild(craftBeer.lastChild);
+                
+                setTimeout(() => {
+                    alert("Tu Craft Beer esta Listo");
+                }, "200");
             }
 
             while(craftBeer.childElementCount > 6) {

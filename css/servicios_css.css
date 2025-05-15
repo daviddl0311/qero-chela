@@ -79,7 +79,9 @@ header {
     padding-bottom: 5rem;
     text-transform: uppercase;
     color: #401e08;
-    font-size: clamp(20px, 3vw, 29px);
+    font-size: clamp(25px, 3vw, 35px);
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
 }
 .ser-column-2 {
     grid-template-columns: repeat(2, auto);

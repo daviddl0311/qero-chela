@@ -265,6 +265,8 @@ header {
     text-transform: uppercase;
     margin-bottom: 1rem;
     color: white;
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
 }
 .text-section {
     font-size: clamp(17px, 3vw, 20px);

@@ -88,7 +88,8 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: .3;
+    opacity: .2;
+    filter: blur(2px);
 }
 .mer-div {
     height: 800px;
@@ -137,6 +138,8 @@ header {
 .diseños-title {
     font-size: clamp(20px, 3vw, 25px);
     text-transform: uppercase;
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
 }
 .diseños-text {
     font-size: clamp(15px, 3vw, 20px);

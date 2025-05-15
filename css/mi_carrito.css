@@ -141,6 +141,12 @@ main {
     justify-content: left;
     align-items: center;
 }
+.fa-cart-shopping {
+    transition: all .3s ease-in-out;
+}
+.fa-cart-shopping:hover {
+    color: rgb(185, 185, 185);
+}
 
 /*--------- ITEMS CARRITO --------*/
 .title-carrito {
@@ -323,10 +329,26 @@ main {
     font-size: clamp(10px, 3vw, 15px);
 }
 .gap-message {
-    gap: .8rem;
+    gap: 1.2rem;
 }
 .mess-text-3 {
+    font-size: clamp(10px, 3vw, 15px);
     color: rgb(172, 168, 168);
+}
+.mess-btn {
+    background-color: white;
+    color: black;
+    padding: .6rem;
+    font-size: clamp(13px, 3vw, 16px);
+    margin-inline: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+}
+.mess-btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 3px white;
 }
 
 /*------- MENSAJE EMERGENTE -------*/

@@ -30,6 +30,9 @@ function messageCarrito() {
             <div class="center-align mess-text-3">
                 <p>Explora nuestras mejores ofertas y encuentra lo que necesitas.</p>
             </div>
+            <label for="burgercheck" class="center-align mess-btn">
+                Seguir Comprando
+            </label>
         </div>`;
 
         carrito.appendChild(messageCarrito);

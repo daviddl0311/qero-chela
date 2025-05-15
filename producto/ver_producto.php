@@ -48,10 +48,11 @@
                                 </div>
                                 <div class='producto-formato grid'>
                                     <button id='bt1' class='button producto-opacity' onclick='location.href=`#".$producto['nombre']."`'>unidad</button>
-                                    <button id='bt2' class='button' onclick='location.href=`#".$producto['nombre']."`'>6 unid.</button>
-                                    <button id='bt3' class='button' onclick='location.href=`#".$producto['nombre']."`'>pack 24</button>
-                                    <button id='bt4' class='button' onclick='location.href=`#".$producto['nombre']."`'>30 l</button>
-                                    <button id='bt5' class='button' onclick='location.href=`#".$producto['nombre']."`'>50 l</button>
+                                    <button id='bt2' class='button' onclick='location.href=`#".$producto['nombre']."`'>4 pack</button>
+                                    <button id='bt3' class='button' onclick='location.href=`#".$producto['nombre']."`'>6 pack</button>
+                                    <button id='bt4' class='button' onclick='location.href=`#".$producto['nombre']."`'>24 pack</button>
+                                    <button id='bt5' class='button' onclick='location.href=`#".$producto['nombre']."`'>30 l</button>
+                                    <button id='bt6' class='button' onclick='location.href=`#".$producto['nombre']."`'>50 l</button>
                                 </div>
                                 <div class='producto-precio'>
                                     <span id='precio'>

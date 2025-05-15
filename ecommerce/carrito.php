@@ -72,10 +72,11 @@
                                 </div>
                                 <div class='productos-formato grid grid-column-2'>
                                     <button id='btn1' class='formato formato-selected'>unid.</button>
-                                    <button id='btn2' class='formato'>6 unid.</button>
-                                    <button id='btn3'  class='formato'>24 pack</button>
-                                    <button id='btn4' class='formato'>30 l</button>
-                                    <button id='btn5' class='formato'>50 l</button>
+                                    <button id='btn2' class='formato'>4 pack</button>
+                                    <button id='btn3' class='formato'>6 pack</button>
+                                    <button id='btn4' class='formato'>24 pack</button>
+                                    <button id='btn5' class='formato'>30 l</button>
+                                    <button id='btn6' class='formato'>50 l</button>
                                 </div>
                                 <div class='cantidad center'>
                                     <div class='flex productos-gap-4'>

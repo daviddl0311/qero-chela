@@ -268,8 +268,7 @@ main {
     transition: all .3s ease-in-out;
 }
 .formato:hover {
-    background-color: white;
-    color: black;
+    opacity: .7;
 }
 .formato-selected {
     background-color: white;

@@ -18,7 +18,7 @@ buttons.forEach(button => {
                 img.classList.add("producto-img")
                 break;
             case "bt2": 
-                price.textContent = "pen 45.00";
+                price.textContent = "pen 29.20";
                 if(title.textContent.trim() == "aborigen") {
                     img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
@@ -28,7 +28,7 @@ buttons.forEach(button => {
                 img.classList.add("producto-img")
                 break;
             case "bt3": 
-                price.textContent = "pen 175.00";
+                price.textContent = "pen 45.00";
                 if(title.textContent.trim() == "aborigen") {
                     img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
@@ -38,12 +38,22 @@ buttons.forEach(button => {
                 img.classList.add("producto-img")
                 break;
             case "bt4": 
+                price.textContent = "pen 175.00";
+                if(title.textContent.trim() == "aborigen") {
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
+                } else {
+                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
+                }
+                img.classList.remove("producto-img-2")
+                img.classList.add("producto-img")
+                break;
+            case "bt5": 
                 price.textContent = "pen 465.00";
                 img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91af4810a725ec4834f1_barril-30.png"
                 img.classList.add("producto-img-2")
                 img.classList.remove("producto-img")
                 break;
-            case "bt5": 
+            case "bt6": 
                 price.textContent = "pen 749.00";
                 img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png"
                 img.classList.add("producto-img-2")

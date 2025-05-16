@@ -14,7 +14,7 @@ function finalizarCompra() {
         //Habilitar Boton de Finalizar Compra
         document.querySelector("#finalCompra").style.opacity = 1;
 
-        let mensaje = '*Hola, envío mi carrito de compras para su recepción. Quedo atento(a) a la confirmación. ¡Gracias!\nMi Carrito:*\n\n';
+        let mensaje = '*Hola, envío mi carrito de compras para su recepción. Quedo atento(a) a la confirmación. ¡Gracias!*\n\n*Mi Carrito:*\n\n';
     
         items.forEach(item => {
             const lineas = item.querySelectorAll("p");

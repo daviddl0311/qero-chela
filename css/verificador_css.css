@@ -31,6 +31,10 @@ body {
     justify-content: right;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /*---------- IMG VERIFICADOR --------*/
 .img-verificador {
     position: absolute;

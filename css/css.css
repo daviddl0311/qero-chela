@@ -46,6 +46,10 @@ header {
     display: none;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /*--------------- MENSAGE ----------------*/
 .message {
     position: sticky;

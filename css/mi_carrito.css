@@ -55,6 +55,10 @@ main {
     display: none;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /*--------------  HEADER -----------------*/
 .column-header {
     grid-template-columns: repeat(2, auto);

@@ -219,6 +219,17 @@ main {
 .productos {
     padding: 5rem;
 }
+.title-productos {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color: #401e08;
+    font-size: clamp(30px, 3vw, 35px);
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
+}
+.gap-carrito {
+    gap: 5rem;
+}
 .grid-column-3 {
     grid-template-columns: repeat(3, auto);
 }

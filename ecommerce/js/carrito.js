@@ -44,10 +44,12 @@ function enlistarCarrito(btnEnviar) {
     const productoName = producto.querySelector(".productos-name").textContent.trim();
     const productoImg = producto.querySelector(".img-producto").src;
     const productoPrecio = producto.querySelector(".precio").textContent;
-    const productoFormato = producto.querySelector(".formato-selected").textContent;
     const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
     const productoButton = producto.querySelector(".input-enviar");
-    
+
+    //Obtenemos la categoria del producto
+    const productoCat = producto.getAttribute("id");
+
     //Botones de Formato
     const productoButtons = producto.querySelectorAll(".formato");
     //Boton de Aumentar
@@ -70,35 +72,101 @@ function enlistarCarrito(btnEnviar) {
 
     let item = document.createElement("li");
     item.setAttribute("class","item-carrito");
-    item.innerHTML= 
-    `<div class="flex item-carrito-gap">
-        <div class="flex flex-direction-item item-carrito-gap">
-            <div class="center item-carrito-img">
-                <img src="${productoImg}" alt="${productoName}">
-            </div>
-            <div class="flex flex-column center item-carrito-gap-2">
-                <div class="item-carrito-producto">
-                    <p>${productoName}</p>
+
+    switch(productoCat) {
+        case "bebida": 
+            const productoFormato = producto.querySelector(".formato-selected").textContent;
+        
+            item.innerHTML= 
+            `<div class="flex item-carrito-gap">
+                <div class="flex flex-direction-item item-carrito-gap">
+                    <div class="center item-carrito-img">
+                        <img src="${productoImg}" alt="${productoName}">
+                    </div>
+                    <div class="flex flex-column center item-carrito-gap-2">
+                        <div class="item-carrito-producto">
+                            <p>${productoName}</p>
+                        </div>
+                        <div class="flex flex-column item-carrito-gap-3">
+                            <div class="item-carrito-formato">
+                                <p>Formato: <span id="carrito-for">${productoFormato}</span></p>
+                            </div>
+                            <div class="item-carrito-cantidad">
+                                <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                            </div>
+                            <div class="item-carrito-subtotal">
+                                <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-column item-carrito-gap-3">
-                    <div class="item-carrito-formato">
-                        <p>Formato: <span id="carrito-for">${productoFormato}</span></p>
+            </div>
+            <div class="btn-delete">
+                <button class="item-delete center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>`;
+            break;
+        
+        case "promo":
+            item.innerHTML= 
+            `<div class="flex item-carrito-gap">
+                <div class="flex flex-direction-item item-carrito-gap">
+                    <div class="center item-carrito-img">
+                        <img src="${productoImg}" alt="${productoName}">
                     </div>
-                    <div class="item-carrito-cantidad">
-                        <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
-                    </div>
-                    <div class="item-carrito-subtotal">
-                        <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                    <div class="flex flex-column center item-carrito-gap-2">
+                        <div class="item-carrito-producto">
+                            <p>${productoName}</p>
+                        </div>
+                        <div class="flex flex-column item-carrito-gap-3">
+                            <div class="item-carrito-cantidad">
+                                <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                            </div>
+                            <div class="item-carrito-subtotal">
+                                <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="btn-delete">
-        <button class="item-delete center">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>`;
+            <div class="btn-delete">
+                <button class="item-delete center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>`;
+            break;
+    }
+
+    // if(productoCat == "bebida") {
+    // } else {
+    //     item.innerHTML= 
+    //     `<div class="flex item-carrito-gap">
+    //         <div class="flex flex-direction-item item-carrito-gap">
+    //             <div class="center item-carrito-img">
+    //                 <img src="${productoImg}" alt="${productoName}">
+    //             </div>
+    //             <div class="flex flex-column center item-carrito-gap-2">
+    //                 <div class="item-carrito-producto">
+    //                     <p>${productoName}</p>
+    //                 </div>
+    //                 <div class="flex flex-column item-carrito-gap-3">
+    //                     <div class="item-carrito-cantidad">
+    //                         <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+    //                     </div>
+    //                     <div class="item-carrito-subtotal">
+    //                         <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     <div class="btn-delete">
+    //         <button class="item-delete center">
+    //             <i class="fa-solid fa-xmark"></i>
+    //         </button>
+    //     </div>`;
+    // }
 
     //Activar Boton de Finalizar Compra
     activarBtnFin();

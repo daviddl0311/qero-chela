@@ -121,7 +121,7 @@ header {
     text-transform: uppercase;
 }
 .producto-text {
-    font-size: clamp(15px, 3vw, 19px);
+    font-size: clamp(16px, 3vw, 19px);
     text-align: justify;
 }
 .producto-formato {
@@ -157,8 +157,8 @@ header {
 }
 .producto-info {
     width: 100%;
-    font-size: clamp(14px, 3vw, 18px);
-    padding: .7rem;
+    font-size: clamp(15px, 3vw, 18px);
+    padding: 1rem;
     border-radius: .2rem;  
     background-color: white;
     border: 1px solid black;
@@ -170,8 +170,8 @@ header {
 }
 .producto-comprar {
     width: 100%;
-    font-size: clamp(14px, 3vw, 18px);
-    padding: .7rem;
+    font-size: clamp(15px, 3vw, 18px);
+    padding: 1rem;
     border-radius: .2rem; 
     background-color: black;
     color: white;

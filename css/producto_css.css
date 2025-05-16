@@ -125,7 +125,7 @@ header {
     text-align: justify;
 }
 .producto-formato {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
 }
 .producto-formato > button {
@@ -792,7 +792,7 @@ footer {
     }
 
     .ver-producto-img {
-        background-color: #efd15a;
+        background-color: #ffa500;
         padding: 2rem;
         border-radius: 1rem;
         min-width: 230px;
@@ -948,7 +948,7 @@ footer {
     }
 
     .ver-producto-img {
-        background-color: #efd15a;
+        background-color: #ffa500;
         padding: 2rem;
         border-radius: 1rem;
         min-width: 230px;

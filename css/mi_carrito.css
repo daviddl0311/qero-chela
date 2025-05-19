@@ -306,6 +306,30 @@ main {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
+
+/*-------- DESHABILITADO ---------*/
+*:disabled {
+    background-color: #b97b09;
+    border: 1px solid #f7a40b;
+    color: white;
+}
+.productos-button-enviar button:disabled {
+    background-color: #b97b09;
+    color: white;
+}
+.productos-button-enviar button:hover:disabled {
+    background-color: #b97b09;
+    color: white;
+}
+.btn-plus:disabled, .btn-minus:disabled {
+    background-color: #b97b09;
+    color: white;
+}
+.btn-plus:hover:disabled, .btn-minus:hover:disabled {
+    background-color: #b97b09;
+    color: white;
+}
+
 .productos-button-enviar button:hover {
     background-color: white;
     color: black;

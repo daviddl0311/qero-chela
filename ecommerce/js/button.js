@@ -91,7 +91,7 @@ function cantidadUpdate(btn, cambio) {
 
 function statusStock (myStock) {
     const producto = myStock.closest(".item-producto");
-    const btnProducto = producto.querySelector(".input-enviar");
+    const btnEnviar = producto.querySelector(".input-enviar");
     const btnFormato = producto.querySelectorAll(".formato");
     const btnPlus = producto.querySelector(".btn-plus")
     const btnMinus = producto.querySelector(".btn-minus")
@@ -99,10 +99,11 @@ function statusStock (myStock) {
     
     
     if(stock.textContent.trim("") == "Agotado") {
-        producto.style.opacity = ".6"
+        producto.style.opacity = ".7"
         btnPlus.disabled = true;
         btnMinus.disabled = true;
         btnFormato.forEach(formato => formato.disabled = true);
-        btnProducto.disabled = true;
+        btnEnviar.disabled = true;
+        btnEnviar.textContent = "agotado";
     }
 }

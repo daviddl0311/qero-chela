@@ -73,9 +73,14 @@
                                         <div class='productos-name'>
                                             <p>".$producto['nombre']."</p>
                                         </div>
-                                        <div class='productos-precio'>
-                                            <p>PEN <span class='precio'>7.50</span></p>
-                                        </div>
+                                        <div class='flex gap-stock'>
+                                            <div class='productos-precio center'>
+                                                <p>PEN <span class='precio'>7.50</span></p>
+                                            </div>
+                                            <div class='productos-stock center'>
+                                                <p class='stock'>" .$producto['stock']. "</p>
+                                            </div>
+                                        </div> 
                                         <div class='productos-formato grid grid-column-2'>
                                             <button id='btn1' class='formato formato-selected'>unid.</button>
                                             <button id='btn2' class='formato'>4 pack</button>

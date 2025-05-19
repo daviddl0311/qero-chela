@@ -332,6 +332,12 @@ main {
     font-size: 25px;
     width: 20px;
 }
+.gap-stock {
+    justify-content: space-between;
+}
+.productos-stock {
+    color: #481a00;
+}
 
 /*--------- MENSAJE ---------*/
 .message-carrito {

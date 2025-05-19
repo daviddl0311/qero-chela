@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             cantidadUpdate(btn, -1);
         })
     });
+
+    document.querySelectorAll(".stock").forEach(myStock => {
+        statusStock(myStock);
+    });
 });
 
 function changeFormato(btn) {
@@ -83,4 +87,22 @@ function cantidadUpdate(btn, cambio) {
     }
 
     cantidadP.textContent = newCantidad;
+}
+
+function statusStock (myStock) {
+    const producto = myStock.closest(".item-producto");
+    const btnProducto = producto.querySelector(".input-enviar");
+    const btnFormato = producto.querySelectorAll(".formato");
+    const btnPlus = producto.querySelector(".btn-plus")
+    const btnMinus = producto.querySelector(".btn-minus")
+    const stock = producto.querySelector(".stock");
+    
+    
+    if(stock.textContent.trim("") == "Agotado") {
+        producto.style.opacity = ".6"
+        btnPlus.disabled = true;
+        btnMinus.disabled = true;
+        btnFormato.forEach(formato => formato.disabled = true);
+        btnProducto.disabled = true;
+    }
 }

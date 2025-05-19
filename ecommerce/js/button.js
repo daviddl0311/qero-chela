@@ -92,6 +92,10 @@ function cantidadUpdate(btn, cambio) {
 function statusStock (myStock) {
     const producto = myStock.closest(".item-producto");
     const btnEnviar = producto.querySelector(".input-enviar");
+    const productoImg = producto.querySelector(".img-producto");
+    const productoNombre = producto.querySelector(".productos-name");
+    const productoPrecio = producto.querySelector(".productos-precio");
+    const productoCantidad = producto.querySelector(".producto-cantidad");
     const btnFormato = producto.querySelectorAll(".formato");
     const btnPlus = producto.querySelector(".btn-plus")
     const btnMinus = producto.querySelector(".btn-minus")
@@ -99,7 +103,10 @@ function statusStock (myStock) {
     
     
     if(stock.textContent.trim("") == "Agotado") {
-        producto.style.opacity = ".7"
+        productoImg.style.opacity = ".5"
+        productoNombre.style.opacity = ".5"
+        productoPrecio.style.opacity = ".5"
+        productoCantidad.style.opacity = ".5"
         btnPlus.disabled = true;
         btnMinus.disabled = true;
         btnFormato.forEach(formato => formato.disabled = true);

@@ -125,8 +125,13 @@
                             <div class='productos-name'>
                                 <p>Promo 1</p>
                             </div>
-                            <div class='productos-precio'>
-                                <p>PEN <span class='precio'>5.00</span></p>
+                            <div class="flex gap-stock">
+                                <div class='productos-precio center'>
+                                    <p>PEN <span class='precio'>5.00</span></p>
+                                </div>
+                                <div class='productos-stock center'>
+                                    <p class='stock'>En Stock</p>
+                                </div>
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>
@@ -154,8 +159,13 @@
                             <div class='productos-name'>
                                 <p>Promo 2</p>
                             </div>
-                            <div class='productos-precio'>
-                                <p>PEN <span class='precio'>10.00</span></p>
+                            <div class="flex gap-stock">
+                                <div class='productos-precio center'>
+                                    <p>PEN <span class='precio'>10.00</span></p>
+                                </div>
+                                <div class='productos-stock center'>
+                                    <p class='stock'>En Stock</p>
+                                </div>
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>
@@ -183,8 +193,13 @@
                             <div class='productos-name'>
                                 <p>Promo 3</p>
                             </div>
-                            <div class='productos-precio'>
-                                <p>PEN <span class='precio'>60.00</span></p>
+                             <div class="flex gap-stock">
+                                <div class='productos-precio center'>
+                                    <p>PEN <span class='precio'>60.00</span></p>
+                                </div>
+                                <div class='productos-stock center'>
+                                    <p class='stock'>Agotado</p>
+                                </div>
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>

@@ -320,6 +320,7 @@ main {
 .productos-button-enviar button:hover:disabled {
     background-color: #b97b09;
     color: white;
+    box-shadow: 0 0 0px white;
 }
 .btn-plus:disabled, .btn-minus:disabled {
     background-color: #b97b09;
@@ -328,6 +329,8 @@ main {
 .btn-plus:hover:disabled, .btn-minus:hover:disabled {
     background-color: #b97b09;
     color: white;
+    scale: 1;
+    box-shadow: 0 0 0px white;
 }
 
 .productos-button-enviar button:hover {

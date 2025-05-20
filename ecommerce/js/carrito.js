@@ -95,7 +95,7 @@ function enlistarCarrito(btnEnviar) {
                                 <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
                             </div>
                             <div class="item-carrito-subtotal">
-                                <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                                <p>Precio: S/. <span id="carrito-sub">${totalProducto}</span></p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ function enlistarCarrito(btnEnviar) {
                                 <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
                             </div>
                             <div class="item-carrito-subtotal">
-                                <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                                <p>Precio: S/. <span id="carrito-sub">${totalProducto}</span></p>
                             </div>
                         </div>
                     </div>
@@ -265,26 +265,33 @@ function addMessage() {
 }
 
 function addTotal() {
-    let a = document.querySelector(".total");
+    let a = document.querySelector(".subtotal");
     let b = document.querySelectorAll("#carrito-sub");
-    let total = 0.00
+    let c = document.querySelector(".igv");
+    let d = document.querySelector(".total");
+    let total = 0;
 
     b.forEach(item => {
         total += parseFloat(item.textContent);
     });
 
-    a.textContent = total.toFixed(2);
+    a.textContent = parseFloat(total).toFixed(2);
+    c.textContent = (a.textContent * 0.18).toFixed(2);
+    d.textContent = (parseFloat(a.textContent) + parseFloat(c.textContent)).toFixed(2);
 }
 
 function resTotal(itemDel) {
     const productoItem = itemDel.closest(".item-carrito");
+    let a = document.querySelector(".subtotal");
     let b = productoItem.querySelector("#carrito-sub");
-    let a = document.querySelector(".total");
+    let c = document.querySelector(".igv");
+    let d = document.querySelector(".total");
 
     let newTotal = parseFloat(a.textContent) - parseFloat(b.textContent);
 
     a.textContent = newTotal.toFixed(2);
-    console.log(a,b,newTotal);
+    c.textContent = (a.textContent * 0.18).toFixed(2);
+    d.textContent = (parseFloat(a.textContent) + parseFloat(c.textContent)).toFixed(2);
 }
 
 

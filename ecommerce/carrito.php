@@ -52,9 +52,15 @@
                     </div>
                 </label>
                 <ul class="flex gap2rem flex-row-2"> 
-                    <li class="flex flex-column">
+                    <li class="flex flex-column gap-total">
                         <div>
-                            <p class="title-carrito">Mi carrito:</p>
+                            <p class="title-carrito">Mi carrito</p>
+                        </div>
+                        <div>
+                            <p class="precio-final">Subtotal: S/. <span class="subtotal">0.00</span></p>
+                        </div>
+                        <div>
+                            <p class="precio-final">IGV (18%): S/. <span class="igv">0.00</span></p>
                         </div>
                         <div>
                             <p class="precio-final">Total: S/. <span class="total">0.00</span></p>
@@ -93,14 +99,19 @@
                                         <div class='productos-name'>
                                             <p>".$producto['nombre']."</p>
                                         </div>
-                                        <div class='flex gap-stock'>
-                                            <div class='productos-precio center'>
-                                                <p>PEN <span class='precio'>7.50</span></p>
+                                        <div class='flex flex-column gap-stock2'>
+                                            <div class='flex gap-stock'>
+                                                <div class='productos-precio center'>
+                                                    <p>PEN <span class='precio'>7.50</span></p>
+                                                </div>
+                                                <div class='productos-stock center'>
+                                                    <p class='stock'>" .$producto['stock']. "</p>
+                                                </div>
                                             </div>
-                                            <div class='productos-stock center'>
-                                                <p class='stock'>" .$producto['stock']. "</p>
-                                            </div>
-                                        </div> 
+                                            <div>
+                                                <small class='productos-igv'>IGV incluido</small>
+                                            </div> 
+                                        </div>
                                         <div class='productos-formato grid grid-column-2'>
                                             <button id='btn1' class='formato formato-selected'>unid.</button>
                                             <button id='btn2' class='formato'>4 pack</button>

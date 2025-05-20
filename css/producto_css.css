@@ -178,6 +178,9 @@ header {
     text-transform: uppercase;
     transition: all .3s;
 }
+.nota {
+    font-size: 16px;
+}
 
 /*-------------- PRODUCTOS -----------------*/
 .productos section {

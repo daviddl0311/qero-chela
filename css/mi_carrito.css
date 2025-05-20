@@ -151,8 +151,11 @@ main {
 .fa-cart-shopping:hover {
     color: rgb(185, 185, 185);
 }
-.total {
+.total, .igv, .subtotal {
     font-size: clamp(15px, 3vw, 20px);
+}
+.gap-total {
+    gap: .4rem;
 }
 
 /*--------- ITEMS CARRITO --------*/
@@ -365,7 +368,14 @@ main {
 .gap-stock {
     justify-content: space-between;
 }
+.gap-stock2 {
+    gap: .5rem;
+}
 .productos-stock {
+    color: #481a00;
+}
+.productos-igv {
+    font-size: 1rem; 
     color: #481a00;
 }
 

@@ -26,7 +26,10 @@ function finalizarCompra() {
         
         //Mensaje y redirección al WhatsApp
         let mensaje = '*Hola, envío mi carrito de compras para su recepción. Quedo atento(a) a la confirmación. ¡Gracias!*\n\n*Mi Carrito:*\n\n';
-    
+        let subtotal = document.querySelector(".subtotal").innerText;
+        let igv = document.querySelector(".igv").innerText;
+        let total = document.querySelector(".total").innerText;
+
         items.forEach(item => {
             const lineas = item.querySelectorAll("p");
             mensaje += `*${lineas[0].innerText.trim()}*\n`;
@@ -37,6 +40,10 @@ function finalizarCompra() {
     
             mensaje += '----------------------\n';
         })
+        
+        mensaje += `*SUBTOTAL: S/. ${subtotal}*\n`;
+        mensaje += `*IGV (18%): S/. ${igv}*\n`;
+        mensaje += `*TOTAL: S/. ${total}*\n`;
     
         const mensajeCodificado = encodeURIComponent(mensaje);
         

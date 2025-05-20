@@ -63,7 +63,7 @@
                                 <div class='flex flex-column producto-buttons'>
                                     <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                     <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
-                                    <sub style='color:gray; font-size: 15px;'>*Producto fuera de IGV</sub>
+                                    <sub style='color:gray; font-size: 16px;'>*Precio con IGV incluido</sub>
                                 </div>
                             </div>
                         </article>

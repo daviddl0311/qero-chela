@@ -484,6 +484,56 @@ main {
     color: black;
 }
 
+/*-------- POPUP -------*/
+.alert {
+    position: sticky;
+    top: 0%;
+    z-index: 10000;
+}
+.myalert {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .8;
+}
+.alert-finalizar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;    
+}
+.container {
+    background-color: white;
+    width: clamp(250px, 40vw, 400px);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.alert-title {
+    font-size: clamp(20px, 3vw, 25px);
+}
+.alert-text {
+    font-size: clamp(13px, 3vw, 16px);
+}
+.gap-alert {
+    gap: 1rem;
+}
+.btn-alert {
+    background-color: rgb(32, 32, 219);
+    color: white;
+    padding-block: .7rem;
+    padding-inline: 1.2rem;
+    border-radius: 5px;
+    font-size: clamp(10px, 3vw, 15px);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn-alert:hover {
+    background-color: white;
+    color: rgb(32, 32, 219);
+    box-shadow: 0 0 5px rgb(32, 32, 219);
+}
+
+
 /*--------------  FOOTER -----------------*/
 footer {
     background-color: #FDFAE9;

@@ -19,6 +19,21 @@
     <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>   
 </head>
 <body>
+    <div class="alert center display-none">
+        <span class="myalert center"></span>
+        <span class="alert-finalizar center">
+            <div class="container flex flex-column gap-alert">
+                <h2 class="center-align alert-title">¡Registro exitoso!</h2>
+                <p class="center-align alert-text">
+                    Tus productos fueron registrados. Nuestro personal te atenderá en unos minutos.
+                </p>
+                <div class="center">
+                    <button class="btn-alert">Cerrar</button>
+                </div>
+            </div>
+        </span>
+    </div>
+
     <header>
         <nav class="grid column-header">
             <div class="flex title-logo">
@@ -260,6 +275,7 @@
         <div class="finalizar">
             <button id="finalCompra">Finalizar Compra</button>
         </div> 
+            
     </main>
 
     <?php

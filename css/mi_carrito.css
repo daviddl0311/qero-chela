@@ -151,6 +151,9 @@ main {
 .fa-cart-shopping:hover {
     color: rgb(185, 185, 185);
 }
+.total {
+    font-size: clamp(15px, 3vw, 20px);
+}
 
 /*--------- ITEMS CARRITO --------*/
 .title-carrito {

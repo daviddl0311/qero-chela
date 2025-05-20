@@ -137,37 +137,7 @@ function enlistarCarrito(btnEnviar) {
             </div>`;
             break;
     }
-
-    // if(productoCat == "bebida") {
-    // } else {
-    //     item.innerHTML= 
-    //     `<div class="flex item-carrito-gap">
-    //         <div class="flex flex-direction-item item-carrito-gap">
-    //             <div class="center item-carrito-img">
-    //                 <img src="${productoImg}" alt="${productoName}">
-    //             </div>
-    //             <div class="flex flex-column center item-carrito-gap-2">
-    //                 <div class="item-carrito-producto">
-    //                     <p>${productoName}</p>
-    //                 </div>
-    //                 <div class="flex flex-column item-carrito-gap-3">
-    //                     <div class="item-carrito-cantidad">
-    //                         <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
-    //                     </div>
-    //                     <div class="item-carrito-subtotal">
-    //                         <p>SubTotal: S/. <span id="carrito-sub">${totalProducto}</span></p>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <div class="btn-delete">
-    //         <button class="item-delete center">
-    //             <i class="fa-solid fa-xmark"></i>
-    //         </button>
-    //     </div>`;
-    // }
-
+  
     //Activar Boton de Finalizar Compra
     activarBtnFin();
 
@@ -184,14 +154,61 @@ function enlistarCarrito(btnEnviar) {
     //Se enlista en el Carrito
     document.getElementById("mi-carrito").appendChild(item);
 
-    //Evento de Button Eliminar
+    //Evento de Button Eliminar Producto
     const deleteItemButton = document.querySelectorAll(".item-delete");
 
     deleteItemButton.forEach((itemDel) => {
         itemDel.addEventListener("click", () => {
             deleteItem(itemDel, producto);
+            //RESTAR TOTAL
+            resTotal(itemDel);
         });
     });
+
+    //TOTAL
+    addTotal();
+}
+
+function addItem(sum) {
+    let products = document.querySelector("#n-items");
+    products.textContent = sum;
+}
+
+function deleteItem(itemDel, producto) {
+    const productoItem = itemDel.closest(".item-carrito");
+    const productoButton = producto.querySelector(".input-enviar");
+    const productoButtons = producto.querySelectorAll(".formato");
+    
+    //Boton de Aumentar
+    const productoAddbtn = producto.querySelector(".btn-plus");
+    //Boton de Disminuir
+    const productoMinusbtn = producto.querySelector(".btn-minus");
+    
+    //Eliminar Producto en Carrito
+    document.getElementById("mi-carrito").removeChild(productoItem);
+    
+    //Habilitar Botones
+    productoButton.disabled = false;
+    producto.style.opacity = "1";
+    productoButton.textContent = "Añadir";
+    productoButtons.forEach(btn => {
+        btn.disabled = false;
+    });
+    productoAddbtn.disabled = false;
+    productoMinusbtn.disabled = false;
+    
+    //Mensage Emergente
+    emergeMessageDel();
+    
+    //Dismuir en Carrito
+    sum-=1;
+    addItem(sum);
+    
+    //Desactivar Boton Finalizar
+    desactivarBtnFin();
+    
+    //Añadir Mensaje
+    addMessage();
 }
 
 function activarBtnFin() {
@@ -210,51 +227,7 @@ function desactivarBtnFin() {
     if(miCar.children.length <= 1) {
         fin.style.opacity = ".5";
     }
-
-    console.log(miCar.children.length);
 }
-
-function addItem(sum) {
-    let products = document.querySelector("#n-items");
-    products.textContent = sum;
-}
-
-function deleteItem(itemDel, producto) {
-    const productoItem = itemDel.closest(".item-carrito");
-    const productoButton = producto.querySelector(".input-enviar");
-    const productoButtons = producto.querySelectorAll(".formato");
-    
-    //Boton de Aumentar
-    const productoAddbtn = producto.querySelector(".btn-plus");
-    //Boton de Disminuir
-    const productoMinusbtn = producto.querySelector(".btn-minus");
-
-    //Eliminar Producto en Carrito
-    document.getElementById("mi-carrito").removeChild(productoItem);
-    
-    //Habilitar Botones
-    productoButton.disabled = false;
-    producto.style.opacity = "1";
-    productoButton.textContent = "Añadir";
-    productoButtons.forEach(btn => {
-        btn.disabled = false;
-    });
-    productoAddbtn.disabled = false;
-    productoMinusbtn.disabled = false;
-
-    //Mensage Emergente
-    emergeMessageDel();
-
-    //Dismuir en Carrito
-    sum-=1;
-    addItem(sum);
-
-    //Desactivar Boton Finalizar
-    desactivarBtnFin();
-
-    //Añadir Mensaje
-    addMessage();
-}   
 
 function emergeMessage() {
     let msgList = document.querySelector(".emerge-msg");
@@ -289,6 +262,29 @@ function addMessage() {
     if(document.querySelector("#mi-carrito").children.length <= 1) {
         document.querySelector(".message-carrito").classList.remove("display-none");
     }
+}
+
+function addTotal() {
+    let a = document.querySelector(".total");
+    let b = document.querySelectorAll("#carrito-sub");
+    let total = 0.00
+
+    b.forEach(item => {
+        total += parseFloat(item.textContent);
+    });
+
+    a.textContent = total.toFixed(2);
+}
+
+function resTotal(itemDel) {
+    const productoItem = itemDel.closest(".item-carrito");
+    let b = productoItem.querySelector("#carrito-sub");
+    let a = document.querySelector(".total");
+
+    let newTotal = parseFloat(a.textContent) - parseFloat(b.textContent);
+
+    a.textContent = newTotal.toFixed(2);
+    console.log(a,b,newTotal);
 }
 
 

@@ -52,8 +52,13 @@
                     </div>
                 </label>
                 <ul class="flex gap2rem flex-row-2"> 
-                    <li class="center burger-center">
-                        <p class="title-carrito">Mi carrito:</p>
+                    <li class="flex flex-column">
+                        <div>
+                            <p class="title-carrito">Mi carrito:</p>
+                        </div>
+                        <div>
+                            <p class="precio-final">Total: S/. <span class="total">0.00</span></p>
+                        </div>
                     </li>
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
                         

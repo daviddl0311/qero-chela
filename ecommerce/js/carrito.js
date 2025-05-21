@@ -63,7 +63,7 @@ function enlistarCarrito(btnEnviar) {
     //Deshabilitar Botones
     productoButton.disabled = true;
     producto.style.opacity = "0.5";
-    productoButton.textContent = "✔";
+    productoButton.innerHTML = "<i class='fa-solid fa-check'></i>";
     productoButtons.forEach(btn => {
         btn.disabled = true;
     });

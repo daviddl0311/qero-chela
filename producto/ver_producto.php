@@ -57,13 +57,13 @@
                                 </div>
                                 <div class='producto-precio'>
                                     <span id='precio'>
-                                        pen 7.50
+                                        pen 8.85
                                     </span>
                                 </div>
                                 <div class='flex flex-column producto-buttons'>
                                     <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                     <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
-                                    <sub class='nota'>*Precio final con IGV</sub>
+                                    <sub class='nota'>*Incluye IGV (18%)</sub>
                                 </div>
                             </div>
                         </article>

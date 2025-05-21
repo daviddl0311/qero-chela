@@ -23,13 +23,29 @@
         <span class="myalert center"></span>
         <span class="alert-finalizar center">
             <div class="container flex flex-column gap-alert">
-                <h2 class="center-align alert-title">¡Registro exitoso!</h2>
-                <p class="center-align alert-text">
-                    Tus productos fueron registrados. Nuestro personal te atenderá en unos minutos.
+                <h2 class="center-align alert-title">¡Último paso!</h2>
+                <p class="alert-text">
+                    Confirma tu dirección para coordinar el delivery.
                 </p>
-                <div class="center">
-                    <button class="btn-alert">Cerrar</button>
-                </div>
+                <form action="" class="flex flex-column gap-alert">
+                    <div class="departamente">
+                        <select name="" id="" required>
+                            <option value="" selected disabled>Selecciona Departamento</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="distrito">
+                        <input type="text" name="" id="distrito" required>
+                    </div>
+                    <p class="alert-text-2">*El delivery tiene una comisión según tu ubicación.</p>
+                    <!-- btn-alert -->
+                    <button class="btn-submit" type="submit">Finalizar</button>
+                    <div class="center">
+                        <p class="btn-volver">Volver</p>
+                    </div>
+                </form>
             </div>
         </span>
     </div>
@@ -289,7 +305,7 @@
         </div>
 
         <div class="finalizar">
-            <button id="finalCompra">Finalizar Compra</button>
+            <button id="finalCompra">Confirmar pedido</button>
         </div> 
             
     </main>

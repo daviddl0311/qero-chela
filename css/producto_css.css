@@ -179,7 +179,7 @@ header {
     transition: all .3s;
 }
 .nota {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /*-------------- PRODUCTOS -----------------*/
@@ -217,6 +217,9 @@ header {
 }
 .gap1-3rem {
     gap: 1.3rem;
+}
+.gappx {
+    gap: 10px;
 }
 .text-producto {
     font-size: clamp(20px, 3vw, 22px);

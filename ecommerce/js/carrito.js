@@ -81,7 +81,7 @@ function enlistarCarrito(btnEnviar) {
             `<div class="flex item-carrito-gap">
                 <div class="flex flex-direction-item item-carrito-gap">
                     <div class="center item-carrito-img">
-                        <img src="${productoImg}" alt="${productoName}">
+                        <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
                     </div>
                     <div class="flex flex-column center item-carrito-gap-2">
                         <div class="item-carrito-producto">
@@ -95,7 +95,7 @@ function enlistarCarrito(btnEnviar) {
                                 <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
                             </div>
                             <div class="item-carrito-subtotal">
-                                <p>Precio: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                                <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ function enlistarCarrito(btnEnviar) {
             `<div class="flex item-carrito-gap">
                 <div class="flex flex-direction-item item-carrito-gap">
                     <div class="center item-carrito-img">
-                        <img src="${productoImg}" alt="${productoName}">
+                        <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
                     </div>
                     <div class="flex flex-column center item-carrito-gap-2">
                         <div class="item-carrito-producto">
@@ -124,7 +124,7 @@ function enlistarCarrito(btnEnviar) {
                                 <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
                             </div>
                             <div class="item-carrito-subtotal">
-                                <p>Precio: S/. <span id="carrito-sub">${totalProducto}</span></p>
+                                <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
                             </div>
                         </div>
                     </div>
@@ -167,6 +167,9 @@ function enlistarCarrito(btnEnviar) {
 
     //TOTAL
     addTotal();
+
+    //Pedido
+    pedido();
 }
 
 function addItem(sum) {
@@ -294,4 +297,32 @@ function resTotal(itemDel) {
     d.textContent = (parseFloat(a.textContent) + parseFloat(c.textContent)).toFixed(2);
 }
 
+function pedido() {
+    const items = document.querySelectorAll("#mi-carrito .item-carrito");
+    const subtotal = document.querySelector(".subtotal").innerText;
+    const igv = document.querySelector(".igv").innerText;
+    const total = document.querySelector(".total").innerText;
+    let mensaje = "";
+            
+    items.forEach(item => {
+        const lineas = item.querySelectorAll("p");
+        const myImg = item.querySelector(".img-pedido").src;
+
+        mensaje += `${lineas[0].innerText.trim()}\n`;
+
+        for(let i = 1; i < lineas.length; i++) {
+            mensaje += lineas[i].innerText.trim() + '\n';
+        }
+
+        mensaje += `Imagen Producto: ${myImg}\n`;
+
+        mensaje += '----------------------\n';
+    })
+    
+    mensaje += `SUBTOTAL: S/. ${subtotal}\n`;
+    mensaje += `IGV (18%): S/. ${igv}\n`;
+    mensaje += `TOTAL: S/. ${total}\n`;
+
+    document.querySelector("#productos").value = mensaje;
+}
 

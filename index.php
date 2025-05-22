@@ -35,7 +35,7 @@
                     <div class='message-a'>
                         <div>
                             <a href='".$mensaje['info-publicidad']."' target='_blank'>
-                                <img src='".$mensaje['img']."' alt='Publicidad Templo Q'ero Chela' class='pulsate-fwd'>
+                                <img src='".$mensaje['img']."' alt='Publicidad Templo' class='pulsate-fwd'>
                             </a>
                         </div>
                         <i class='fa-solid fa-x' id='close'></i>

@@ -27,24 +27,46 @@
                 <p class="alert-text">
                     Confirma tu dirección para coordinar el delivery.
                 </p>
-                <form action="" class="flex flex-column gap-alert">
+                <form id="formulario" method="POST" class="flex flex-column gap-alert">
                     <div class="departamente">
-                        <select name="" id="" required>
+                        <select name="departamento" id="depa" required>
                             <option value="" selected disabled>Selecciona Departamento</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Áncash">Áncash</option>
+                            <option value="Apurímac">Apurímac</option>
+                            <option value="Arequipa">Arequipa</option>
+                            <option value="Ayacucho">Ayacucho</option>
+                            <option value="Cajamarca">Cajamarca</option>
+                            <option value="Cusco">Cusco</option>
+                            <option value="Huancavelica">Huancavelica</option>
+                            <option value="Huánuco">Huánuco</option>
+                            <option value="Ica">Ica</option>
+                            <option value="Junín">Junín</option>
+                            <option value="La Libertad">La Libertad</option>
+                            <option value="Lambayeque">Lambayeque</option>
+                            <option value="Lima">Lima</option>
+                            <option value="Loreto">Loreto</option>
+                            <option value="Madre de Dios">Madre de Dios</option>
+                            <option value="Moquegua">Moquegua</option>
+                            <option value="Pasco">Pasco</option>
+                            <option value="Piura">Piura</option>
+                            <option value="Puno">Puno</option>
+                            <option value="San Martín">San Martín</option>
+                            <option value="Tacna">Tacna</option>
+                            <option value="Tumbes">Tumbes</option>
+                            <option value="Ucayali">Ucayali</option>
                         </select>
                     </div>
-                    <div class="distrito">
-                        <input type="text" name="" id="distrito" required>
+                    <div class="ubicacion">
+                        <input type="text" name="ubicacion" id="ubicacion" placeholder="Dirección" required>
                     </div>
-                    <p class="alert-text-2">*El delivery tiene una comisión según tu ubicación.</p>
-                    <!-- btn-alert -->
-                    <button class="btn-submit" type="submit">Finalizar</button>
+                    <input type="hidden" name="productos" id="productos">
+                    <p class="alert-text-2">*Delivery: S/ 15.00 adicionales.</p>
+                    <button class="btn-submit" type="submit">Finalizar Compra</button>
                     <div class="center">
                         <p class="btn-volver">Volver</p>
                     </div>
+                    <!-- btn-alert -->
                 </form>
             </div>
         </span>
@@ -73,13 +95,13 @@
                             <p class="title-carrito">Mi carrito</p>
                         </div>
                         <div>
-                            <p class="precio-final">Subtotal: S/. <span class="subtotal">0.00</span></p>
+                            <p class="precio-final">Subtotal: S/ <span class="subtotal">0.00</span></p>
                         </div>
                         <div>
-                            <p class="precio-final">IGV (18%): S/. <span class="igv">0.00</span></p>
+                            <p class="precio-final">IGV (18%): S/ <span class="igv">0.00</span></p>
                         </div>
                         <div>
-                            <p class="precio-final">Total: S/. <span class="total">0.00</span></p>
+                            <p class="precio-final">Total: S/ <span class="total">0.00</span></p>
                         </div>
                     </li>
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
@@ -172,13 +194,18 @@
                             <div class='productos-name'>
                                 <p>Promo 1</p>
                             </div>
-                            <div class="flex gap-stock">
-                                <div class='productos-precio center'>
-                                    <p>PEN <span class='precio'>5.00</span></p>
+                            <div class='flex flex-column gap-stock2'>
+                                <div class="flex gap-stock">
+                                    <div class='productos-precio center'>
+                                        <p>PEN <span class='precio'>5.00</span></p>
+                                    </div>
+                                    <div class='productos-stock center'>
+                                        <p class='stock'>En Stock</p>
+                                    </div>
                                 </div>
-                                <div class='productos-stock center'>
-                                    <p class='stock'>En Stock</p>
-                                </div>
+                                <div>
+                                    <small class='productos-igv'>IGV incluido</small>
+                                </div> 
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>
@@ -198,21 +225,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class='grid grid-column-3'>
+                    <div class='grid grid-column-3 '>
                         <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
                             <div class='productos-img center'>
                                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
                             </div>
                             <div class='productos-name'>
-                                <p>Promo 2</p>
+                                <p>Promo 1</p>
                             </div>
-                            <div class="flex gap-stock">
-                                <div class='productos-precio center'>
-                                    <p>PEN <span class='precio'>10.00</span></p>
+                            <div class='flex flex-column gap-stock2'>
+                                <div class="flex gap-stock">
+                                    <div class='productos-precio center'>
+                                        <p>PEN <span class='precio'>5.00</span></p>
+                                    </div>
+                                    <div class='productos-stock center'>
+                                        <p class='stock'>En Stock</p>
+                                    </div>
                                 </div>
-                                <div class='productos-stock center'>
-                                    <p class='stock'>En Stock</p>
-                                </div>
+                                <div>
+                                    <small class='productos-igv'>IGV incluido</small>
+                                </div> 
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>
@@ -232,21 +264,26 @@
                             </div>
                         </div>
                     </div>
-                     <div class='grid grid-column-3'>
+                    <div class='grid grid-column-3 '>
                         <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
                             <div class='productos-img center'>
                                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
                             </div>
                             <div class='productos-name'>
-                                <p>Promo 3</p>
+                                <p>Promo 1</p>
                             </div>
-                             <div class="flex gap-stock">
-                                <div class='productos-precio center'>
-                                    <p>PEN <span class='precio'>60.00</span></p>
+                            <div class='flex flex-column gap-stock2'>
+                                <div class="flex gap-stock">
+                                    <div class='productos-precio center'>
+                                        <p>PEN <span class='precio'>5.00</span></p>
+                                    </div>
+                                    <div class='productos-stock center'>
+                                        <p class='stock'>En Stock</p>
+                                    </div>
                                 </div>
-                                <div class='productos-stock center'>
-                                    <p class='stock'>Agotado</p>
-                                </div>
+                                <div>
+                                    <small class='productos-igv'>IGV incluido</small>
+                                </div> 
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>
@@ -266,16 +303,26 @@
                             </div>
                         </div>
                     </div>
-                     <div class='grid grid-column-3'>
+                    <div class='grid grid-column-3 '>
                         <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
                             <div class='productos-img center'>
                                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
                             </div>
                             <div class='productos-name'>
-                                <p>Promo 4</p>
+                                <p>Promo 1</p>
                             </div>
-                            <div class='productos-precio'>
-                                <p>PEN <span class='precio'>20.00</span></p>
+                            <div class='flex flex-column gap-stock2'>
+                                <div class="flex gap-stock">
+                                    <div class='productos-precio center'>
+                                        <p>PEN <span class='precio'>5.00</span></p>
+                                    </div>
+                                    <div class='productos-stock center'>
+                                        <p class='stock'>Agotado</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class='productos-igv'>IGV incluido</small>
+                                </div> 
                             </div>
                             <div class='cantidad center'>
                                 <div class='flex productos-gap-4'>

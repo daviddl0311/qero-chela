@@ -55,15 +55,17 @@
                                     <button id='bt5' class='button'>30 l</button>
                                     <button id='bt6' class='button'>50 l</button>
                                 </div>
-                                <div class='producto-precio'>
-                                    <span id='precio'>
-                                        pen 8.85
-                                    </span>
+                                <div class='flex flex-column gappx'>
+                                    <div class='producto-precio'>
+                                        <span id='precio'>
+                                            pen 8.85
+                                        </span>
+                                    </div>
+                                    <sub class='nota'>*Incluye IGV (18%)</sub>
                                 </div>
                                 <div class='flex flex-column producto-buttons'>
                                     <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                     <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
-                                    <sub class='nota'>*Incluye IGV (18%)</sub>
                                 </div>
                             </div>
                         </article>

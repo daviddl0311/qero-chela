@@ -578,9 +578,10 @@ select {
     border: 1px solid black;
     border-radius: 5px;
 }
-#distrito {
-    width: 100%;
+#ubicacion {
+    width: 97%;
     padding-block: .5rem;
+    padding-left: .5rem;
     font-family: "Gidole", sans-serif;
     font-size: clamp(10px, 3vw, 14px);
     border: 1px solid black;

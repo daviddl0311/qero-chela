@@ -69,9 +69,10 @@ function changeFormato(btn) {
             imgPro.src ="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png";
             break;
     }
-    //remover clase formato-selected
+
+    //Remover clase formato-selected
     producto.querySelectorAll(".formato").forEach(button => button.classList.remove("formato-selected"));
-    //añadir clase formato-selected
+    //Añadir clase formato-selected
     btn.classList.add("formato-selected");
 }
 

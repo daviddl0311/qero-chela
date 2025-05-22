@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function finalizarCompra() {
-    
     if(document.querySelector("#mi-carrito").children.length > 1) {
         
         //Habilitar Boton de Finalizar Compra

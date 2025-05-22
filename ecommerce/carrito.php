@@ -66,7 +66,6 @@
                     <div class="center">
                         <p class="btn-volver">Volver</p>
                     </div>
-                    <!-- btn-alert -->
                 </form>
             </div>
         </span>

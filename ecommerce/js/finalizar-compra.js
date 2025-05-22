@@ -83,6 +83,6 @@ function enviarWhatsApp() {
     const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
     setTimeout(() => {
-        window.open(url, "_blank");
+        window.open(url, "_self");
     }, 500);
 }

@@ -29,7 +29,7 @@ function changeFormato(btn) {
 
     switch(btn.id) {
         case "btn1":
-            precioPro.textContent = "7.50";
+            precioPro.textContent = "8.85";
             if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
@@ -37,7 +37,7 @@ function changeFormato(btn) {
             }
             break;
         case "btn2":
-            precioPro.textContent = "29.20";
+            precioPro.textContent = "34.46";
             if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
@@ -45,7 +45,7 @@ function changeFormato(btn) {
             }
             break;
         case "btn3":
-            precioPro.textContent = "45.00";
+            precioPro.textContent = "53.10";
             if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
@@ -53,7 +53,7 @@ function changeFormato(btn) {
             }
             break;
         case "btn4":
-            precioPro.textContent = "175.00";
+            precioPro.textContent = "206.50";
              if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
@@ -61,11 +61,11 @@ function changeFormato(btn) {
             }
             break;
         case "btn5":
-            precioPro.textContent = "465.00";
+            precioPro.textContent = "548.70";
             imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91af4810a725ec4834f1_barril-30.png";
             break;
         case "btn6":
-            precioPro.textContent = "749.00";
+            precioPro.textContent = "883.82";
             imgPro.src ="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681a91afc94d33a3106045f6_barril-50.png";
             break;
     }

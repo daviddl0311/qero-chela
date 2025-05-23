@@ -28,40 +28,80 @@
                     Confirma tu dirección para coordinar el delivery.
                 </p>
                 <form id="formulario" method="POST" class="flex flex-column gap-alert">
-                    <div class="departamente">
-                        <select name="departamento" id="depa" required>
-                            <option value="" selected disabled>Selecciona Departamento</option>
-                            <option value="Amazonas">Amazonas</option>
-                            <option value="Áncash">Áncash</option>
-                            <option value="Apurímac">Apurímac</option>
-                            <option value="Arequipa">Arequipa</option>
-                            <option value="Ayacucho">Ayacucho</option>
-                            <option value="Cajamarca">Cajamarca</option>
-                            <option value="Cusco">Cusco</option>
-                            <option value="Huancavelica">Huancavelica</option>
-                            <option value="Huánuco">Huánuco</option>
-                            <option value="Ica">Ica</option>
-                            <option value="Junín">Junín</option>
-                            <option value="La Libertad">La Libertad</option>
-                            <option value="Lambayeque">Lambayeque</option>
-                            <option value="Lima">Lima</option>
-                            <option value="Loreto">Loreto</option>
-                            <option value="Madre de Dios">Madre de Dios</option>
-                            <option value="Moquegua">Moquegua</option>
-                            <option value="Pasco">Pasco</option>
-                            <option value="Piura">Piura</option>
-                            <option value="Puno">Puno</option>
-                            <option value="San Martín">San Martín</option>
-                            <option value="Tacna">Tacna</option>
-                            <option value="Tumbes">Tumbes</option>
-                            <option value="Ucayali">Ucayali</option>
-                        </select>
+                    <div class="flex flex-column gap-alert-2">
+                        <div class="departamente">
+                            <select name="distrito" id="distrito" required>
+                                <option value="" selected disabled>Selecciona tu distrito</option>
+                                <option value="Ate - Huachipa">Ate - Huachipa</option>
+                                <option value="Ate - Huaycan">Ate - Huaycan</option>
+                                <option value="Ate - Salamanca">Ate - Salamanca</option>
+                                <option value="Ate - Santa Clara">Ate - Santa Clara</option>
+                                <option value="Ate Vitarte - Puruchuco">Ate Vitarte - Puruchuco</option>
+                                <option value="Barranco">Barranco</option>
+                                <option value="Bellavista">Bellavista</option>
+                                <option value="Breña">Breña</option>
+                                <option value="Carabayllo">Carabayllo</option>
+                                <option value="Carmen de la Legua">Carmen de la Legua</option>
+                                <option value="Cercado de Lima">Cercado de Lima</option>
+                                <option value="Chaclacayo">Chaclacayo</option>
+                                <option value="Chorrillos">Chorrillos</option>
+                                <option value="Chosica">Chosica</option>
+                                <option value="Comas">Comas</option>
+                                <option value="El Agustino">El Agustino</option>
+                                <option value="Independencia">Independencia</option>
+                                <option value="Jesús María">Jesús María</option>
+                                <option value="La Molina">La Molina</option>
+                                <option value="La Perla">La Perla</option>
+                                <option value="La Victoria">La Victoria</option>
+                                <option value="Lince">Lince</option>
+                                <option value="Los Olivos">Los Olivos</option>
+                                <option value="Lurín">Lurín</option>
+                                <option value="Magdalena">Magdalena</option>
+                                <option value="Miraflores">Miraflores</option>
+                                <option value="Molina - Musa">Molina - Musa</option>
+                                <option value="Ñaña">Ñaña</option>
+                                <option value="Pachacamac">Pachacamac</option>
+                                <option value="Pueblo Libre">Pueblo Libre</option>
+                                <option value="Puente Piedra">Puente Piedra</option>
+                                <option value="Rímac">Rímac</option>
+                                <option value="San Borja">San Borja</option>
+                                <option value="San Isidro">San Isidro</option>
+                                <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="San Martín de Porres">San Martín de Porres</option>
+                                <option value="San Miguel">San Miguel</option>
+                                <option value="Santa Anita">Santa Anita</option>
+                                <option value="Surco">Surco</option>
+                                <option value="Surquillo">Surquillo</option>
+                                <option value="S.J.L - Jicamarca">S.J.L - Jicamarca</option>
+                                <option value="S.J.L - Mariscal">S.J.L - Mariscal</option>
+                                <option value="S.J.L - Montenegro">S.J.L - Montenegro</option>
+                                <option value="V.M.T - José Gálvez">V.M.T - José Gálvez</option>
+                                <option value="Ventanilla">Ventanilla</option>
+                                <option value="Villa El Salvador">Villa El Salvador</option>
+                                <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                                <option value="Callao">Callao</option>
+                                <option value="Callao - La Punta">Callao - La Punta</option>
+                                <option value="Callao - Márquez">Callao - Márquez</option>
+                                <option value="Callao - Oquendo">Callao - Oquendo</option>
+                            </select>
+                        </div>
+                        <p class="alert-text-2">*El costo de envío varía según el distrito seleccionado.</p>
                     </div>
                     <div class="ubicacion">
                         <input type="text" name="ubicacion" id="ubicacion" placeholder="Dirección" required>
                     </div>
-                    <input type="hidden" name="productos" id="productos">
-                    <p class="alert-text-2">*Delivery: S/ 15.00 adicionales.</p>
+                    <div class="texto">
+                        <p>Subtotal: S/ <span id="pay"></span></p>
+                    </div>
+                    <div class="texto">
+                        <p>Delivery: S/ <span id="pay-delivery">0.00</span></p>
+                    </div>
+                    <div class="texto">
+                        <p>Total: S/ <span id="pay-total">0.00</span></p>
+                    </div>
+                    <input type="hidden" name="pedido" id="pedido">
                     <button class="btn-submit" type="submit">Finalizar Compra</button>
                     <div class="center">
                         <p class="btn-volver">Volver</p>
@@ -96,12 +136,12 @@
                         <div>
                             <p class="precio-final">Subtotal: S/ <span class="subtotal">0.00</span></p>
                         </div>
-                        <div>
+                        <!-- <div>
                             <p class="precio-final">IGV (18%): S/ <span class="igv">0.00</span></p>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                             <p class="precio-final">Total: S/ <span class="total">0.00</span></p>
-                        </div>
+                        </div> -->
                     </li>
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
                         
@@ -139,7 +179,7 @@
                                         <div class='flex flex-column gap-stock2'>
                                             <div class='flex gap-stock'>
                                                 <div class='productos-precio center'>
-                                                    <p>PEN <span class='precio'>7.50</span></p>
+                                                    <p>PEN <span class='precio'>8.85</span></p>
                                                 </div>
                                                 <div class='productos-stock center'>
                                                     <p class='stock'>" .$producto['stock']. "</p>

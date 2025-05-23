@@ -527,21 +527,14 @@ main {
     font-size: clamp(13px, 3vw, 16px);
 }
 .alert-text-2 {
-    font-size: clamp(10px, 3vw, 13px);
+    font-size: clamp(10px, 3vw, 14px);
     font-weight: 600;
 }
 .gap-alert {
     gap: 1rem;
 }
-.btn-alert {
-    color: white;
-    padding-block: .7rem;
-    padding-inline: 1.2rem;
-    border-radius: 5px;
-    font-size: clamp(10px, 3vw, 15px);
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    background-color: rgb(32, 32, 219);
+.gap-alert-2 {
+    gap: .5rem;
 }
 .btn-submit {
     font-family: "Gidole", sans-serif;
@@ -549,7 +542,7 @@ main {
     padding-block: .7rem;
     padding-inline: 1.2rem;
     border-radius: 5px;
-    font-size: clamp(13px, 3vw, 15px);
+    font-size: clamp(14px, 3vw, 16px);
     cursor: pointer;
     transition: all .3s ease-in-out;
     background-color: rgb(32, 32, 219);
@@ -559,13 +552,8 @@ main {
     color: rgb(32, 32, 219);
     box-shadow: 0 0 5px rgb(32, 32, 219);
 }
-.btn-alert:hover {
-    background-color: white;
-    color: rgb(32, 32, 219);
-    box-shadow: 0 0 3px rgb(32, 32, 219);
-}
 .btn-volver {
-    font-size: clamp(13px, 3vw, 15px);
+    font-size: clamp(14px, 3vw, 16px);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -573,6 +561,7 @@ main {
 select {
     width: 100%;
     padding-block: .5rem;
+    padding-left: .2rem;
     font-family: "Gidole", sans-serif;
     font-size: clamp(10px, 3vw, 14px);
     border: 1px solid black;
@@ -586,6 +575,22 @@ select {
     font-size: clamp(10px, 3vw, 14px);
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.texto {
+    font-size: clamp(13px, 3vw, 16px);
+}
+#pay-delivery,
+#pay,
+#pay-total {
+    font-size: clamp(16px, 3vw, 21px);
+}
+#pay {
+    font-weight: 200;
+}
+#pay-delivery,
+#pay-total {
+    font-weight: bold;
 }
 
 

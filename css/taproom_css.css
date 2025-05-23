@@ -243,8 +243,20 @@ header {
     letter-spacing: 2px;
     font-size: clamp(30px, 3vw, 35px);
     font-family: 'Bilcase Demo', sans-serif;
+    margin-bottom: 5rem;
 }
-  
+.tap-galeria-fotos {
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+}
+.item img {
+    width: 300px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.item img:hover {
+    scale: 1.1;
+}
 
 /*--------------  FOOTER -----------------*/
 footer {

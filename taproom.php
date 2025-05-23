@@ -81,8 +81,21 @@
             <div class="tap-galeria-title center-align">
                 <h2>galeria</h2>
             </div>
-            <div class="tap-galeria-fotos">
-                
+            <div class="grid tap-galeria-fotos">
+                <?php
+                    include 'php/conexion.php';
+
+                    $query = "SELECT * FROM galeria ORDER BY id_galeria DESC LIMIT 9";
+
+                    $resultado = mysqli_query($conexion, $query);
+
+                    while($galeria = mysqli_fetch_assoc($resultado)){
+                        echo 
+                        "<div class='item'>
+                            <img src='".$galeria['img']."' alt='Foto Templo Qero Chela'>
+                        </div>";
+                    }
+                ?>
             </div>
         </div>
     </main>

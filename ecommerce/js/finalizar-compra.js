@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
         finalizarCompra();
     });
 
-    document.querySelector("#finalCompra").style.opacity = ".5";
-
     document.querySelector(".btn-volver").addEventListener("click", () => {
         document.querySelector(".alert").classList.add("display-none");
     });
@@ -37,7 +35,6 @@ function finalizarCompra() {
     if(document.querySelector("#mi-carrito").children.length > 1) {
         
         //Habilitar Boton de Finalizar Compra
-        document.querySelector("#finalCompra").style.opacity = 1;
         
         //Mensaje Emergente
         document.querySelector(".alert").classList.remove("display-none");
@@ -159,8 +156,6 @@ function enviarWhatsApp() {
     mensaje += `*SUBTOTAL: S/. ${subtotal}*\n`;
     mensaje += `*DELIVERY: S/. ${delivery}*\n`;
     mensaje += `*TOTAL: S/. ${total}*\n`;
-
-    // mensaje += `*TOTAL: S/. ${parseFloat(total) + 15}*\n`;
 
     const mensajeCodificado = encodeURIComponent(mensaje);
     

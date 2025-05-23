@@ -179,7 +179,7 @@
                                         <div class='flex flex-column gap-stock2'>
                                             <div class='flex gap-stock'>
                                                 <div class='productos-precio center'>
-                                                    <p>PEN <span class='precio'>8.85</span></p>
+                                                    <p>PEN <span class='precio'>" .$producto['precio_ini']. "</span></p>
                                                 </div>
                                                 <div class='productos-stock center'>
                                                     <p class='stock'>" .$producto['stock']. "</p>

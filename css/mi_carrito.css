@@ -299,7 +299,11 @@ main {
 }
 .formato-selected {
     background-color: white;
-    color: black
+    color: black;
+}
+.formato-selected:disabled {
+    background-color: #6d4905;
+    color: white;
 }
 .productos-button-enviar button {
     width: 100%;
@@ -316,7 +320,6 @@ main {
 /*-------- DESHABILITADO ---------*/
 *:disabled {
     background-color: #b97b09;
-    border: 1px solid #f7a40b;
     color: white;
 }
 .productos-button-enviar button:disabled {
@@ -485,7 +488,8 @@ main {
     bottom: 2%;
     background-color: black;
     padding-block: 1rem;
-    padding-inline: 4rem;
+    padding-inline: 5rem;
+    border-radius: 5px;
     color: white;
     font-size: clamp(14px, 3vw, 16px);
     cursor: pointer;
@@ -1148,11 +1152,13 @@ footer {
         object-fit: contain;
         filter: drop-shadow(0 0 .5px white);
     }
-    /* .flex-direction-item {
-        flex-direction: column;
-    } */
     .item-carrito-gap {
         gap: .5rem;
+    }
+
+    /*----- MENSAJE EMERGENTE -----*/
+    .container {
+        padding: 1rem;
     }
 
     /*-------------- FOOTER --------------*/ 
@@ -1280,9 +1286,6 @@ footer {
         object-fit: contain;
         filter: drop-shadow(0 0 .5px white);
     }
-    /* .flex-direction-item {
-        flex-direction: column;
-    } */
     .item-carrito-gap {
         gap: 0.4rem;
     }
@@ -1302,6 +1305,11 @@ footer {
         border-radius: 100%;
         font-size: clamp(11px, 3vw, 16px);
         cursor: pointer;
+    }
+
+    /*----- MENSAJE EMERGENTE -----*/
+    .container {
+        padding: 1rem;
     }
 
 
@@ -1421,6 +1429,11 @@ footer {
     }
     .grid-column-3 {
         grid-template-columns: repeat(1, auto);
+    }
+
+    /*----- MENSAJE EMERGENTE -----*/
+    .container {
+        padding: .8rem;
     }
 
     /*-------------- FOOTER --------------*/ 

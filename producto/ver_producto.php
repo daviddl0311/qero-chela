@@ -58,7 +58,7 @@
                                 <div class='flex flex-column gappx'>
                                     <div class='producto-precio'>
                                         <span id='precio'>
-                                            pen 8.85
+                                            pen " .$producto['precio_ini']. "
                                         </span>
                                     </div>
                                     <sub class='nota'>*Incluye IGV (18%)</sub>

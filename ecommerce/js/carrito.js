@@ -139,7 +139,7 @@ function enlistarCarrito(btnEnviar) {
     }
   
     //Activar Boton de Finalizar Compra
-    activarBtnFin();
+    //activarBtnFin();
 
     //Aumentar Cantidad
     sum+=1;
@@ -205,29 +205,31 @@ function deleteItem(itemDel, producto) {
     addItem(sum);
     
     //Desactivar Boton Finalizar
-    desactivarBtnFin();
+    //desactivarBtnFin();
     
     //Añadir Mensaje
     addMessage();
 }
 
-function activarBtnFin() {
-    let fin = document.querySelector("#finalCompra");
-    let miCar = document.querySelector("#mi-carrito");
+// function activarBtnFin() {
+//     let fin = document.querySelector("#finalCompra");
+//     let miCar = document.querySelector("#mi-carrito");
 
-    if(miCar.children.length >= 0) {
-        fin.style.opacity = "1";
-    }
-}
+//     if(miCar.children.length >= 0) {
+//         // fin.style.opacity = "1";
+//         fin.disabled = false;
+//     }
+// }
 
-function desactivarBtnFin() {
-    let fin = document.querySelector("#finalCompra");
-    let miCar = document.querySelector("#mi-carrito");
+// function desactivarBtnFin() {
+//     let fin = document.querySelector("#finalCompra");
+//     let miCar = document.querySelector("#mi-carrito");
 
-    if(miCar.children.length <= 1) {
-        fin.style.opacity = ".5";
-    }
-}
+//     if(miCar.children.length <= 1) {
+//         // fin.style.opacity = ".5";
+//         fin.disabled = true;
+//     }
+// }
 
 function emergeMessage() {
     let msgList = document.querySelector(".emerge-msg");

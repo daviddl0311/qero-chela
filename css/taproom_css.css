@@ -233,6 +233,17 @@ header {
               transform: scale(1);
     }
 }
+
+/*-------------- GALERIA TAPROOM --------------*/
+.tap-galeria {
+    padding: 5rem;
+}
+.tap-galeria-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: clamp(30px, 3vw, 35px);
+    font-family: 'Bilcase Demo', sans-serif;
+}
   
 
 /*--------------  FOOTER -----------------*/

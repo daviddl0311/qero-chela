@@ -77,6 +77,14 @@
                 </div>
             </div>
         </div>
+        <div class="tap-galeria center flex flex-column">
+            <div class="tap-galeria-title center-align">
+                <h2>galeria</h2>
+            </div>
+            <div class="tap-galeria-fotos">
+                
+            </div>
+        </div>
     </main>
 
     <?php

@@ -25,7 +25,7 @@
     <main class="productos flex flex-column center gap-pro" id="productos">
         <article>
             <div class="title-productos center">
-                <h2>productos</h2>
+                <h2 class="center-align">productos</h2>
             </div>
             <section class="my-products center grid productos-column-3">
                 <?php
@@ -105,7 +105,7 @@
         
         <article>
             <div class="title-productos center">
-                <h2>regalo cervecero</h2>
+                <h2 class="center-align">regalo cervecero</h2>
             </div>
             <section class="my-products center grid productos-column-2">
                 <?php

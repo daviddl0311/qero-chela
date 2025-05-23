@@ -33,6 +33,9 @@ header {
     display: grid;
     place-content: center;
 }
+.center-align {
+    text-align: center;
+}
 
 @view-transition {
     navigation: auto;

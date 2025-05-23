@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             enlistarCarrito(btnEnviar);
         });
     });
+
 });
 
 function messageCarrito() {

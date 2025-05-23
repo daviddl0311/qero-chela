@@ -217,170 +217,69 @@
                                 </div>
                             </div>";
                         }
+
+                        mysqli_close($conexion);
                     ?>
                 </article>
             </div>
             <div>
                 <div class="title-productos center">
-                    <h2>promos</h2>
+                    <h2>regalo cervecero</h2>
                 </div>
                 <article class="grid grid-column-3 productos-gap-3 center">
-                    <div class='grid grid-column-3 '>
-                        <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
-                            <div class='productos-img center'>
-                                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
-                            </div>
-                            <div class='productos-name'>
-                                <p>Promo 1</p>
-                            </div>
-                            <div class='flex flex-column gap-stock2'>
-                                <div class="flex gap-stock">
-                                    <div class='productos-precio center'>
-                                        <p>PEN <span class='precio'>5.00</span></p>
+                    <?php
+                        include '../php/conexion.php';
+
+                        $query = "SELECT * FROM producto WHERE categoria = 'promo'";
+
+                        $resultado = mysqli_query($conexion, $query);
+
+                        while($producto = mysqli_fetch_assoc($resultado)) {
+                            echo
+                            "<div class='grid grid-column-3 '>
+                                <div class='item-producto flex flex-column center productos-gap-2' id='promo'>
+                                    <div class='productos-img center'>
+                                        <img src='".$producto['img']."' alt='".$producto['nombre']."' class='img-producto'>
                                     </div>
-                                    <div class='productos-stock center'>
-                                        <p class='stock'>En Stock</p>
+                                    <div class='productos-name'>
+                                        <p>".$producto['nombre']."</p>
                                     </div>
-                                </div>
-                                <div>
-                                    <small class='productos-igv'>IGV incluido</small>
-                                </div> 
-                            </div>
-                            <div class='cantidad center'>
-                                <div class='flex productos-gap-4'>
-                                    <button class='center btn-minus'>
-                                        -
-                                    </button>
-                                    <div class='center producto-cantidad'>
-                                        1
+                                    <div class='flex flex-column gap-stock2'>
+                                        <div class='flex gap-stock'>
+                                            <div class='productos-precio center'>
+                                                <p>PEN <span class='precio'>".$producto['precio_ini']."</span></p>
+                                            </div>
+                                            <div class='productos-stock center'>
+                                                <p class='stock'>".$producto['stock']."</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <small class='productos-igv'>IGV incluido</small>
+                                        </div> 
                                     </div>
-                                    <button class='center btn-plus'>
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productos-button-enviar">
-                                <button class='input-enviar'>añadir</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='grid grid-column-3 '>
-                        <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
-                            <div class='productos-img center'>
-                                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
-                            </div>
-                            <div class='productos-name'>
-                                <p>Promo 1</p>
-                            </div>
-                            <div class='flex flex-column gap-stock2'>
-                                <div class="flex gap-stock">
-                                    <div class='productos-precio center'>
-                                        <p>PEN <span class='precio'>5.00</span></p>
+                                    <div class='cantidad center'>
+                                        <div class='flex productos-gap-4'>
+                                            <button class='center btn-minus'>
+                                                -
+                                            </button>
+                                            <div class='center producto-cantidad'>
+                                                1
+                                            </div>
+                                            <button class='center btn-plus'>
+                                                +
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class='productos-stock center'>
-                                        <p class='stock'>En Stock</p>
+                                    <div class='productos-button-enviar'>
+                                        <button class='input-enviar'>añadir</button>
                                     </div>
                                 </div>
-                                <div>
-                                    <small class='productos-igv'>IGV incluido</small>
-                                </div> 
-                            </div>
-                            <div class='cantidad center'>
-                                <div class='flex productos-gap-4'>
-                                    <button class='center btn-minus'>
-                                        -
-                                    </button>
-                                    <div class='center producto-cantidad'>
-                                        1
-                                    </div>
-                                    <button class='center btn-plus'>
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productos-button-enviar">
-                                <button class='input-enviar'>añadir</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='grid grid-column-3 '>
-                        <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
-                            <div class='productos-img center'>
-                                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
-                            </div>
-                            <div class='productos-name'>
-                                <p>Promo 1</p>
-                            </div>
-                            <div class='flex flex-column gap-stock2'>
-                                <div class="flex gap-stock">
-                                    <div class='productos-precio center'>
-                                        <p>PEN <span class='precio'>5.00</span></p>
-                                    </div>
-                                    <div class='productos-stock center'>
-                                        <p class='stock'>En Stock</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <small class='productos-igv'>IGV incluido</small>
-                                </div> 
-                            </div>
-                            <div class='cantidad center'>
-                                <div class='flex productos-gap-4'>
-                                    <button class='center btn-minus'>
-                                        -
-                                    </button>
-                                    <div class='center producto-cantidad'>
-                                        1
-                                    </div>
-                                    <button class='center btn-plus'>
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productos-button-enviar">
-                                <button class='input-enviar'>añadir</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='grid grid-column-3 '>
-                        <div class="item-producto flex flex-column center productos-gap-2" id='promo'>
-                            <div class='productos-img center'>
-                                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/681b9f81da511ce9b6ed78cf_caja-de-24.png" alt="" class='img-producto'>
-                            </div>
-                            <div class='productos-name'>
-                                <p>Promo 1</p>
-                            </div>
-                            <div class='flex flex-column gap-stock2'>
-                                <div class="flex gap-stock">
-                                    <div class='productos-precio center'>
-                                        <p>PEN <span class='precio'>5.00</span></p>
-                                    </div>
-                                    <div class='productos-stock center'>
-                                        <p class='stock'>Agotado</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <small class='productos-igv'>IGV incluido</small>
-                                </div> 
-                            </div>
-                            <div class='cantidad center'>
-                                <div class='flex productos-gap-4'>
-                                    <button class='center btn-minus'>
-                                        -
-                                    </button>
-                                    <div class='center producto-cantidad'>
-                                        1
-                                    </div>
-                                    <button class='center btn-plus'>
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productos-button-enviar">
-                                <button class='input-enviar'>añadir</button>
-                            </div>
-                        </div>
-                    </div>
+                            </div>";
+                        }
+
+                        mysqli_close($conexion);
+                    ?>
+                   
                 </article>
             </div>
         </section>

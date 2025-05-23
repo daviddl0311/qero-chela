@@ -105,7 +105,7 @@
         <section class="productos" id="productos">
             <section class="center">
                 <div class="center">
-                    <h2 class="title-section">nuestros productos</h2>
+                    <h2 class="title-section">principales productos</h2>
                 </div>
                 <div class="center">
                     <p class="text-section center-align">Cerveza artesanal con identidad. Sabor que cuenta una historia.</p>
@@ -115,7 +115,7 @@
             <?php
                 include 'php/conexion.php';
 
-                $query = "SELECT * FROM producto";
+                $query = "SELECT * FROM producto WHERE categoria = 'bebida' OR categoria = 'tantrica'";
 
                 $resultado = mysqli_query($conexion, $query);
 

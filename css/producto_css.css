@@ -105,7 +105,7 @@ header {
     max-width: 100%;
 }
 .producto-img {
-    width: 130px;
+    /* width: 130px; */
     height: 350px;
     object-fit: cover;
     filter: drop-shadow(0 0 3px white);
@@ -962,7 +962,7 @@ footer {
         height: 370px;
     }
     .producto-img {
-        width: 130px;
+        /* width: 130px; */
         height: 350px;
         object-fit: cover;
     }
@@ -1130,7 +1130,7 @@ footer {
         padding: 1rem;
     }
     .producto-img {
-        width: 120px;
+        /* width: 120px; */
         height: 300px;
         object-fit: cover;
     }

@@ -102,7 +102,42 @@
                 ?>
             </section>
         </article>
+        
+        <article>
+            <div class="title-productos center">
+                <h2>regalo cervecero</h2>
+            </div>
+            <section class="my-products center grid productos-column-2">
+                <?php
+                    include 'php/conexion.php';
 
+                    $query = "SELECT * FROM producto WHERE categoria = 'promo'";
+
+                    $resultado = mysqli_query($conexion, $query);
+
+                    while($producto = mysqli_fetch_assoc($resultado)) {
+                        echo
+                        "<div class='item-flex flex flex-column'>
+                            <div class='center'>
+                                <a href='producto/ver_producto_promo.php?id={$producto['id_producto']}'>
+                                    <img src='".$producto['img']."' alt='Promos Día del Padre' class='item-img'>
+                                </a>
+                            </div>
+                            <div class='producto-info flex flex-column'>
+                                <div class='center'>
+                                    <p>".$producto['nombre']."</p>
+                                </div>
+                                <div class='center'>
+                                    <button onclick='location.href=`producto/ver_producto_promo.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
+                                </div>
+                            </div>
+                        </div>";
+                    }
+
+                    mysqli_close($conexion);
+                ?>
+            </section>
+        </article>
         <!-- <article>
             <div class="title-productos center">
                 <h2>craft Beer</h2>

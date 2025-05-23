@@ -47,14 +47,6 @@
                                 <div class='producto-text'>
                                     <p>" .$producto['descripcion']. "</p>    
                                 </div>
-                                <div class='producto-formato grid'>
-                                    <button id='bt1' class='button producto-opacity'>unidad</button>
-                                    <button id='bt2' class='button'>4 pack</button>
-                                    <button id='bt3' class='button'>6 pack</button>
-                                    <button id='bt4' class='button'>24 pack</button>
-                                    <button id='bt5' class='button'>30 l</button>
-                                    <button id='bt6' class='button'>50 l</button>
-                                </div>
                                 <div class='flex flex-column gappx'>
                                     <div class='producto-precio'>
                                         <span id='precio'>
@@ -64,7 +56,6 @@
                                     <sub class='nota'>*Incluye IGV (18%)</sub>
                                 </div>
                                 <div class='flex flex-column producto-buttons'>
-                                    <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                     <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
                                 </div>
                             </div>

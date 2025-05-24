@@ -155,7 +155,7 @@
         <section class="productos flex flex-column gap-carrito">
             <div>
                 <div class="title-productos center">
-                    <h2>bebidas</h2>
+                    <h2 class="center-align">bebidas</h2>
                 </div>
                 <article class="grid grid-column-3 productos-gap-3 center">
                     <?php
@@ -224,7 +224,7 @@
             </div>
             <div>
                 <div class="title-productos center">
-                    <h2>regalo cervecero</h2>
+                    <h2 class="center-align">regalo cervecero</h2>
                 </div>
                 <article class="grid grid-column-3 productos-gap-3 center">
                     <?php

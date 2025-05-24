@@ -72,7 +72,7 @@
                     </section>";
                 }
 
-                mysqli_close($conexion);
+                // mysqli_close($conexion);
             }
         ?>
         <section class="productos" id="productos">
@@ -86,7 +86,7 @@
             </section>
             <div class="grid productos-column-3 center">
                 <?php
-                    include '../php/conexion.php';
+                    // include '../php/conexion.php';
     
                     $query = "SELECT * FROM producto WHERE categoria = 'bebida' OR categoria = 'tantrica'";
     

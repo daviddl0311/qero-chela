@@ -95,6 +95,8 @@
                             <img src='".$galeria['img']."' alt='Foto Templo Qero Chela'>
                         </div>";
                     }
+
+                    mysqli_close($conexion);
                 ?>
             </div>
         </div>

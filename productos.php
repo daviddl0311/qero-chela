@@ -54,7 +54,7 @@
                         </div>";
                     }
 
-                    mysqli_close($conexion);
+                    // mysqli_close($conexion);
                 ?>
                 <div class="item-flex flex flex-column">
                     <div class="center">
@@ -73,7 +73,7 @@
                 </div>
 
                 <?php
-                    include 'php/conexion.php';
+                    // include 'php/conexion.php';
 
                     $query = "SELECT * FROM producto WHERE nombre = 'luna de miel'";
 
@@ -98,7 +98,7 @@
                         </div>";
                     }
 
-                    mysqli_close($conexion);
+                    // mysqli_close($conexion);
                 ?>
             </section>
         </article>
@@ -109,7 +109,7 @@
             </div>
             <section class="my-products center grid productos-column-2">
                 <?php
-                    include 'php/conexion.php';
+                    // include 'php/conexion.php';
 
                     $query = "SELECT * FROM producto WHERE categoria = 'promo'";
 

@@ -217,8 +217,6 @@
                                 </div>
                             </div>";
                         }
-
-                        mysqli_close($conexion);
                     ?>
                 </article>
             </div>
@@ -228,7 +226,7 @@
                 </div>
                 <article class="grid grid-column-3 productos-gap-3 center">
                     <?php
-                        include '../php/conexion.php';
+                        // include '../php/conexion.php';
 
                         $query = "SELECT * FROM producto WHERE categoria = 'promo'";
 

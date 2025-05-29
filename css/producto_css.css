@@ -87,7 +87,7 @@ header {
 }
 .ver-producto-2 {
     padding-block: 2rem;
-    padding-inline: 1rem;
+    /* padding-inline: 1rem; */
     gap: 2rem;
 }
 .ver-producto-column {

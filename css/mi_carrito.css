@@ -487,6 +487,7 @@ main {
     right: 1%;
     bottom: 2%;
     background-color: black;
+    border: 1px solid rgb(48, 48, 48);
     padding-block: 1rem;
     padding-inline: 5rem;
     border-radius: 5px;
@@ -497,7 +498,6 @@ main {
 }
 .finalizar button:hover {
     background-color: white;
-    box-shadow: 0 0 5px black;
     color: black;
 }
 
@@ -548,13 +548,13 @@ main {
     border-radius: 5px;
     font-size: clamp(14px, 3vw, 16px);
     cursor: pointer;
-    transition: all .3s ease-in-out;
     background-color: rgb(32, 32, 219);
+    border: 1px solid rgb(32, 32, 219);
+    transition: all .3s ease-in-out;
 }
 .btn-submit:hover {
     background-color: white;
     color: rgb(32, 32, 219);
-    box-shadow: 0 0 5px rgb(32, 32, 219);
 }
 .btn-volver {
     font-size: clamp(14px, 3vw, 16px);

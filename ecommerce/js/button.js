@@ -41,7 +41,7 @@ function changeFormato(btn) {
             if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
-                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png";
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/68389758ac5956e135583045_11.png";
             }
             break;
         case "btn3":
@@ -49,7 +49,7 @@ function changeFormato(btn) {
             if(nombrePro.textContent.trim() == "aborigen") {
                 imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f815308fe96f66a6284b9_QeroChela_Aborigen.png";
             } else {
-                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8153dbb31f989894afc0_QeroChela_LunaMiel.png";
+                imgPro.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/683897589fb2a38753873b64_12.png";
             }
             break;
         case "btn4":

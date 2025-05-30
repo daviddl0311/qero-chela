@@ -75,6 +75,30 @@
                 // mysqli_close($conexion);
             }
         ?>
+        <section class="ver-producto2 center">
+            <article class="grid grid-column-new">
+                <div class="new-productos-img center">
+                    <div class="img-new">
+                        <a href="">
+                            <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838975a568c62d5c6efe9c8_9.png" alt="">
+                        </a>
+                    </div>
+                    <div class="btn-new center">
+                        <button>Ver producto</button>
+                    </div>
+                </div>
+               <div class="new-productos-img center">
+                    <div class="img-new">
+                        <a href="">
+                            <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838975a568c62d5c6efe9c8_9.png" alt="">
+                        </a>
+                    </div>
+                    <div class="btn-new center">
+                        <button>Ver producto</button>
+                    </div>
+                </div>
+            </article>
+        </section>
         <section class="productos" id="productos">
             <section class="center">
                 <div class="center">

@@ -24,7 +24,7 @@ buttons.forEach(button => {
                 if(title.textContent.trim() == "aborigen") {
                     img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
-                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
+                    img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/68389758ac5956e135583045_11.png";
                 }
                 img.classList.remove("producto-img-2")
                 img.classList.add("producto-img")
@@ -34,7 +34,7 @@ buttons.forEach(button => {
                 if(title.textContent.trim() == "aborigen") {
                     img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da043f98fb67f81903884_QeroChela_Aborigen.png";
                 } else {
-                    img.src = "https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da04352c03b07f7dcf05b_QeroChela_LunaMiel.png";
+                    img.src = "https://cdn.prod.website-files.com/680f81021936b0d565d34173/683897589fb2a38753873b64_12.png";
                 }
                 img.classList.remove("producto-img-2")
                 img.classList.add("producto-img")

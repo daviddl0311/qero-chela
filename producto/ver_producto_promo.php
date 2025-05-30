@@ -34,11 +34,13 @@
                 $resultado = mysqli_query($conexion, $query);
 
                 while($producto = mysqli_fetch_assoc($resultado)) {
+                    // $imagenes = json_decode($producto['img'], true);
+
                     echo
                     "<section class='ver-producto center' id='".$producto['nombre']."'>
                         <article class='grid ver-producto-column-2'>
                             <div class='ver-producto-img center'>
-                                <img src=' ". $producto['img'] ."' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
+                                <img src='" .$producto['img']. "' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
                             </div>
                             <div class='flex flex-column ver-producto-2'>
                                 <div class='producto-title'>

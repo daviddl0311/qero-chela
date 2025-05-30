@@ -90,11 +90,11 @@ header {
 }
 .productos-column-2 {
     grid-template-columns: repeat(2, auto);
-    gap: 10rem;
+    gap: 8rem;
 }
 .productos-column-3 {
     grid-template-columns: repeat(3, auto);
-    gap: 10rem;
+    gap: 8rem;
 }
 .item-img {
     /* width: 8.5rem; */
@@ -145,7 +145,7 @@ header {
 }
 .producto-info div > p {
     text-transform: uppercase;
-    font-size: clamp(25px, 3vw, 30px);
+    font-size: clamp(30px, 3vw, 25px);
     font-weight: bold;
 }
 .producto-info div > button {
@@ -166,7 +166,7 @@ header {
     gap: 6rem;
 }
 .item-flex {
-    /* width: 200px; */
+    width: 200px;
 }
 .item-flex-2 {
     width: 100%;

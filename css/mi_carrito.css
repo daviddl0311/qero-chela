@@ -201,7 +201,7 @@ main {
     padding-inline: .4rem;
     padding-block: .3rem;
     border-radius: 100%;
-    font-size: clamp(11px, 3vw, 16px);
+    /* font-size: clamp(11px, 3vw, 16px); */
     cursor: pointer;
 }
 .item-carrito {
@@ -1342,7 +1342,7 @@ footer {
         padding-inline: .3rem;
         padding-block: .2rem;
         border-radius: 100%;
-        font-size: clamp(11px, 3vw, 16px);
+        /* font-size: clamp(11px, 3vw, 16px); */
         cursor: pointer;
     }
 

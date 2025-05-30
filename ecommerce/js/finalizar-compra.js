@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".message2").classList.add("display-none");
 
     document.querySelector(".btn-msg2").addEventListener("click", () => {
-        document.querySelector(".alert").classList.add("display-none");
         document.querySelector(".message").classList.remove("display-none");
+        document.querySelector(".alert").classList.add("display-none");
     });
 });
 

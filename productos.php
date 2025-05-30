@@ -40,7 +40,7 @@
                         "<div class='item-flex flex flex-column'>
                             <div class='center'>
                                 <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
-                                    <img src='".$producto['img']."' alt='Q'ero Chela ".$producto['nombre']."' class='item-img'>
+                                    <img src='" .$producto['img']. "' alt='Qero Chela ".$producto['nombre']."' class='item-img'>
                                 </a>
                             </div>
                             <div class='producto-info flex flex-column'>
@@ -84,12 +84,12 @@
                         "<div class='item-flex flex flex-column'>
                             <div class='center'>
                                 <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
-                                    <img src='".$producto['img']."' alt='Q'ero Chela ".$producto['nombre']."' class='item-img'>
+                                    <img src='".$producto['img']."' alt='Qero Chela ".$producto['nombre']."' class='item-img'>
                                 </a>
                             </div>
                             <div class='producto-info flex flex-column'>
                                 <div class='center'>
-                                    <p>".$producto['nombre']."</p>
+                                    <p class='center-align'>".$producto['nombre']."</p>
                                 </div>
                                 <div class='center'>
                                     <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
@@ -107,7 +107,7 @@
             <div class="title-productos center">
                 <h2 class="center-align">regalo cervecero</h2>
             </div>
-            <section class="my-products center grid productos-column-2">
+            <section class="my-products center grid productos-column-3">
                 <?php
                     // include 'php/conexion.php';
 
@@ -125,7 +125,7 @@
                             </div>
                             <div class='producto-info flex flex-column'>
                                 <div class='center'>
-                                    <p>".$producto['nombre']."</p>
+                                    <p class='center-align'>".$producto['nombre']."</p>
                                 </div>
                                 <div class='center'>
                                     <button onclick='location.href=`producto/ver_producto_promo.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>

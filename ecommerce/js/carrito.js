@@ -104,7 +104,7 @@ function enlistarCarrito(btnEnviar) {
             </div>
             <div class="btn-delete">
                 <button class="item-delete center">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="center fa-solid fa-xmark"></i>
                 </button>
             </div>`;
             break;

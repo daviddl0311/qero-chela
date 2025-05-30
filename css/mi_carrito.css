@@ -54,6 +54,10 @@ main {
 .display-none {
     display: none;
 }
+.flex-space {
+    justify-content: space-between;
+}
+
 
 @view-transition {
     navigation: auto;
@@ -156,6 +160,12 @@ main {
 }
 .gap-total {
     gap: .4rem;
+}
+.icon-side-bar {
+    cursor: pointer;
+}
+.icon-side-bar .ic {
+    font-size: clamp(20px, 3vw, 25px);
 }
 
 /*--------- ITEMS CARRITO --------*/

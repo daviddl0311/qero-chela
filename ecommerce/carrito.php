@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/mi_carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=left_panel_close" />
     <link href="https://fonts.cdnfonts.com/css/bilcase-demo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f8146c15656b15c111316_Logo-Web.png">
@@ -138,8 +139,11 @@
                 </label>
                 <ul class="flex gap2rem flex-row-2"> 
                     <li class="flex flex-column gap-total">
-                        <div>
+                        <div class="flex flex-space">
                             <p class="title-carrito">Mi carrito</p>
+                            <label class="center icon-side-bar" for="burgercheck">
+                                <span class="ic center material-symbols-outlined">left_panel_close</span>
+                            </label>
                         </div>
                         <div>
                             <p class="precio-final">Subtotal: S/ <span class="subtotal">0.00</span></p>

@@ -104,6 +104,9 @@
             }
         ?>
         <section class="ver-producto2 center">
+            <div class="new-title">
+                <h2 class="center-align">nuevos productos</h2>
+            </div>
             <article class="grid grid-column-new">
                 <?php
                     $query = "SELECT * FROM producto ORDER BY id_producto DESC LIMIT 4";

@@ -44,7 +44,6 @@
             </div>";
 
         }
-        // mysqli_close($conexion);
     ?>
 
     <?php
@@ -58,8 +57,6 @@
         <section class="categorias center">
             <article class="grid cat-column-2">
                 <?php
-                    // include "php/conexion.php";
-
                     $query = "SELECT * FROM producto WHERE nombre = 'aborigen'";
 
                     $resultado = mysqli_query($conexion, $query);
@@ -72,8 +69,6 @@
                             </a>
                         </div>";
                     }
-
-                    // mysqli_close($conexion);
                 ?>
                 <div class="grid cat-subcolumn-2">
                     <div class="item-img2">
@@ -82,8 +77,6 @@
                         </a>
                     </div>
                     <?php
-                        // include "php/conexion.php";
-
                         $query = "SELECT * FROM producto WHERE nombre = 'luna de miel'";
 
                         $resultado = mysqli_query($conexion, $query);
@@ -96,8 +89,6 @@
                                 </a>
                             </div>";
                         }
-
-                        // mysqli_close($conexion);
                     ?>
                 </div>
             </article>
@@ -113,8 +104,6 @@
             </section>
             <div class="grid productos-column-3 center">
             <?php
-                // include 'php/conexion.php';
-
                 $query = "SELECT * FROM producto WHERE categoria = 'bebida' OR categoria = 'tantrica'";
 
                 $resultado = mysqli_query($conexion, $query);

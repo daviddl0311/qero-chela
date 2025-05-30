@@ -22,7 +22,7 @@
     <div class="alert center display-none">
         <span class="myalert center"></span>
         <span class="alert-finalizar center">
-            <div class="container flex flex-column gap-alert">
+            <div class="message container flex flex-column gap-alert">
                 <h2 class="center-align alert-title">¡Último paso!</h2>
                 <p class="alert-text">
                     Confirma tu dirección para coordinar el delivery.
@@ -107,6 +107,14 @@
                         <p class="btn-volver">Volver</p>
                     </div>
                 </form>
+            </div>
+            <div class="message2 container center flex flex-column gap-message-2">
+                <h2 class="center-align">¡Compra completada!</h2>
+                <p class="center-align">Serás redirigido a WhatsApp para confirmar tu pedido.</p>
+                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="">
+                <div class="center">
+                    <button class="btn-msg2">Cerrar</button>
+                </div>
             </div>
         </span>
     </div>

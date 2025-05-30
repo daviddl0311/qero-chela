@@ -18,8 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(res => res.text())
         .then(respuesta => {
-            alert("✅ Dirección guardada con éxito. Se procederá a enviar tu pedido por WhatsApp.");
-            document.querySelector(".alert").classList.add("display-none");
+            document.querySelector(".message").classList.add("display-none");
+            document.querySelector(".message2").classList.remove("display-none");
+            
             enviarWhatsApp();
         })
         
@@ -28,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("#distrito").addEventListener("change", () => {
         deliveryFunction();
         pedido();
+    });
+
+    document.querySelector(".message2").classList.add("display-none");
+
+    document.querySelector(".btn-msg2").addEventListener("click", () => {
+        document.querySelector(".alert").classList.add("display-none");
+        document.querySelector(".message").classList.remove("display-none");
     });
 });
 
@@ -38,6 +46,8 @@ function finalizarCompra() {
         
         //Mensaje Emergente
         document.querySelector(".alert").classList.remove("display-none");
+        
+        document.querySelector(".message2").classList.add("display-none");
 
         //Añadir Subtotal
         document.querySelector("#pay").textContent = document.querySelector(".subtotal").innerText;
@@ -164,8 +174,8 @@ function enviarWhatsApp() {
     const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
     setTimeout(() => {
-        window.open(url, "_self");
-    }, 500);
+        window.open(url, "_blank");
+    }, 2500);
 }
 
 function pedido() {

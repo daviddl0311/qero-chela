@@ -53,8 +53,6 @@
                             </div>
                         </div>";
                     }
-
-                    // mysqli_close($conexion);
                 ?>
                 <div class="item-flex flex flex-column">
                     <div class="center">
@@ -73,8 +71,6 @@
                 </div>
 
                 <?php
-                    // include 'php/conexion.php';
-
                     $query = "SELECT * FROM producto WHERE nombre = 'luna de miel'";
 
                     $resultado = mysqli_query($conexion, $query);
@@ -97,8 +93,6 @@
                             </div>
                         </div>";
                     }
-
-                    // mysqli_close($conexion);
                 ?>
             </section>
         </article>
@@ -109,8 +103,6 @@
             </div>
             <section class="my-products center grid productos-column-3">
                 <?php
-                    // include 'php/conexion.php';
-
                     $query = "SELECT * FROM producto WHERE categoria = 'promo'";
 
                     $resultado = mysqli_query($conexion, $query);
@@ -119,7 +111,7 @@
                         echo
                         "<div class='item-flex flex flex-column'>
                             <div class='center'>
-                                <a href='producto/ver_producto_promo.php?id={$producto['id_producto']}'>
+                                <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
                                     <img src='".$producto['img']."' alt='Promos Día del Padre' class='item-img'>
                                 </a>
                             </div>
@@ -128,7 +120,7 @@
                                     <p class='center-align'>".$producto['nombre']."</p>
                                 </div>
                                 <div class='center'>
-                                    <button onclick='location.href=`producto/ver_producto_promo.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
+                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
                                 </div>
                             </div>
                         </div>";

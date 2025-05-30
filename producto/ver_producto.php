@@ -34,69 +34,96 @@
                 $resultado = mysqli_query($conexion, $query);
 
                 while($producto = mysqli_fetch_assoc($resultado)) {
-                    echo
-                    "<section class='ver-producto center' id='".$producto['nombre']."'>
-                        <article class='grid ver-producto-column-2'>
-                            <div class='ver-producto-img center'>
-                                <img src=' ". $producto['img'] ."' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
-                            </div>
-                            <div class='flex flex-column ver-producto-2'>
-                                <div class='producto-title'>
-                                    <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                    if($producto['categoria'] == 'bebida') {
+                        echo
+                        "<section class='ver-producto center' id='".$producto['nombre']."'>
+                            <article class='grid ver-producto-column-2'>
+                                <div class='ver-producto-img center'>
+                                    <img src=' ". $producto['img'] ."' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
                                 </div>
-                                <div class='producto-text'>
-                                    <p>" .$producto['descripcion']. "</p>    
-                                </div>
-                                <div class='producto-formato grid'>
-                                    <button id='bt1' class='button producto-opacity'>unidad</button>
-                                    <button id='bt2' class='button'>4 pack</button>
-                                    <button id='bt3' class='button'>6 pack</button>
-                                    <button id='bt4' class='button'>24 pack</button>
-                                    <button id='bt5' class='button'>30 l</button>
-                                    <button id='bt6' class='button'>50 l</button>
-                                </div>
-                                <div class='flex flex-column gappx'>
-                                    <div class='producto-precio'>
-                                        <span id='precio'>
-                                            pen " .$producto['precio_ini']. "
-                                        </span>
+                                <div class='flex flex-column ver-producto-2'>
+                                    <div class='producto-title'>
+                                        <h2 id='h2-t'>" .$producto['nombre']. "</h2>
                                     </div>
-                                    <sub class='nota'>*Incluye IGV (18%)</sub>
+                                    <div class='producto-text'>
+                                        <p>" .$producto['descripcion']. "</p>    
+                                    </div>
+                                    <div class='producto-formato grid'>
+                                        <button id='bt1' class='button producto-opacity'>unidad</button>
+                                        <button id='bt2' class='button'>4 pack</button>
+                                        <button id='bt3' class='button'>6 pack</button>
+                                        <button id='bt4' class='button'>24 pack</button>
+                                        <button id='bt5' class='button'>30 l</button>
+                                        <button id='bt6' class='button'>50 l</button>
+                                    </div>
+                                    <div class='flex flex-column gappx'>
+                                        <div class='producto-precio'>
+                                            <span id='precio'>
+                                                pen " .$producto['precio_ini']. "
+                                            </span>
+                                        </div>
+                                        <sub class='nota'>*Incluye IGV (18%)</sub>
+                                    </div>
+                                    <div class='flex flex-column producto-buttons'>
+                                        <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
+                                        <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
+                                    </div>
                                 </div>
-                                <div class='flex flex-column producto-buttons'>
-                                    <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
-                                    <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
+                            </article>
+                        </section>";
+                    } else {
+                        echo
+                        "<section class='ver-producto center' id='".$producto['nombre']."'>
+                            <article class='grid ver-producto-column-2'>
+                                <div class='ver-producto-img center'>
+                                    <img src='" .$producto['img']. "' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
                                 </div>
-                            </div>
-                        </article>
-                    </section>";
+                                <div class='flex flex-column ver-producto-2'>
+                                    <div class='producto-title'>
+                                        <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                    </div>
+                                    <div class='producto-text'>
+                                        <p>" .$producto['descripcion']. "</p>    
+                                    </div>
+                                    <div class='flex flex-column gappx'>
+                                        <div class='producto-precio'>
+                                            <span id='precio'>
+                                                pen " .$producto['precio_ini']. "
+                                            </span>
+                                        </div>
+                                        <sub class='nota'>*Incluye IGV (18%)</sub>
+                                    </div>
+                                    <div class='flex flex-column producto-buttons'>
+                                        <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>";
+                    }
                 }
-
-                // mysqli_close($conexion);
             }
         ?>
         <section class="ver-producto2 center">
             <article class="grid grid-column-new">
-                <div class="new-productos-img center">
-                    <div class="img-new">
-                        <a href="">
-                            <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838975a568c62d5c6efe9c8_9.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-new center">
-                        <button>Ver producto</button>
-                    </div>
-                </div>
-               <div class="new-productos-img center">
-                    <div class="img-new">
-                        <a href="">
-                            <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838975a568c62d5c6efe9c8_9.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-new center">
-                        <button>Ver producto</button>
-                    </div>
-                </div>
+                <?php
+                    $query = "SELECT * FROM producto ORDER BY id_producto DESC LIMIT 4";
+
+                    $resultado = mysqli_query($conexion, $query);
+
+                    while($producto = mysqli_fetch_assoc($resultado)) {
+                        echo 
+                        "<div class='new-productos-img center'>
+                            <div class='img-new'> 
+                                <a href='ver_producto.php?id={$producto['id_producto']}'>
+                                    <img src='" .$producto['img']. "' alt=''>
+                                </a>
+                            </div>
+                            <div class='btn-new center'>
+                                <button onclick='location.href=`ver_producto.php?id={$producto['id_producto']}`'>Ver producto</button>
+                            </div>
+                        </div>";
+                    }
+                ?>
             </article>
         </section>
         <section class="productos" id="productos">
@@ -110,8 +137,6 @@
             </section>
             <div class="grid productos-column-3 center">
                 <?php
-                    // include '../php/conexion.php';
-    
                     $query = "SELECT * FROM producto WHERE categoria = 'bebida' OR categoria = 'tantrica'";
     
                     $resultado = mysqli_query($conexion, $query);

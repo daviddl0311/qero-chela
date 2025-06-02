@@ -98,7 +98,7 @@ header {
 }
 .item-img {
     /* width: 8.5rem; */
-    height: 21rem;
+    height: 20rem;
      object-fit: cover;
     filter: grayscale(100%);
     transition: all .3s ease-in-out;
@@ -145,7 +145,7 @@ header {
 }
 .producto-info div > p {
     text-transform: uppercase;
-    font-size: clamp(30px, 3vw, 25px);
+    font-size: clamp(25px, 3vw, 27px);
     font-weight: bold;
 }
 .producto-info div > button {

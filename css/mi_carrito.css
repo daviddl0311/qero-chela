@@ -333,13 +333,10 @@ main {
 }
 .select-sabor select:valid {
     /* color: white; */
-    border: 1.5px solid #b97b09;
+    border: .5px solid #b97b09;
 }
 .gap-sabores {
     gap: .5rem;
-}
-.sab, .cop {
-    width: 100px;
 }
 
 /*-------- DESHABILITADO ---------*/

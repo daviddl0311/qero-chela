@@ -110,8 +110,10 @@ function enlistarCarrito(btnEnviar) {
             break;
         
         case "promo":
+            
             if(productoName == "Unidad" || productoName == "Four Pack" || productoName == "Six Pack" ) {
                 const productoSabor = producto.querySelector(".sabor").value;
+                
                 item.innerHTML= 
                 `<div class="flex item-carrito-gap">
                     <div class="flex flex-direction-item item-carrito-gap">
@@ -144,7 +146,7 @@ function enlistarCarrito(btnEnviar) {
             } else if(productoName == "Box Brindis" || productoName == "Box Standard" || productoName == "Box Premium") {
                 const productoDuo1 = producto.querySelector(".op1").value;
                 const productoDuo2 = producto.querySelector(".op2").value;
-
+                
                 item.innerHTML= 
                 `<div class="flex item-carrito-gap">
                     <div class="flex flex-direction-item item-carrito-gap">

@@ -270,7 +270,7 @@
                                                 </div> 
                                             </div>
                                             <div class='select-sabor'>
-                                                <select class='sabor' required>
+                                                <select class='sabor' id='sabor'>
                                                     <option selected disabled hidden>Elige tu sabor</option>
                                                     <option value='Aborigen'>Aborigen</option>
                                                     <option value='Luna de Miel'>Luna de Miel</option>
@@ -322,7 +322,7 @@
                                             </div>
                                             <div class='flex flex-column gap-sabores'>
                                                 <div class='select-sabor sab'>
-                                                    <select class='op1' required>
+                                                    <select class='op1'>
                                                         <option selected disabled hidden>Opción 1</option>
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen'>Aborigen</option>
@@ -332,7 +332,7 @@
                                                     </select>                                    
                                                 </div> 
                                                 <div class='select-sabor cop'>
-                                                    <select class='op2' required>
+                                                    <select class='op2'>
                                                         <option selected disabled hidden>Opción 2</option>
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen'>Aborigen</option>

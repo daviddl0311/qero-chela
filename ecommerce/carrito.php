@@ -272,7 +272,7 @@
                                             <div class='select-sabor'>
                                                 <select class='sabor' id='sabor'>
                                                     <option selected disabled hidden>Elige tu sabor</option>
-                                                    <option value='Aborigen'>Aborigen</option>
+                                                    <option value='Aborigen' disabled>Aborigen</option>
                                                     <option value='Luna de Miel'>Luna de Miel</option>
                                                     <option value='Tántrica'>Tántrica</option>
                                                 </select>                                    
@@ -325,7 +325,7 @@
                                                     <select class='op1'>
                                                         <option selected disabled hidden>Opción 1</option>
                                                         <optgroup label='Cervezas'>
-                                                            <option value='Aborigen'>Aborigen</option>
+                                                            <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
                                                             <option value='Tántrica'>Tántrica</option>
                                                         </optgroup>
@@ -335,14 +335,13 @@
                                                     <select class='op2'>
                                                         <option selected disabled hidden>Opción 2</option>
                                                         <optgroup label='Cervezas'>
-                                                            <option value='Aborigen'>Aborigen</option>
+                                                            <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
                                                             <option value='Tántrica'>Tántrica</option>
                                                         </optgroup>
                                                         <optgroup label='Vasos'>
                                                             <option value='Chop'>Chop</option>
                                                             <option value='Q´ero'>Q'ero</option>
-                                                            <option value='Copa'>Copa</option>
                                                         </optgroup>
                                                     </select>                                    
                                                 </div> 
@@ -396,7 +395,7 @@
                                                     <select class='op1' required>
                                                         <option selected disabled hidden>Opción 1</option>
                                                         <optgroup label='Cervezas'>
-                                                            <option value='Aborigen'>Aborigen</option>
+                                                            <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
                                                             <option value='Tántrica'>Tántrica</option>
                                                         </optgroup>
@@ -406,7 +405,7 @@
                                                     <select class='op2' required>
                                                         <option selected disabled hidden>Opción 2</option>
                                                         <optgroup label='Cervezas'>
-                                                            <option value='Aborigen'>Aborigen</option>
+                                                            <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
                                                             <option value='Tántrica'>Tántrica</option>
                                                         </optgroup>

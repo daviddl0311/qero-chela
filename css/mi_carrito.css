@@ -191,9 +191,14 @@ main {
 }
 #carrito-for,
 #carrito-cant,
-#carrito-sub {
+#carrito-sub,
+#carrito-sabor {
     font-size: clamp(13px, 3vw, 18px);
     text-transform: uppercase;
+}
+#carrito-duo {
+    font-size: clamp(13px, 3vw, 16px);
+    /* text-transform: uppercase; */
 }
 .item-carrito-gap {
     gap: .8rem;
@@ -326,6 +331,16 @@ main {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
+.select-sabor select:valid {
+    /* color: white; */
+    border: 1.5px solid #b97b09;
+}
+.gap-sabores {
+    gap: .5rem;
+}
+.sab, .cop {
+    width: 100px;
+}
 
 /*-------- DESHABILITADO ---------*/
 *:disabled {
@@ -435,6 +450,7 @@ main {
     position: fixed;
     right: 5%;
     gap: .6rem;
+    z-index: 9999;
 }
 .add {
     background-color: rgb(57, 182, 20);

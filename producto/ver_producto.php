@@ -91,7 +91,7 @@
                                                 pen " .$producto['precio_ini']. "
                                             </span>
                                         </div>
-                                        <sub class='nota'>*Incluye IGV (18%)</sub>
+                                        <sub class='nota'>*IGV ya incluido (18%)</sub>
                                     </div>
                                     <div class='flex flex-column producto-buttons'>
                                         <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>

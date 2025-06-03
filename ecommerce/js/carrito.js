@@ -110,32 +110,98 @@ function enlistarCarrito(btnEnviar) {
             break;
         
         case "promo":
-            item.innerHTML= 
-            `<div class="flex item-carrito-gap">
-                <div class="flex flex-direction-item item-carrito-gap">
-                    <div class="center item-carrito-img">
-                        <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
-                    </div>
-                    <div class="flex flex-column center item-carrito-gap-2">
-                        <div class="item-carrito-producto">
-                            <p>${productoName}</p>
+            if(productoName == "Unidad" || productoName == "Four Pack" || productoName == "Six Pack" ) {
+                const productoSabor = producto.querySelector(".sabor").value;
+                item.innerHTML= 
+                `<div class="flex item-carrito-gap">
+                    <div class="flex flex-direction-item item-carrito-gap">
+                        <div class="center item-carrito-img">
+                            <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
                         </div>
-                        <div class="flex flex-column item-carrito-gap-3">
-                            <div class="item-carrito-cantidad">
-                                <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                        <div class="flex flex-column center item-carrito-gap-2">
+                            <div class="item-carrito-producto">
+                                <p>${productoName}</p>
                             </div>
-                            <div class="item-carrito-subtotal">
-                                <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
+                            <div class="flex flex-column item-carrito-gap-3">
+                                <div class="item-carrito-cantidad">
+                                    <p>Sabor: <span id="carrito-sabor">${productoSabor}</span></p>
+                                </div>
+                                <div class="item-carrito-cantidad">
+                                    <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                                </div>
+                                <div class="item-carrito-subtotal">
+                                    <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="btn-delete">
-                <button class="item-delete center">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>`;
+                <div class="btn-delete">
+                    <button class="item-delete center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>`;
+            } else if(productoName == "Box Brindis" || productoName == "Box Standard" || productoName == "Box Premium") {
+                const productoDuo1 = producto.querySelector(".op1").value;
+                const productoDuo2 = producto.querySelector(".op2").value;
+
+                item.innerHTML= 
+                `<div class="flex item-carrito-gap">
+                    <div class="flex flex-direction-item item-carrito-gap">
+                        <div class="center item-carrito-img">
+                            <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
+                        </div>
+                        <div class="flex flex-column center item-carrito-gap-2">
+                            <div class="item-carrito-producto">
+                                <p>${productoName}</p>
+                            </div>
+                            <div class="flex flex-column item-carrito-gap-3">
+                                <div class="item-carrito-cantidad">
+                                    <p>Duo: <span id="carrito-duo">${productoDuo1}</span> & <span id="carrito-duo">${productoDuo2}</span></p>
+                                </div>
+                                <div class="item-carrito-cantidad">
+                                    <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                                </div>
+                                <div class="item-carrito-subtotal">
+                                    <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-delete">
+                    <button class="item-delete center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>`;
+            } else {
+                item.innerHTML= 
+                `<div class="flex item-carrito-gap">
+                    <div class="flex flex-direction-item item-carrito-gap">
+                        <div class="center item-carrito-img">
+                            <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
+                        </div>
+                        <div class="flex flex-column center item-carrito-gap-2">
+                            <div class="item-carrito-producto">
+                                <p>${productoName}</p>
+                            </div>
+                            <div class="flex flex-column item-carrito-gap-3">
+                                <div class="item-carrito-cantidad">
+                                    <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
+                                </div>
+                                <div class="item-carrito-subtotal">
+                                    <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-delete">
+                    <button class="item-delete center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>`;
+            }
             break;
     }
   

@@ -174,8 +174,8 @@ function enviarWhatsApp() {
     const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
     setTimeout(() => {
-        window.open(url, "_blank");
-    }, 2500);
+        window.open(url, "_self");
+    }, 3000);
 }
 
 function pedido() {

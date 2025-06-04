@@ -2,7 +2,7 @@ let price = document.getElementById("precio");
 let buttons = Array.from(document.getElementsByClassName("button"));
 let img = document.querySelector("#img-change");
 let title = document.querySelector("#h2-t");
-console.log(title.textContent.trim());
+// console.log(title.textContent.trim());
 
 //Se incluye IGV (18%) a los productos
 

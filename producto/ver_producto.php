@@ -69,6 +69,9 @@
                                         </div>
                                         <sub class='nota'>*Incluye IGV (18%)</sub>
                                     </div>
+                                    <div>
+                                        <h2 id='state'>".$producto['stock']."</h2>
+                                    </div>
                                     <div class='flex flex-column producto-buttons'>
                                         <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                         <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
@@ -102,6 +105,9 @@
                                             </span>
                                         </div>
                                         <sub class='nota'>*IGV ya incluido (18%)</sub>
+                                    </div>
+                                    <div>
+                                        <h2 id='state'>".$producto['stock']."</h2>
                                     </div>
                                     <div class='flex flex-column producto-buttons'>
                                         <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
@@ -213,6 +219,7 @@
     ?>
 
     <script src="../js/app.js"></script>
+    <script src="js/stock.js"></script>
     
     <?php
         include "../php/verificado-2.php";

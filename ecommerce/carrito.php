@@ -137,16 +137,13 @@
                         0
                     </div>
                 </label>
-                <ul class="flex gap2rem flex-row-2"> 
+                <ul class="grid gap2rem grid-row"> 
                     <li class="flex flex-column gap-total">
                         <div class="flex flex-space">
                             <p class="title-carrito">Mi carrito</p>
                             <label class="center icon-side-bar" for="burgercheck">
                                 <span class="ic center material-symbols-outlined">left_panel_close</span>
                             </label>
-                        </div>
-                        <div>
-                            <p class="precio-final">Subtotal: S/ <span class="subtotal">0.00</span></p>
                         </div>
                         <!-- <div>
                             <p class="precio-final">IGV (18%): S/ <span class="igv">0.00</span></p>
@@ -158,6 +155,14 @@
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
                         
                     </ul>
+                    <div class="cat flex flex-column gap-car">
+                        <div class="p">
+                            <p class="precio-final">Subtotal: S/ <span class="subtotal">0.00</span></p>
+                        </div>
+                        <div class="finalizar">
+                            <button id="finalCompra">Confirmar pedido</button>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -487,11 +492,9 @@
             <ul class="emerge-msg flex flex-column ">
             </ul>
         </div>
-
-        <div class="finalizar">
+        <!-- <div class="finalizar">
             <button id="finalCompra">Confirmar pedido</button>
-        </div> 
-            
+        </div>  -->
     </main>
 
     <?php

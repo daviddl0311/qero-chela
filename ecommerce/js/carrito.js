@@ -61,15 +61,15 @@ function enlistarCarrito(btnEnviar) {
     /*SUB-TOTAL*/
     let totalProducto = parseFloat(productoPrecio * productoCantidad).toFixed(2);
 
-    //Deshabilitar Botones
-    productoButton.disabled = true;
-    producto.style.opacity = "0.5";
-    productoButton.innerHTML = "<i class='fa-solid fa-check'></i>";
-    productoButtons.forEach(btn => {
-        btn.disabled = true;
-    });
-    productoAddbtn.disabled = true;
-    productoMinusbtn.disabled = true;
+    // //Deshabilitar Botones
+    // productoButton.disabled = true;
+    // producto.style.opacity = "0.5";
+    // productoButton.innerHTML = "<i class='fa-solid fa-check'></i>";
+    // productoButtons.forEach(btn => {
+    //     btn.disabled = true;
+    // });
+    // productoAddbtn.disabled = true;
+    // productoMinusbtn.disabled = true;
 
     let item = document.createElement("li");
     item.setAttribute("class","item-carrito");
@@ -257,14 +257,14 @@ function deleteItem(itemDel, producto) {
     document.getElementById("mi-carrito").removeChild(productoItem);
     
     //Habilitar Botones
-    productoButton.disabled = false;
-    producto.style.opacity = "1";
-    productoButton.textContent = "Añadir";
-    productoButtons.forEach(btn => {
-        btn.disabled = false;
-    });
-    productoAddbtn.disabled = false;
-    productoMinusbtn.disabled = false;
+    // productoButton.disabled = false;
+    // producto.style.opacity = "1";
+    // productoButton.textContent = "Añadir";
+    // productoButtons.forEach(btn => {
+    //     btn.disabled = false;
+    // });
+    // productoAddbtn.disabled = false;
+    // productoMinusbtn.disabled = false;
     
     //Mensage Emergente
     emergeMessageDel();

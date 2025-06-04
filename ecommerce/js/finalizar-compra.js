@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector("#distrito").addEventListener("change", () => {
         deliveryFunction();
-        pedido();
     });
 
     document.querySelector(".message2").classList.add("display-none");
@@ -57,6 +56,8 @@ function finalizarCompra() {
     } else {
         alert("¡Tu carrito está vacío...¡pero no por mucho tiempo! Explora nuestras mejores ofertas y encuentra lo que necesitas!");
     }
+
+    pedido();
 }
 
 function deliveryFunction() {

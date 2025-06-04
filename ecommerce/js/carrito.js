@@ -110,7 +110,6 @@ function enlistarCarrito(btnEnviar) {
             break;
         
         case "promo":
-            
             if(productoName == "Unidad" || productoName == "Four Pack" || productoName == "Six Pack" ) {
                 const productoSabor = producto.querySelector(".sabor").value;
                 
@@ -176,34 +175,36 @@ function enlistarCarrito(btnEnviar) {
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>`;
-            } else {
-                item.innerHTML= 
-                `<div class="flex item-carrito-gap">
-                    <div class="flex flex-direction-item item-carrito-gap">
-                        <div class="center item-carrito-img">
-                            <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
+            } 
+            break;
+
+        default: 
+            item.innerHTML= 
+            `<div class="flex item-carrito-gap">
+                <div class="flex flex-direction-item item-carrito-gap">
+                    <div class="center item-carrito-img">
+                        <img src="${productoImg}" alt="${productoName}" class='img-pedido'>
+                    </div>
+                    <div class="flex flex-column center item-carrito-gap-2">
+                        <div class="item-carrito-producto">
+                            <p>${productoName}</p>
                         </div>
-                        <div class="flex flex-column center item-carrito-gap-2">
-                            <div class="item-carrito-producto">
-                                <p>${productoName}</p>
+                        <div class="flex flex-column item-carrito-gap-3">
+                            <div class="item-carrito-cantidad">
+                                <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
                             </div>
-                            <div class="flex flex-column item-carrito-gap-3">
-                                <div class="item-carrito-cantidad">
-                                    <p>Cantidad: <span id="carrito-cant">${productoCantidad}</span></p>
-                                </div>
-                                <div class="item-carrito-subtotal">
-                                    <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
-                                </div>
+                            <div class="item-carrito-subtotal">
+                                <p>Precio: S/ <span id="carrito-sub">${totalProducto}</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="btn-delete">
-                    <button class="item-delete center">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>`;
-            }
+            </div>
+            <div class="btn-delete">
+                <button class="item-delete center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>`;
             break;
     }
   

@@ -239,6 +239,63 @@
             </div>
             <div>
                 <div class="title-productos center">
+                    <h2 class="center-align">vasos q'ero chela</h2>
+                </div>
+                <article class="grid grid-column-3 productos-gap-3 center">
+                    <?php
+                        $query = "SELECT * FROM producto WHERE categoria = 'vaso'";
+        
+                        $resultado = mysqli_query($conexion, $query);
+        
+                        while($producto = mysqli_fetch_assoc($resultado)) {
+                            echo 
+                            "<div class='grid grid-column-3'>
+                                <div class='item-producto flex flex-column center productos-gap' id='vaso'>
+                                    <div class='productos-img center'>
+                                        <img src='".$producto['img']."' alt='".$producto['nombre']."' class='img-producto'>
+                                    </div>
+                                    <div class='productos-info flex flex-column productos-gap-2'>
+                                        <div class='productos-name'>
+                                            <p>".$producto['nombre']."</p>
+                                        </div>
+                                        <div class='flex flex-column gap-stock2'>
+                                            <div class='flex gap-stock'>
+                                                <div class='productos-precio center'>
+                                                    <p>PEN <span class='precio'>" .$producto['precio_ini']. "</span></p>
+                                                </div>
+                                                <div class='productos-stock center'>
+                                                    <p class='stock'>" .$producto['stock']. "</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <small class='productos-igv'>IGV incluido</small>
+                                            </div> 
+                                        </div>
+                                        <div class='cantidad center'>
+                                            <div class='flex productos-gap-4'>
+                                                <button class='center btn-minus'>
+                                                    -
+                                                </button>
+                                                <div class='center producto-cantidad'>
+                                                    1
+                                                </div>
+                                                <button class='center btn-plus'>
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class='productos-button-enviar'>
+                                            <button class='input-enviar'>añadir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+                        }
+                    ?>
+                </article>
+            </div>
+            <div>
+                <div class="title-productos center">
                     <h2 class="center-align">regalo cervecero</h2>
                 </div>
                 <article class="grid grid-column-3 productos-gap-3 center">
@@ -303,74 +360,6 @@
                                     break;
                                 
                                 case "Box Brindis":
-                                    echo
-                                    "<div class='grid grid-column-3 '>
-                                        <div class='item-producto flex flex-column center productos-gap-2' id='promo'>
-                                            <div class='productos-img center'>
-                                                <img src='".$producto['img']."' alt='".$producto['nombre']."' class='img-producto'>
-                                            </div>
-                                            <div class='productos-name'>
-                                                <p>".$producto['nombre']."</p>
-                                            </div>
-                                            <div class='flex flex-column gap-stock2'>
-                                                <div class='flex gap-stock'>
-                                                    <div class='productos-precio center'>
-                                                        <p>PEN <span class='precio'>".$producto['precio_ini']."</span></p>
-                                                    </div>
-                                                    <div class='productos-stock center'>
-                                                        <p class='stock'>".$producto['stock']."</p>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <small class='productos-igv'>IGV incluido</small>
-                                                </div> 
-                                            </div>
-                                            <div class='flex flex-column gap-sabores'>
-                                                <div class='select-sabor sab'>
-                                                    <select class='op1'>
-                                                        <option selected disabled hidden>Opción 1</option>
-                                                        <optgroup label='Cervezas'>
-                                                            <option value='Aborigen' disabled>Aborigen</option>
-                                                            <option value='Luna de Miel'>Luna de Miel</option>
-                                                            <option value='Tántrica'>Tántrica</option>
-                                                        </optgroup>
-                                                    </select>                                    
-                                                </div> 
-                                                <div class='select-sabor cop'>
-                                                    <select class='op2'>
-                                                        <option selected disabled hidden>Opción 2</option>
-                                                        <optgroup label='Cervezas'>
-                                                            <option value='Aborigen' disabled>Aborigen</option>
-                                                            <option value='Luna de Miel'>Luna de Miel</option>
-                                                            <option value='Tántrica'>Tántrica</option>
-                                                        </optgroup>
-                                                        <optgroup label='Vasos'>
-                                                            <option value='Chop'>Chop</option>
-                                                            <option value='Q´ero'>Q'ero</option>
-                                                        </optgroup>
-                                                    </select>                                    
-                                                </div> 
-                                            </div>
-                                            <div class='cantidad center'>
-                                                <div class='flex productos-gap-4'>
-                                                    <button class='center btn-minus'>
-                                                        -
-                                                    </button>
-                                                    <div class='center producto-cantidad'>
-                                                        1
-                                                    </div>
-                                                    <button class='center btn-plus'>
-                                                        +
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class='productos-button-enviar'>
-                                                <button class='input-enviar'>añadir</button>
-                                            </div>
-                                        </div>
-                                    </div>";
-                                    break;
-
                                 case "Box Standard":
                                 case "Box Premium":
                                     echo

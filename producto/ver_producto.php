@@ -109,7 +109,7 @@
             </div>
             <article class="grid grid-column-new">
                 <?php
-                    $query = "SELECT * FROM producto ORDER BY id_producto DESC LIMIT 4";
+                    $query = "SELECT * FROM producto WHERE categoria = 'promo' ORDER BY id_producto DESC LIMIT 4";
 
                     $resultado = mysqli_query($conexion, $query);
 

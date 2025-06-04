@@ -96,6 +96,38 @@
                 ?>
             </section>
         </article>
+
+         <article>
+            <div class="title-productos center">
+                <h2 class="center-align">vasos q'ero chela</h2>
+            </div>
+            <section class="my-products center grid productos-column-3">
+                <?php
+                    $query = "SELECT * FROM producto WHERE categoria = 'vaso'";
+
+                    $resultado = mysqli_query($conexion, $query);
+
+                    while($producto = mysqli_fetch_assoc($resultado)) {
+                        echo
+                        "<div class='item-flex flex flex-column'>
+                            <div class='center'>
+                                <a href='producto/ver_producto.php?id={$producto['id_producto']}'>
+                                    <img src='".$producto['img']."' alt='Promos Día del Padre' class='item-img'>
+                                </a>
+                            </div>
+                            <div class='producto-info flex flex-column'>
+                                <div class='center'>
+                                    <p class='center-align'>".$producto['nombre']."</p>
+                                </div>
+                                <div class='center'>
+                                    <button onclick='location.href=`producto/ver_producto.php?id={$producto['id_producto']}`' id='btn-an'>conoce más</button>
+                                </div>
+                            </div>
+                        </div>";
+                    }
+                ?>
+            </section>
+        </article>
         
         <article>
             <div class="title-productos center">

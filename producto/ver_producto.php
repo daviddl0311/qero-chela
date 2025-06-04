@@ -42,8 +42,13 @@
                                     <img src=' ". $producto['img'] ."' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
                                 </div>
                                 <div class='flex flex-column ver-producto-2'>
-                                    <div class='producto-title'>
-                                        <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                    <div class='flex flex-column gap-cod'>
+                                        <div class='producto-title'>
+                                            <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                        </div>
+                                        <div>
+                                            <p class='cod'>Código: <span class='codigo-pro'>". $producto['codigo_pro'] ."</span></p>
+                                        </div>
                                     </div>
                                     <div class='producto-text'>
                                         <p>" .$producto['descripcion']. "</p>    
@@ -79,8 +84,13 @@
                                     <img src='" .$producto['img']. "' alt='".$producto['nombre']."' id='img-change' class='producto-img'>
                                 </div>
                                 <div class='flex flex-column ver-producto-2'>
-                                    <div class='producto-title'>
-                                        <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                    <div class='flex flex-column gap-cod'>
+                                        <div class='producto-title'>
+                                            <h2 id='h2-t'>" .$producto['nombre']. "</h2>
+                                        </div>
+                                        <div>
+                                            <p class='cod'>Código: <span class='codigo-pro'>". $producto['codigo_pro'] ."</span></p>
+                                        </div>
                                     </div>
                                     <div class='producto-text'>
                                         <p>" .$producto['descripcion']. "</p>    

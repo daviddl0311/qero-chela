@@ -36,6 +36,15 @@ header {
 .center-align {
     text-align: center;
 }
+.gap-cod {
+    gap: 10px;
+}
+.cod {
+    font-size: 15px;
+}
+.codigo-pro {
+    font-size: clamp(18px, 3vw, 20px);
+}
 
 @view-transition {
     navigation: auto;

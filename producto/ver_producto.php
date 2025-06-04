@@ -110,6 +110,7 @@
                                         <h2 id='state'>".$producto['stock']."</h2>
                                     </div>
                                     <div class='flex flex-column producto-buttons'>
+                                        <button class='producto-info' onclick='location.href=` ".$producto['info']." `'>Informacion</button>
                                         <button class='producto-comprar' onclick='location.href=`../ecommerce/carrito.php`'>Comprar ahora</button>
                                     </div>
                                 </div>

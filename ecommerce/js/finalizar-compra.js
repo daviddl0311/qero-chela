@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(respuesta => {
             document.querySelector(".message").classList.add("display-none");
             document.querySelector(".message2").classList.remove("display-none");
-            
-            enviarWhatsApp();
+            // enviarWhatsApp();
         })
         
     });
@@ -35,8 +34,26 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".btn-msg2").addEventListener("click", () => {
         document.querySelector(".message").classList.remove("display-none");
         document.querySelector(".alert").classList.add("display-none");
+        
+        enviarWhatsApp();
     });
+
+    document.querySelector("#codigo").value = codigoRandom();
 });
+
+function codigoRandom() {
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    const arrText = text.split("");
+    let arr = [];
+
+    for(let i = 0; i < 5; i++) {
+        let random = arrText[Math.floor(Math.random() * arrText.length)];
+        arr.push(random);    
+    }
+
+    return arr.join("");
+}
 
 function finalizarCompra() {
     if(document.querySelector("#mi-carrito").children.length > 1) {
@@ -141,10 +158,12 @@ function enviarWhatsApp() {
     const total = document.querySelector("#pay-total").textContent;
     let distrito = document.querySelector("#distrito").value;
     let ubicación = document.querySelector("#ubicacion").value;
+    let codigoCli = document.querySelector("#codigo").value;
 
     //Mensaje y redirección al WhatsApp
     let mensaje = '*Hola, envío mi carrito de compras para su recepción. Quedo atento(a) a la confirmación. ¡Gracias!*\n\n';
 
+    mensaje += `*Código Cliente*: ${codigoCli}\n`
     mensaje += `*Distrito*: ${distrito}\n`;
     mensaje += `*Dirección*: ${ubicación}\n\n`;
 
@@ -176,7 +195,7 @@ function enviarWhatsApp() {
 
     setTimeout(() => {
         window.open(url, "_blank");
-    }, 3500);
+    }, 500);
 }
 
 function pedido() {

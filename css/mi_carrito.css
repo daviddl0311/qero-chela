@@ -30,6 +30,14 @@ main {
     position: relative;
 }
 
+#ul-mess {
+    padding-inline: 1rem;
+}
+#ul-mess > li {
+    list-style-type: disc;
+    text-align: justify;
+}
+
 .grid {
     display: grid;
 }
@@ -647,6 +655,7 @@ select:valid {
 }
 .message2 {
     position: relative;
+    width: 380px;
 }
 .gap-message-2 {
     gap: 1rem;

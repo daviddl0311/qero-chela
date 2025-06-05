@@ -102,6 +102,7 @@
                     <div class="texto">
                         <p>Total: S/ <span id="pay-total">0.00</span></p>
                     </div>
+                    <input type="hidden" name="codigo" id="codigo">
                     <input type="hidden" name="pedido" id="pedido">
                     <button class="btn-submit" type="submit">Finalizar Compra</button>
                     <div class="center">
@@ -111,16 +112,18 @@
             </div>
             <div class="message2 container center flex flex-column gap-message-2">
                 <h2 class="center-align">¡Sigamos con tu Pedido!</h2>
-                <ul type='disc'>
-                    <li>Envia tu pedido a nuestro WhatsApp.</li>
-                    <li>Paga por Plin o Yape al número: +51 983348954.</li>
-                    <li>Envianos la Imagen del Pago.</li>
-                    <li>Los Envios son realizados el mismo día, si el pedido se hizo antes de las 5:00 p.m.</li>
-                    <li>Luego de las 5:00 p.m. el envio será al dia siguiente</li>
-                </ul>
+                <div>
+                    <ul id="ul-mess">
+                        <li>Envia tu pedido a nuestro WhatsApp.</li>
+                        <li>Paga por Plin o Yape al número: +51 983348954.</li>
+                        <li>Envianos la Imagen del Pago al mismo número.</li>
+                        <li>Los Envios son realizados el mismo día si el pedido se hizo antes de las 5:00 p.m.</li>
+                        <li>Luego de las 5:00 p.m. el envio será al dia siguiente.</li>
+                    </ul>
+                </div>
                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="">
                 <div class="center">
-                    <button class="btn-msg2">Cerrar</button>
+                    <button class="btn-msg2">Enviar</button>
                 </div>
             </div>
         </span>

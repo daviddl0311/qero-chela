@@ -387,7 +387,7 @@
                                             <div class='flex flex-column gap-sabores'>
                                                 <div class='select-sabor sab'>
                                                     <select class='op1' required>
-                                                        <option selected disabled hidden>Opción 1</option>
+                                                        <option selected disabled hidden>Elige tu sabor</option>
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
@@ -397,7 +397,7 @@
                                                 </div> 
                                                 <div class='select-sabor cop'>
                                                     <select class='op2' required>
-                                                        <option selected disabled hidden>Opción 2</option>
+                                                        <option selected disabled hidden>Elige tu sabor</option>
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen' disabled>Aborigen</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>

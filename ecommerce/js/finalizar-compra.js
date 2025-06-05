@@ -176,7 +176,7 @@ function enviarWhatsApp() {
 
     setTimeout(() => {
         window.open(url, "_blank");
-    }, 3000);
+    }, 3500);
 }
 
 function pedido() {

@@ -110,7 +110,7 @@
                 </form>
             </div>
             <div class="message2 container center flex flex-column gap-message-2">
-                <h2 class="center-align">¡Compra completada!</h2>
+                <h2 class="center-align">¡Pedido Registrado!</h2>
                 <p class="center-align">Serás redirigido a WhatsApp para confirmar tu pedido.</p>
                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="">
                 <div class="center">

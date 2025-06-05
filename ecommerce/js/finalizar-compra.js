@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(respuesta => {
             document.querySelector(".message").classList.add("display-none");
             document.querySelector(".message2").classList.remove("display-none");
-            // enviarWhatsApp();
         })
         
     });

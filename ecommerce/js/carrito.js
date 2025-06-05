@@ -6,11 +6,40 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.querySelectorAll(".input-enviar").forEach((btnEnviar) => {
         btnEnviar.addEventListener("click", () => {
-            enlistarCarrito(btnEnviar);
+            let value = mysabor(btnEnviar);
+            
+            if(value) {
+                enlistarCarrito(btnEnviar);
+            } else {
+                alert("😅 ¡Oops! Tienes que elegir una Q'ero Chela y/o Tántrica antes de continuar.");
+            }
         });
     });
-
 });
+
+function mysabor(btnEnviar) {
+    const producto = btnEnviar.closest(".item-producto");
+    const productoName = producto.querySelector(".productos-name").textContent.trim();
+    
+    if (productoName === "Unidad" || productoName === "Four Pack" || productoName === "Six Pack") {
+        const sabor = producto.querySelector("#sabor");
+        const selectedSabor = sabor.value;
+        
+        return selectedSabor === "Luna de Miel" || selectedSabor === "Tántrica";
+    } 
+    
+    if (productoName === "Box Brindis" || productoName === "Box Standard" || productoName === "Box Premium") {
+        const option1 = producto.querySelector(".op1");
+        const option2 = producto.querySelector(".op2");
+        
+        const selectedSabor1 = option1.value;
+        const selectedSabor2 = option2.value
+
+        return (selectedSabor1 === "Luna de Miel" || selectedSabor1 === "Tántrica") && (selectedSabor2 === "Luna de Miel" || selectedSabor2 === "Tántrica");
+    } 
+
+    return true;
+}
 
 function messageCarrito() {
     const carrito = document.getElementById("mi-carrito");
@@ -46,30 +75,12 @@ function enlistarCarrito(btnEnviar) {
     const productoImg = producto.querySelector(".img-producto").src;
     const productoPrecio = producto.querySelector(".precio").textContent;
     const productoCantidad = producto.querySelector(".producto-cantidad").textContent;
-    const productoButton = producto.querySelector(".input-enviar");
 
     //Obtenemos la categoria del producto
     const productoCat = producto.getAttribute("id");
 
-    //Botones de Formato
-    const productoButtons = producto.querySelectorAll(".formato");
-    //Boton de Aumentar
-    const productoAddbtn = producto.querySelector(".btn-plus");
-    //Boton de Disminuir
-    const productoMinusbtn = producto.querySelector(".btn-minus");
-
     /*SUB-TOTAL*/
     let totalProducto = parseFloat(productoPrecio * productoCantidad).toFixed(2);
-
-    // //Deshabilitar Botones
-    // productoButton.disabled = true;
-    // producto.style.opacity = "0.5";
-    // productoButton.innerHTML = "<i class='fa-solid fa-check'></i>";
-    // productoButtons.forEach(btn => {
-    //     btn.disabled = true;
-    // });
-    // productoAddbtn.disabled = true;
-    // productoMinusbtn.disabled = true;
 
     let item = document.createElement("li");
     item.setAttribute("class","item-carrito");
@@ -207,9 +218,6 @@ function enlistarCarrito(btnEnviar) {
             </div>`;
             break;
     }
-  
-    //Activar Boton de Finalizar Compra
-    //activarBtnFin();
 
     //Aumentar Cantidad
     sum+=1;
@@ -246,26 +254,9 @@ function addItem(sum) {
 
 function deleteItem(itemDel, producto) {
     const productoItem = itemDel.closest(".item-carrito");
-    const productoButton = producto.querySelector(".input-enviar");
-    const productoButtons = producto.querySelectorAll(".formato");
-    
-    //Boton de Aumentar
-    const productoAddbtn = producto.querySelector(".btn-plus");
-    //Boton de Disminuir
-    const productoMinusbtn = producto.querySelector(".btn-minus");
     
     //Eliminar Producto en Carrito
     document.getElementById("mi-carrito").removeChild(productoItem);
-    
-    //Habilitar Botones
-    // productoButton.disabled = false;
-    // producto.style.opacity = "1";
-    // productoButton.textContent = "Añadir";
-    // productoButtons.forEach(btn => {
-    //     btn.disabled = false;
-    // });
-    // productoAddbtn.disabled = false;
-    // productoMinusbtn.disabled = false;
     
     //Mensage Emergente
     emergeMessageDel();
@@ -274,32 +265,9 @@ function deleteItem(itemDel, producto) {
     sum-=1;
     addItem(sum);
     
-    //Desactivar Boton Finalizar
-    //desactivarBtnFin();
-    
     //Añadir Mensaje
     addMessage();
 }
-
-// function activarBtnFin() {
-//     let fin = document.querySelector("#finalCompra");
-//     let miCar = document.querySelector("#mi-carrito");
-
-//     if(miCar.children.length >= 0) {
-//         // fin.style.opacity = "1";
-//         fin.disabled = false;
-//     }
-// }
-
-// function desactivarBtnFin() {
-//     let fin = document.querySelector("#finalCompra");
-//     let miCar = document.querySelector("#mi-carrito");
-
-//     if(miCar.children.length <= 1) {
-//         // fin.style.opacity = ".5";
-//         fin.disabled = true;
-//     }
-// }
 
 function emergeMessage() {
     let msgList = document.querySelector(".emerge-msg");

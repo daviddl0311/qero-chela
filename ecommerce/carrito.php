@@ -121,7 +121,7 @@
                         <li>Luego de las 5:00 p.m. el envio será al dia siguiente.</li>
                     </ul>
                 </div>
-                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="">
+                <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="Gracias Q'ero Chela">
                 <div class="center">
                     <button class="btn-msg2">Enviar</button>
                 </div>
@@ -154,12 +154,6 @@
                                 <span class="ic center material-symbols-outlined">left_panel_close</span>
                             </label>
                         </div>
-                        <!-- <div>
-                            <p class="precio-final">IGV (18%): S/ <span class="igv">0.00</span></p>
-                        </div> -->
-                        <!-- <div>
-                            <p class="precio-final">Total: S/ <span class="total">0.00</span></p>
-                        </div> -->
                     </li>
                     <ul class="flex gap2rem flex-row-2" id="mi-carrito">
                         

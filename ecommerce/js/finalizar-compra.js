@@ -171,7 +171,7 @@ function enviarWhatsApp() {
     const mensajeCodificado = encodeURIComponent(mensaje);
     
     //Colocar Numero
-    const numero = 51935287218;
+    const numero = 51983348954;
     const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
     setTimeout(() => {

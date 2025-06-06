@@ -90,6 +90,10 @@
                         </div>
                         <p class="alert-text-2">*El costo de envío varía según el distrito seleccionado.</p>
                     </div>
+                    <div class="flex flex-column gap-alert-2">
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" maxlength="9" required>
+                        <p class="alert-text-2">*Usaremos tu número solo para notificaciones sobre tu pedido</p>
+                    </div>
                     <div class="ubicacion">
                         <input type="text" name="ubicacion" id="ubicacion" placeholder="Dirección" required>
                     </div>
@@ -123,7 +127,7 @@
                 </div>
                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="Gracias Q'ero Chela">
                 <div class="center">
-                    <button class="btn-msg2">Enviar</button>
+                    <button class="btn-msg2">Enviar ahora</button>
                 </div>
             </div>
         </span>

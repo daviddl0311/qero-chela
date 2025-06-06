@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector("#formulario").addEventListener("submit", function (e) {
         e.preventDefault();
-
+        pedido();
         const datos = new FormData(this);
 
         fetch("php/guardar.php", {
@@ -72,8 +72,6 @@ function finalizarCompra() {
     } else {
         alert("¡Tu carrito está vacío...¡pero no por mucho tiempo! Explora nuestras mejores ofertas y encuentra lo que necesitas!");
     }
-
-    pedido();
 }
 
 function deliveryFunction() {

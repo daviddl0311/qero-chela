@@ -343,7 +343,7 @@
                                                     <option selected disabled hidden>Elige tu sabor</option>
                                                     <option value='Aborigen' disabled>Aborigen (Agotado)</option>
                                                     <option value='Luna de Miel'>Luna de Miel</option>
-                                                    <option value='Tántrica'>Tántrica</option>
+                                                    <option value='Tántrica' disabled>Tántrica (Agotado)</option>
                                                 </select>                                    
                                             </div> 
                                             <div class='cantidad center'>
@@ -398,7 +398,7 @@
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen' disabled>Aborigen (Agotado)</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
-                                                            <option value='Tántrica'>Tántrica</option>
+                                                            <option value='Tántrica' disabled>Tántrica (Agotado)</option>
                                                         </optgroup>
                                                     </select>                                    
                                                 </div> 
@@ -408,7 +408,7 @@
                                                         <optgroup label='Cervezas'>
                                                             <option value='Aborigen' disabled>Aborigen (Agotado)</option>
                                                             <option value='Luna de Miel'>Luna de Miel</option>
-                                                            <option value='Tántrica'>Tántrica</option>
+                                                            <option value='Tántrica' disabled>Tántrica (Agotado)</option>
                                                         </optgroup>
                                                     </select>                                    
                                                 </div> 

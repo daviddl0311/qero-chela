@@ -613,13 +613,13 @@ select {
     transition: all .3s ease-in-out;
 }
 #ubicacion:valid,
-select:valid,
+#distrito:valid,
 #telefono:valid {
     border: 1px solid green;
     outline: 1px solid green;
 }
 #ubicacion:invalid,
-select:invalid,
+#distrito:invalid,
 #telefono:invalid {
     border: 1px solid red;
     outline: 1px solid red;

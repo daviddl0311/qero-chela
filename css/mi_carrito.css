@@ -694,7 +694,112 @@ input[type="text"] {
     color: rgb(32, 32, 219);
 }
 
+/*-------- TUTORIAL --------*/
+.title {
+    text-transform: uppercase;
+    font-size: clamp(30px, 3vw, 35px);
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
+}
+.tutorial {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    z-index: 0;
+    background-color: black;
+    border-radius: 15px;
+}
+.tutorial-img {
+    width: 400px;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    opacity: .3;
+}
+.tutorial-img img {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.tutorial-enlace > a > img {
+    width: 6.5rem;
+}
+.texto-tu {
+    font-size: clamp(15px, 3vw, 18px);
+}
+.gap-tu {
+    gap: 2rem;
+    padding: 3rem; 
+}
 
+/*------- FRECUENTES --------*/
+.frecuentes {
+    padding: 5rem;
+}
+details {
+    width: 500px;
+    font-size: clamp(15px, 3vw, 18px);
+    background-color: #f5a004;
+    border: 1px solid #775008;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+summary {
+    cursor: pointer;
+    border-radius: 10px; 
+    font-weight: bold;
+    padding: .5rem;
+}
+details p {
+    width: fit-content;
+    text-align: justify;
+    border-radius: 10px; 
+    padding: .5rem;
+}   
+.gap-tu-2 {
+    gap: 1rem;
+}
+.del-price {
+    font-weight: bold;
+}
+.enla-pre {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/*------------- ANIMATION BUTTON -------------*/
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
 
 /*--------------  FOOTER -----------------*/
 footer {
@@ -1129,6 +1234,27 @@ footer {
         flex-direction: column;
     } */
 
+    /*---- TUTORIAL ----*/
+    .tutorial {
+        width: 350px;
+        height: 500px;
+    }
+    .tutorial-img {
+        width: 350px;
+    }
+    .tutorial-img img {
+        width: 350px;
+        height: 500px;
+    }
+
+    /*---- FRECUENTES ----*/
+    .frecuentes {
+        padding: 3rem;
+    }
+    details {
+        width: 360px;
+    }
+
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -1259,6 +1385,27 @@ footer {
         padding: 1rem;
     }
     .message2 {
+        width: 300px;
+    }
+
+    /*---- TUTORIAL ----*/
+    .tutorial {
+        width: 300px;
+        height: 400px;
+    }
+    .tutorial-img {
+        width: 300px;
+    }
+    .tutorial-img img {
+        width: 300px;
+        height: 400px;
+    }
+
+     /*---- FRECUENTES ----*/
+    .frecuentes {
+        padding: 3rem;
+    }
+    details {
         width: 300px;
     }
 
@@ -1416,6 +1563,26 @@ footer {
         width: 250px;
     }
 
+    /*---- TUTORIAL ----*/
+    .tutorial {
+        width: 250px;
+        height: 350px;
+    }
+    .tutorial-img {
+        width: 250px;
+    }
+    .tutorial-img img {
+        width: 250px;
+        height: 350px;
+    }
+
+     /*---- FRECUENTES ----*/
+    .frecuentes {
+        padding: 3rem;
+    }
+    details {
+        width: 250px;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -1529,7 +1696,8 @@ footer {
 
     /*------ PRODUCTO -------*/
     .productos {
-        padding: 3rem;
+        padding-block: 3rem;
+        padding-inline: 0;
     }
     .grid-column-3 {
         grid-template-columns: repeat(1, auto);
@@ -1541,6 +1709,15 @@ footer {
     }
     .message2 {
         width: 220px;
+    }
+
+     /*---- FRECUENTES ----*/
+    .frecuentes {
+        padding-block: 3rem;
+        padding-inline: 0;
+    }
+    details {
+        width: 230px;
     }
 
     /*-------------- FOOTER --------------*/ 

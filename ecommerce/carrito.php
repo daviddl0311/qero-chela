@@ -488,6 +488,62 @@
             <ul class="emerge-msg flex flex-column ">
             </ul>
         </div>
+        
+        <div class="flex flex-column gap-tu">
+            <div class="title center">
+                <h2 class="center-align">Pide Q’ero Chela Ya</h2>
+            </div>
+            <div class="center texto-tu">
+                <p class="center-align">Aprende cómo comprar en Q’ero Chela en segundos.</p>
+                <p class="center-align">¡Rápido, fácil y sin complicaciones!</p>
+            </div>  
+        </div>
+
+        <div class="center">
+            <div class="tutorial center">
+                <div class="tutorial-img center">
+                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6841c20892f86788244c3942_4.jpg" alt="Fondo Img">
+                </div>
+                <div class="tutorial-enlace center">
+                    <a href="https://drive.google.com/file/d/1lsQFltCO53-DpmK2-djwTz6YOpPji52M/view?usp=sharing" target="_blank">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/680f81a1422ac27aaeddb5ed_boton-Play-Q%27eroChela.png" alt="Boton de Play" class="pulsate-fwd">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="frecuentes flex flex-column gap-tu">
+            <div class="title center">
+                <h2 class="center-align">preguntas frecuentes</h2>
+            </div>
+            <div class="flex flex-column gap-tu-2 center">
+                <details name="details" open>
+                    <summary>¿Cuándo llegará mi pedido?</summary>
+                    <p>Realizamos entregas el día anterior y el mismo Día del Padre, para que tu pedido llegue justo a tiempo para celebrar.</p>
+                </details>
+                <details name="details">
+                    <summary>¿Aceptan Plin o Yape?</summary>
+                    <p>¡Sí, aceptamos ambos! Puedes hacer la transferencia al número: <a class="enla-pre" href="https://wa.me/51983348954/?text=¡Hola,%20quiero%20realizar%20un%20pedido!" target="blank">+51 983 348 954</a>. No olvides enviar tu comprobante por WhatsApp para validar tu pedido.</p>
+                </details>
+                <details name="details">
+                   <summary>¿Cuánto cuesta el envío?</summary>
+                    <p>El costo varía según el distrito. Al momento de confirmar tu pedido, podrás ver el monto exacto.
+Por ejemplo, el envío a Breña cuesta <span class="del-price">S/10</span>.</p>
+                </details>
+                <details name="details">
+                    <summary>¿A qué distritos hacen envíos?</summary>
+                    <p>Hacemos envíos a varios distritos de Lima Metropolitana. Escríbenos por WhatsApp con tu ubicación y te confirmamos al toque si llegamos a tu zona.</p>
+                </details>
+                <details name="details">
+                    <summary>¿Hasta cuándo puedo hacer mi pedido?</summary>
+                    <p>¡Mientras tengamos stock disponible! Te recomendamos hacer tu pedido con anticipación para asegurar tu box o combo especial.</p>
+                </details>
+                <details name="details">
+                    <summary>¿Dónde veo todo lo que ofrecen?</summary>
+                    <p>Solo entra a nuestra <a href="https://qerochela.com/" class="enla-pre" target="_blank">página web<a> y dirígete al carrito. Ahí verás vasos, sabores, regalos y más. ¡Todo lo que necesitas para un buen brindis!</p>
+                </details>
+            </div>
+        </div>
         <!-- <div class="finalizar">
             <button id="finalCompra">Confirmar pedido</button>
         </div>  -->

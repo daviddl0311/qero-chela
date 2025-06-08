@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector("#formulario").addEventListener("submit", function (e) {
         e.preventDefault();
+        
+        datePedido();
         pedido();
+        
         const datos = new FormData(this);
 
         fetch("php/guardar.php", {
@@ -72,6 +75,17 @@ function finalizarCompra() {
     } else {
         alert("¡Tu carrito está vacío...¡pero no por mucho tiempo! Explora nuestras mejores ofertas y encuentra lo que necesitas!");
     }
+}
+
+function datePedido() {
+    let date = new Date().toLocaleDateString();
+    let hour = new Date();
+    let time = hour.getHours().toString().padStart(2,'0')+":"+hour.getMinutes().toString().padStart(2,'0')+":"+hour.getSeconds().toString().padStart(2,'0')
+
+    // console.log(date, time );
+    document.querySelector("#date").value = date;
+    document.querySelector("#hour").value = time;
+
 }
 
 function deliveryFunction() {
@@ -157,12 +171,18 @@ function enviarWhatsApp() {
     let ubicación = document.querySelector("#ubicacion").value;
     let codigoCli = document.querySelector("#codigo").value;
 
+    let hora = document.querySelector("#hour").value;
+    let fecha = document.querySelector("#date").value;
+
     //Mensaje y redirección al WhatsApp
     let mensaje = '*Hola, envío mi carrito de compras para su recepción. Quedo atento(a) a la confirmación. ¡Gracias!*\n\n';
 
     mensaje += `*Código Cliente*: ${codigoCli}\n`
     mensaje += `*Distrito*: ${distrito}\n`;
     mensaje += `*Dirección*: ${ubicación}\n\n`;
+
+    mensaje += `*Fecha*: *${fecha}*\n`;
+    mensaje += `*Hora*: *${hora}*\n\n`;
 
     mensaje += `*Mi Carrito:*\n\n`;
 
@@ -179,10 +199,9 @@ function enviarWhatsApp() {
         mensaje += '----------------------\n';
     })
     
-
     mensaje += `*SUBTOTAL: S/. ${subtotal}*\n`;
     mensaje += `*DELIVERY: S/. ${delivery}*\n`;
-    mensaje += `*TOTAL: S/. ${total}*\n`;
+    mensaje += `*TOTAL A PAGAR: S/. ${total}*\n`;
 
     const mensajeCodificado = encodeURIComponent(mensaje);
     
@@ -220,7 +239,7 @@ function pedido() {
     
     mensaje += `SUBTOTAL: S/. ${subtotal}\n`;
     mensaje += `DELIVERY: S/. ${delivery}\n`;
-    mensaje += `TOTAL: S/. ${total}\n`;
+    mensaje += `TOTAL A PAGAR: S/. ${total}\n`;
 
     document.querySelector("#pedido").value = mensaje;
 }

@@ -108,6 +108,8 @@
                     </div>
                     <input type="hidden" name="codigo" id="codigo">
                     <input type="hidden" name="pedido" id="pedido">
+                    <input type="hidden" name="date" id="date">
+                    <input type="hidden" name="hour" id="hour">
                     <button class="btn-submit" type="submit">Finalizar Compra</button>
                     <div class="center">
                         <p class="btn-volver">Volver</p>

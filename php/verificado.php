@@ -1,1 +1,1 @@
-<script src="js/verificado.js"></ript>
+<!-- <script src="js/verificado.js"></script> -->

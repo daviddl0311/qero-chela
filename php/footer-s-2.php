@@ -29,8 +29,8 @@
                     <i class="fa-solid fa-phone center"></i>
                 </div>
                 <div class="center">
-                    <a href="https://wa.me/51935287218/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!">
-                        +51 935 287 218 
+                   <a href="https://wa.me/51983348954/?text=¡Hola,%20estoy%20interesado%20en%20el%20producto!">
+                        +51 983 348 954 
                     </a>
                 </div>
             </div>

@@ -121,7 +121,7 @@
                 <div>
                     <ul id="ul-mess">
                         <li>Envia tu pedido a nuestro WhatsApp.</li>
-                        <li>Paga por Plin o Yape al número: +51 983348954.</li>
+                        <li>Paga por Plin o Yape al número: +51 948 761 323.</li>
                         <li>Envianos la Imagen del Pago al mismo número.</li>
                         <li>Los Envios son realizados el mismo día si el pedido se hizo antes de las 5:00 p.m.</li>
                         <li>Luego de las 5:00 p.m. el envio será al dia siguiente.</li>
@@ -525,7 +525,7 @@
                 </details>
                 <details name="details">
                     <summary>¿Aceptan Plin o Yape?</summary>
-                    <p>¡Sí, aceptamos ambos! Puedes hacer la transferencia al número: <a class="enla-pre" href="https://wa.me/51983348954/?text=¡Hola,%20quiero%20realizar%20un%20pedido!" target="blank">+51 983 348 954</a>. No olvides enviar tu comprobante por WhatsApp para validar tu pedido.</p>
+                    <p>¡Sí, aceptamos ambos! Puedes hacer la transferencia al número: <a class="enla-pre" href="https://wa.me/51948761323/?text=¡Hola,%20quiero%20realizar%20un%20pedido!" target="blank">+51 948 761 323</a>. No olvides enviar tu comprobante por WhatsApp para validar tu pedido.</p>
                 </details>
                 <details name="details">
                    <summary>¿Cuánto cuesta el envío?</summary>

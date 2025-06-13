@@ -766,6 +766,14 @@ details p {
     text-decoration: underline;
     font-weight: 600;
 }
+.img-pago {
+    margin: .7rem;
+}
+.img-pago img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 /*------------- ANIMATION BUTTON -------------*/
 .pulsate-fwd {

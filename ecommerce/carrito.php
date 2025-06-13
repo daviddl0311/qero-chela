@@ -525,6 +525,9 @@
                 <details name="details">
                     <summary>¿Aceptan Plin o Yape?</summary>
                     <p>¡Sí, aceptamos ambos! Puedes hacer la transferencia al número: <a class="enla-pre" href="https://wa.me/51948761323/?text=¡Hola,%20quiero%20realizar%20un%20pedido!" target="blank">+51 948 761 323</a>. No olvides enviar tu comprobante por WhatsApp para validar tu pedido.</p>
+                    <div class="img-pago">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c61804fb67847f5b1046e_WhatsApp%20Image%202025-06-13%20at%2012.25.43%20PM.jpeg" alt="">
+                    </div>
                 </details>
                 <details name="details">
                    <summary>¿Cuánto cuesta el envío?</summary>

@@ -123,8 +123,7 @@
                         <li>Envia tu pedido a nuestro WhatsApp.</li>
                         <li>Paga por Plin o Yape al número: +51 948 761 323.</li>
                         <li>Envianos la Imagen del Pago al mismo número.</li>
-                        <li>Los Envios son realizados el mismo día si el pedido se hizo antes de las 5:00 p.m.</li>
-                        <li>Luego de las 5:00 p.m. el envio será al dia siguiente.</li>
+                        <li><strong>Tu pedido llegará al día siguiente de haber realizado tu compra</strong>, para asegurarnos de que lo recibas a tiempo y sin complicaciones.</li>
                     </ul>
                 </div>
                 <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/6838ee50f7c70ddd9c57bd5b_Edit%20the%20uploaded%20im-Photoroom.png" alt="Gracias Q'ero Chela">
@@ -521,7 +520,7 @@
             <div class="flex flex-column gap-tu-2 center">
                 <details name="details" open>
                     <summary>¿Cuándo llegará mi pedido?</summary>
-                    <p>Realizamos entregas el día anterior y el mismo Día del Padre, para que tu pedido llegue justo a tiempo para celebrar.</p>
+                    <p>Recepcionamos pedidos durante toda la semana y realizamos las entregas al día siguiente de tu compra, incluso el domingo, Día del Padre, para que tu sorpresa llegue justo a tiempo y sin contratiempos.</p>
                 </details>
                 <details name="details">
                     <summary>¿Aceptan Plin o Yape?</summary>

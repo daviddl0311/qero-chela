@@ -31,7 +31,7 @@
             <div class="container flex flex-column-2 gap1rem">
                 <div class="about flex flex-column gap2rem center">
                     <div class="nosotros-title">
-                        <h2>¿quiénes somos?</h2>
+                        <h2>nuestra esencia</h2>
                     </div>
                     <div class="nosotros-text">
                         <p><span class="bold">Somos una cervecería artesanal</span> ubicada en <span class="bold">Carapongo - HUACHIPA - SJL</span>. Nos dedicamos a la producción y distribución de cervezas artesanales, manteniendo la esencia y calidad de una auténtica cerveza local.</p>
@@ -129,16 +129,10 @@
             </div>
 
             <div class="medals flex flex-column gap2rem-2">
-                <div class="flex flex-column-3 gap1rem">
-                    <div class="center about gap2rem">
-                        <div class="medals-title">
-                            <h2>nuestras medallas</h2>
-                        </div>
-                        <div class="medals-text">
-                            <p>Q'ero Chela ha sido reconocida en el ámbito de la cerveza artesanal por su dedicación y calidad, destacándose en eventos locales y celebrada por su innovación en sabores únicos.</p>
-                        </div>
-                    </div>
+                <div class="medals-title center">
+                    <h2 class="center-align">nuestras medallas</h2>
                 </div>
+               
                 <div class="grid medallas-column">
                     <div class="medallas center">
                         <img class="img" src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da11c5fbc5dc96370a212_Medalla-Emprendedor.png" alt="Premio Emprendedor 2024">

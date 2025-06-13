@@ -33,6 +33,9 @@ header {
     display: grid;
     place-content: center;
 }
+.center-align {
+    text-align: center;
+}
 
 @view-transition {
     navigation: auto;
@@ -95,7 +98,9 @@ header {
 }
 .nosotros-title {
     text-transform: uppercase;
-    font-size: clamp(15px, 3vw, 28px);
+    font-size: clamp(20px, 3vw, 25px);
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
 }
 .nosotros-text {
     font-size: clamp(15px, 3vw, 19px);
@@ -166,8 +171,10 @@ header {
     width: 30rem;
 }
 .medals-title {
-    font-size: clamp(15px, 3vw, 28px);
+    font-size: clamp(20px, 3vw, 25px);
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Bilcase Demo', sans-serif;
 }
 .medals-text {
     font-size: clamp(15px, 3vw, 19px);
@@ -177,10 +184,15 @@ header {
     grid-template-columns: repeat(2, auto);
 }
 .medallas img {
-    width: 300px;
+    width: 300px;       
     height: 350px;
+    aspect-ratio: 16/9;
     object-fit: contain;
     filter: drop-shadow(8px 8px 3px rgb(70, 69, 69));
+    transition: all .3s ease-in-out;
+}
+.medallas img:hover {
+    scale: 1.05;
 }
 .obj-text {
     text-transform: uppercase;

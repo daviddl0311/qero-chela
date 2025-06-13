@@ -89,7 +89,7 @@
                             </select>
                         </div>
                         <p class="alert-text-2">*El costo de envío varía según el distrito seleccionado.</p>
-                    </div>
+                    </div> 
                     <div class="flex flex-column gap-alert-2">
                         <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" maxlength="9" required>
                         <p class="alert-text-2">*Usaremos tu número solo para notificaciones sobre tu pedido</p>

@@ -1,1 +1,1 @@
-<!-- <script src="js/verificador.js"></script> -->
+<script src="js/verificador.js"></script>

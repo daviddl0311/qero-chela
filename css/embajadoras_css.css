@@ -694,6 +694,9 @@ footer {
     }
 
     /*------- EMBAJADORAS ---------*/
+    .em {
+        padding-block: 3rem;
+    }
     .container-em  {
         width: 450px;
     }
@@ -825,6 +828,9 @@ footer {
     }
 
     /*------- EMBAJADORAS ---------*/
+    .em {
+        padding-block: 3rem;
+    }
     .container-em  {
         width: 350px;
     }
@@ -960,6 +966,9 @@ footer {
     }
 
     /*------- EMBAJADORAS ---------*/
+    .em {
+        padding-block: 3rem;
+    }
     .container-em  {
         width: 250px;
     }

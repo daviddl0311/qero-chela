@@ -34,6 +34,9 @@ header {
     display: grid;
     place-content: center;
 }
+.center-2 {
+    text-align: right;
+}
 .center-align {
     text-align: center;
 }
@@ -94,7 +97,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     opacity: .2;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 .em-div {
     height: 800px;
@@ -137,26 +140,36 @@ header {
 }
 
 /*------- INFOMRACION EMBAJADORAS --------*/
-.container-em  {
-    width: 100%;
+.em {
     padding-block: 5rem;
+}
+.container-em  {
+    width: 900px;
 }
 .img-em {
     width: 450px;
 }
 .img-em img {
-    width: 400px;
-    height: 28rem;
+    width: 380px;
+    height: 350px;
     object-fit: contain;
+    aspect-ratio: 8/9;
+    transition: all .3s ease-in-out;
+}
+.img-em img:hover {
+    scale: 1.1;
 }
 .text-em {
     width: 450px;
 }
 .text-em p {
-    font-size: clamp(15px, 3vw, 18px);
+    font-size: clamp(17px, 3vw, 18px);
 }
 .text-em h2 {
-    font-size: clamp(25px, 3vw, 30px);
+    font-size: clamp(25px, 3vw, 35px);
+    font-family: 'Bilcase Demo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .grid-template-column-em {
     grid-template-columns: repeat(2, auto);
@@ -165,8 +178,74 @@ header {
     gap: 1rem;
 }
 .gap-em2 {
-    gap: 2rem;
+    gap: 2.5rem;
 }
+.gap-em3 {
+    gap: .5rem;
+}
+.gap-em4 {
+    gap: 1.2rem;
+}
+.formulario {
+    background-color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    width: auto;
+    position: relative;
+}
+.for-info {
+    position: relative;
+    z-index: 0;
+}
+.for-img img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+.for-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(18px, 3vw, 20px);
+    font-family: 'Bilcase Demo', sans-serif;
+    letter-spacing: 2px;
+}
+.btn button {
+    width: 100%;
+    text-transform: uppercase;
+    padding-block: .7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: orange;
+    border: 1px solid orange;
+    font-weight: bold;
+    font-family: "Gidole", sans-serif;
+    transition: all .3s ease-in-out;
+}
+.btn button:hover {
+    background-color: black;
+    color: orange;
+}
+.text {
+    color: white;
+    font-size: 15px;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 15px;
+    font-family: "Gidole", sans-serif;
+    border: 1px solid orange;
+    outline: 1px solid orange;
+}
+input[type="text"]:valid,
+input[type="email"]:valid {
+    border: 1px solid green;
+    outline: 1px solid green;
+}
+
 /*--------------  FOOTER -----------------*/
 footer {
     background-color: #FDFAE9;
@@ -308,6 +387,9 @@ footer {
         padding-top: 12rem;
         padding-inline: 3.6rem;
     }
+    .op2 {
+        display: none;
+    }
 } 
 @media (850px < width < 1159px) {
      /*-------------- HEADER --------------*/ 
@@ -368,28 +450,17 @@ footer {
         justify-content: left;
         align-items: center;
     }
-    
-    /*-------------- CATEGORIAS --------------*/
-    .categorias {
-        padding-block: 3rem;
-    } 
-    .cat-column-2 {
-        grid-template-columns: repeat(1, auto);
-        gap: 1.5rem;
-    }
-    .item-img img {
-        width: 30rem;
-        height: 100%;
-    }
-    .item-img2 img {
-        width: 30rem;
-        height: 100%;
-    }
 
-    /*------------- DISEÑOS --------------*/
-    /* .grid-column-diseño {
-        grid-template-columns: repeat(2, auto);
-    } */
+    /*------- EMBAJADORAS ------*/
+    .container-em  {
+        width: 800px;
+    }
+    .text-em, .img-em {
+        width: 400px;
+    }
+    .op2 {
+        display: none;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
@@ -491,18 +562,29 @@ footer {
     }
 
     /*------------- MERCHANDISING --------------*/
-    .mer-text p {
+    .em-text p {
         width: 600px;
     }
 
-    /*------------- DISEÑOS --------------*/
-    /* .grid-column-diseño {
-        grid-template-columns: repeat(2, auto);
+    /*------- EMBAJADORAS ---------*/
+    .container-em  {
+        width: 600px;
     }
-    .dis-img img {
-        width: 280px;
-        height: 370px;
-    } */
+    .text-em, .img-em {
+        width: 450px;
+    }
+    .grid-template-column-em {
+       grid-template-columns: repeat(1, auto);
+       gap: 2rem;
+    }
+    .img-em img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 13/9;
+    }
+    .op1 {
+        display: none;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer-column-2 {
@@ -607,22 +689,30 @@ footer {
     }
 
     /*------------- MERCHANDISING --------------*/
-    .mer-text p {
+    .em-text p {
         width: 400px;
     }
 
-    /*------------- DISEÑOS --------------*/
-    /* .diseños {
-        padding: 3rem;
+    /*------- EMBAJADORAS ---------*/
+    .container-em  {
+        width: 450px;
     }
-    .grid-column-diseño {
-        grid-template-columns: repeat(1, auto);
+    .text-em, .img-em {
+        width: 100%;
     }
-    .dis-img img {
-        width: 300px;
-        height: 390px;
-    } */
-
+    .grid-template-column-em {
+       grid-template-columns: repeat(1, auto);
+       gap: 2rem;
+    }
+    .op1 {
+        display: none;
+    }
+    .img-em img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 13/9;
+    }
+    
     /*-------------- FOOTER --------------*/ 
     .footer {
         padding: 3rem;
@@ -730,21 +820,29 @@ footer {
     }
 
     /*------------- MERCHANDISING --------------*/
-    .mer-text p {
+    .em-text p {
         width: 350px;
     }
 
-    /* ------------- DISEÑOS --------------
-    .diseños {
-        padding: 3rem;
+    /*------- EMBAJADORAS ---------*/
+    .container-em  {
+        width: 350px;
     }
-    .grid-column-diseño {
-        grid-template-columns: repeat(1, auto);
+    .text-em, .img-em {
+        width: 100%;
     }
-    .dis-img img {
-        width: 290px;
-        height: 380px;
-    } */
+    .grid-template-column-em {
+       grid-template-columns: repeat(1, auto);
+       gap: 2rem;
+    }
+    .op1 {
+        display: none;
+    }
+    .img-em img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 13/9;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {
@@ -857,21 +955,29 @@ footer {
     }
 
     /*------------- MERCHANDISING --------------*/
-    .mer-text p {
+    .em-text p {
         width: 300px;
     }
 
-    /* ------------- DISEÑOS --------------
-    .diseños {
-        padding: 3rem;
+    /*------- EMBAJADORAS ---------*/
+    .container-em  {
+        width: 250px;
     }
-    .grid-column-diseño {
-        grid-template-columns: repeat(1, auto);
+    .text-em, .img-em {
+        width: 100%;
     }
-    .dis-img img {
-        width: 260px;
-        height: 350px;
-    } */
+    .grid-template-column-em {
+       grid-template-columns: repeat(1, auto);
+       gap: 2rem;
+    }
+    .op1 {
+        display: none;
+    }
+    .img-em img {
+        width: 100%;
+        height: 200px;
+        aspect-ratio: 12/9;
+    }
 
     /*-------------- FOOTER --------------*/ 
     .footer {

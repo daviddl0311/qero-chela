@@ -33,6 +33,9 @@
                         Taproom
                     </a>
                 </li>
+                 <li class="center burger-center">
+                    <a href="embajadoras.php">Embajadoras</a>
+                </li>
                 <li class="center burger-center">
                     <a href="nosotros.php">Nosotros</a>
                 </li>

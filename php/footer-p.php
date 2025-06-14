@@ -66,6 +66,7 @@
             <div class="flex flex-2">
                 <h2>Empresa</h2>
                 <div class="flex flex-2 gap-footer-3">
+                    <a href="embajadoras.php">Embajadoras</a>
                     <a href="nosotros.php">Nosotros</a>
                     <a href="taproom.php">Taproom</a>
                 </div>

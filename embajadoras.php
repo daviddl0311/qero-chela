@@ -36,39 +36,85 @@
             </div>
         </div>
 
-        <div class="container-em center flex flex-column gap-em2">
-            <div class="grid grid-template-column-em emprender-em center">
-                <div class="text-em center flex flex-column gap-em">
-                    <h2>¡Mamá emprendedora, este es tu momento!</h2>
+        <section class="em center">
+            <article class="container-em flex flex-column gap-em2">
+                <div class="grid grid-template-column-em emprender-em center">
+                    <div class="text-em center flex flex-column gap-em">
+                        <h2>¡Mujer emprendedora, este es tu momento!</h2>
+        
+                        <p>Gana ingresos desde casa como micro vendedora de Q'ero Chela. No necesitas experiencia, solo entusiasmo y ganas de crecer. ¡Convierte tu tiempo libre en oportunidades!</p>
+                    </div>
+                    <div class="img-em center">
+                        <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c671eece6bf62f010030d_Dise%C3%B1o-sin-t%C3%ADtulo-(1)nvf%20(1).jpg" alt="Embajadoras" class="img1">
+                    </div>
+                </div>
+                <div class="center flex flex-column gap-em">
+                    <div class="text-em center">
+                        <h2 class="center-align">Regístrate y da el primer paso</h2>
+                    </div>
+                    <div class="center">
+                        <div class="for-img center">
+                            <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/680da092f2f6d2dda40ff911_logo-footer.png" alt="">
+                        </div>
+                        <form method="post" id="formulario" class="formulario flex flex-column gap-em2">
+                            <div class="for-info flex flex-column gap-em4">
+                                <div class="for-title center">
+                                    <h2>registro</h2>
+                                </div>
+                                <div class="flex flex-column gap-em3">
+                                    <div class="text">
+                                        <label for="">Nombre</label>
+                                    </div>
+                                    <input type="text" required name="nombre" id="nombre" placeholder="Nombre(s)">
+                                </div>
+                                <div class="flex flex-column gap-em3">
+                                    <div class="text">
+                                        <label for="">Apellido</label>
+                                    </div>
+                                    <input type="text" required name="apellido" id="apellido" placeholder="Apellido(s)">
+                                </div>
+                                <div class="flex flex-column gap-em3">
+                                    <div class="text">
+                                        <label for="">E-mail</label>
+                                    </div>
+                                    <input type="email" required name="email" id="email" placeholder="name@example.com">
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" id="for-btn">registrate</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                 
+                <div class="grid grid-template-column-em emprender-em center op1">
+                     <div class="img-em center">
+                         <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c6e8d2297df27c721bd90_Dise%C3%B1o-sin-t%C3%ADtulo-(2).jpg" alt="Embajadoras">
+                     </div>
+                    <div class="text-em center center-2 flex flex-column gap-em">
+                       <h2>Aprende y crece con nosotras</h2>
     
-                    <p>Gana ingresos desde casa como micro vendedora de Q'ero Chela. No necesitas experiencia, solo entusiasmo y ganas de crecer. ¡Convierte tu tiempo libre en oportunidades!</p>
+                        <p>Muy pronto tendrás acceso a una capacitación especial con herramientas de venta, consejos y motivación para impulsar tu crecimiento como emprendedora Q'ero Chela.</p>
+                    </div>
                 </div>
-                <div class="img-em center">
-                    <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c671eece6bf62f010030d_Dise%C3%B1o-sin-t%C3%ADtulo-(1)nvf%20(1).jpg" alt="Embajadoras">
+                <div class="grid grid-template-column-em emprender-em center op2">
+                    <div class="text-em center flex flex-column gap-em">
+                       <h2>Aprende y crece con nosotras</h2>
+    
+                        <p>Muy pronto tendrás acceso a una capacitación especial con herramientas de venta, consejos y motivación para impulsar tu crecimiento como emprendedora Q'ero Chela.</p>
+                    </div>
+                     <div class="img-em center">
+                         <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c6e8d2297df27c721bd90_Dise%C3%B1o-sin-t%C3%ADtulo-(2).jpg" alt="Embajadoras">
+                     </div>
                 </div>
-            </div>
-            <div>
-                <h2>Regístrate y da el primer paso</h2>
-                <form action="" class="flex flex-column center">
-                        <input type="text" placeholder="Nombre"><input type="text" placeholder="Correo">
-                        <input type="submit" value ="Registrate">
-                </form>
-            </div>
-             <div class="grid grid-template-column-em emprender-em center">
-                 <div class="img-em center">
-                     <img src="https://cdn.prod.website-files.com/680f81021936b0d565d34173/684c6e8d2297df27c721bd90_Dise%C3%B1o-sin-t%C3%ADtulo-(2).jpg" alt="Embajadoras">
-                 </div>
-                <div class="text-em center flex flex-column gap-em">
-                   <h2>Aprende y crece con nosotras</h2>
-
-                    <p>Muy pronto tendrás acceso a una capacitación especial con herramientas de venta, consejos y motivación para impulsar tu crecimiento como emprendedora Q'ero Chela.</p>
-                </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
 
     <?php
         include "php/footer-p.php";
     ?>
+
+    <script src="js/formulario.js"></script>
 </body>
 </html>
